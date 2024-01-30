@@ -1,9 +1,9 @@
 {
-  "name": "Austin",
-  "headerTaglineOne": "Plebdev",
-  "headerTaglineTwo": "Hi I'm Austin",
-  "headerTaglineThree": "devloper / educator / founder of plebdevs",
-  "headerTaglineFour": " BASED in Austin, TX",
+  "name": "Plebdev",
+  "headerTaglineOne": "Hi I'm Austin,",
+  "headerTaglineTwo": "the bitcoinplebdev,",
+  "headerTaglineThree": "devloper, educator, founder of plebdevs",
+  "headerTaglineFour": "BASED in Austin, TX.",
   "showCursor": false,
   "showBlog": true,
   "darkMode": true,
@@ -25,7 +25,11 @@
       "link": "https://twitter.com/bitcoinplebdev"
     },
     { "id": "4", "title": "Blog", "link": "https://bitcoinpleb.dev/blog/" },
-    { "id": "5", "title": "Email", "link": "mailto:austinkelsay@protonmail.com" }
+    {
+      "id": "5",
+      "title": "Email",
+      "link": "mailto:austinkelsay@protonmail.com"
+    }
   ],
   "projects": [
     {
