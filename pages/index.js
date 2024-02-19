@@ -96,21 +96,22 @@ export default function Home() {
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
           <h1 className="text-2xl text-bold">Work.</h1>
 
-          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
+          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-3 gap-4">
             {data.projects.map((project) => (
               <WorkCard
                 key={project.id}
                 img={project.imageSrc}
                 name={project.title}
+                role={project.role}
                 description={project.description}
-                onClick={() => window.open(project.url)}
+                onClick={() => window.open(project.url, "_blank")}
               />
             ))}
           </div>
         </div>
 
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
-          <h1 className="tablet:m-10 text-2xl text-bold">Services.</h1>
+          <h1 className="tablet:m-10 text-2xl text-bold">Skills</h1>
           <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
             {data.services.map((service, index) => (
               <ServiceCard

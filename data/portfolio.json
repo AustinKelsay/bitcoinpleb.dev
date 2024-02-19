@@ -34,67 +34,73 @@
   "projects": [
     {
       "id": "1",
-      "title": "Project One Test",
-      "description": "Web Design",
-      "imageSrc": "https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      "title": "Plebdevs Community",
+      "role": "Founder / Organizer",
+      "description": "PlebDevs is a Bitcoin/Lightning App developer community focused on education, collaboration, and building hard skills.",
+      "imageSrc": "/images/plebdevs.png",
       "url": "https://plebdevs.com/"
     },
     {
       "id": "2",
-      "title": "Project Two",
-      "description": "Web Development",
-      "imageSrc": "https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60",
-      "url": "https://plebdevs.com/"
+      "title": "MakePrisms",
+      "role": "Full Stack Developer",
+      "description": "Worked on Lightning / Nostr integrated payments API and multiple fullstack apps that utilize the API.",
+      "imageSrc": "/images/makeprisms.png",
+      "url": "https://makeprisms.com/"
     },
     {
       "id": "3",
-      "title": "Project Three",
-      "description": "Design",
-      "imageSrc": "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-      "url": "https://plebdevs.com/"
+      "title": "Stacker News",
+      "role": "Open Source Contributor / Bounty hunter",
+      "description": "Stacker News, the front page of Bitcoin. I worked on the frontend and backend of the project. I Implemented features like Bounties and Nostr crossposting.",
+      "imageSrc": "/images/stackernews.png",
+      "url": "https://stacker.news/"
     },
     {
       "id": "4",
-      "title": "Project Four",
-      "description": "Marketing",
-      "imageSrc": "https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-      "url": "https://plebdevs.com/"
+      "title": "Fold App",
+      "role": "Frontend Developer",
+      "description": "Earn bitcoin back on everything. Buy bitcoin with no fees. I worked on the frontend app. Deployed multiple features and bug fixes to both iOS and Android.",
+      "imageSrc": "/images/foldapp.png",
+      "url": "https://foldapp.com/"
     },
     {
       "id": "5",
-      "title": "Project Five",
-      "description": "Development",
-      "imageSrc": "https://images.unsplash.com/photo-1534239143101-1b1c627395c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzZ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-      "url": "https://plebdevs.com/"
+      "title": "Alby",
+      "role": "Open Source Contributor / Bounty hunter",
+      "description": "Contributed feature that allows users to tip on reddit and recognize lightning adresses on reddit user descriptions as well as extending the LUD-18 payer data capabilities for the wallet/extension.",
+      "imageSrc": "https://framerusercontent.com/images/5gd9JgdX3oFAFQTUDkQ8yEeka0.png",
+      "url": "https://getalby.com/"
     },
     {
       "id": "6",
-      "title": "Project Six",
-      "description": "Design & Development",
-      "imageSrc": "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60",
-      "url": "https://plebdevs.com/"
+      "title": "Forethought AI",
+      "role": "AI Implementation Engineer",
+      "description": "Implemented AI products for startups and enterprises. Worked on multiple projects that utilized AI and Machine Learning. Built custom modles / datasets / pipelines for clients.",
+      "imageSrc": "https://forethought.ai/wp-content/uploads/2023/01/Forethought.png",
+      "url": "https://forethought.ai/"
     }
   ],
   "services": [
     {
       "id": "1",
-      "title": "Art Direction",
-      "description": "We help with the creation and development of online advertising ideas, with particular focus on their visual appearance."
+      "title": "Web / App Developer",
+      "description": "Have worked across musltiple teams building and maintaining web applications. I have experience with React, Node, and other web technologies."
     },
     {
       "id": "2",
-      "title": "Branding",
-      "description": "We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors."
+      "title": "Bitcoin / Lightning Development",
+      "description": "I have been working with Bitcoin and Lightning for the past 4 years. I have built multiple projects and have a deep understanding of the technology."
     },
     {
       "id": "3",
-      "title": "Web Design",
-      "description": "We build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel."
+      "title": "Developer Education",
+      "description": "I have been teaching people how to code for the past 2 years. I run the plebdevs community, I've built multiple courses, I do live workshops, 1:1 tutoring, and more."
     },
     {
       "id": "4",
-      "title": "3D Design",
-      "description": "We combine creative design and technical skills to build striking 3D visualisations that bring your project to life."
+      "title": "Nostr Development",
+      "description": "I have been working with Nostr for the past 2 years. I have built multiple projects and have a deep understanding of the technology."
     }
   ],
   "aboutpara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
