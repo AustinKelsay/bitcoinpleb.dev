@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
@@ -14,6 +14,8 @@ import Link from "next/link";
 import data from "../data/portfolio.json";
 
 export default function Home() {
+  // state
+  const [showCopyConfirmation, setShowCopyConfirmation] = useState(false);
   // Ref
   const workRef = useRef();
   const aboutRef = useRef();
@@ -21,6 +23,21 @@ export default function Home() {
   const textTwo = useRef();
   const textThree = useRef();
   const textFour = useRef();
+
+  const copyToClipboard = async (text) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setShowCopyConfirmation(true);
+      setTimeout(() => setShowCopyConfirmation(false), 2000); // Hide confirmation after 2 seconds
+      if (window && window?.webln && window?.webln?.lnurl) {
+        await window.webln.enable();
+        const result = await window.webln.lnurl("bitcoinplebdev@stacker.news");
+        console.log("result", result);
+      }
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
 
   // Handling Scroll
   const handleWorkScroll = () => {
@@ -87,6 +104,13 @@ export default function Home() {
             >
               {data.headerTaglineFour}
             </h1>
+            <button
+              className="lud16"
+              onClick={() => copyToClipboard(data.lud16)}
+            >
+              ⚡ {data.lud16}
+            </button>
+            {showCopyConfirmation && <div className="copied-notification">Copied to clipboard!</div>}
           </div>
 
           <Socials className="mt-2 laptop:mt-5" />
