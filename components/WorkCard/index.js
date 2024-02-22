@@ -5,9 +5,8 @@ const WorkCard = ({ img, name, role, description, onClick }) => {
     <div className="overflow-hidden rounded-lg p-2 laptop:p-4 first:ml-0 link cursor-pointer">
       <div
         onClick={onClick}
-        className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 h-48 mob:h-auto bg-opacity-hover"
+        className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 bg-opacity-hover laptopl:h-[400px] desktop:h-[380px] laptop:h-[350px] tablet:h-[300px] mob:h-[280px]"
         style={{
-          height: "300px",
           backgroundImage: `url(${img})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
