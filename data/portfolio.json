@@ -80,6 +80,150 @@
       "description": "Implemented AI products for startups and enterprises. Worked on multiple projects that utilized AI and Machine Learning. Built custom modles / datasets / pipelines for clients.",
       "imageSrc": "https://forethought.ai/wp-content/uploads/2023/01/Forethought.png",
       "url": "https://forethought.ai/"
+    },
+    {
+      "id": "7",
+      "title": "Plebdevs Community",
+      "role": "Founder / Organizer",
+      "description": "PlebDevs is a Bitcoin/Lightning App developer community focused on education, collaboration, and building hard skills.",
+      "imageSrc": "/images/plebdevs.png",
+      "url": "https://plebdevs.com/"
+    },
+    {
+      "id": "8",
+      "title": "MakePrisms",
+      "role": "Full Stack Developer",
+      "description": "Worked on Lightning / Nostr integrated payments API and multiple fullstack apps that utilize the API.",
+      "imageSrc": "/images/makeprisms.png",
+      "url": "https://makeprisms.com/"
+    },
+    {
+      "id": "9",
+      "title": "Stacker News",
+      "role": "Open Source Contributor / Bounty hunter",
+      "description": "Stacker News, the front page of Bitcoin. I worked on the frontend and backend of the project. I Implemented features like Bounties and Nostr crossposting.",
+      "imageSrc": "/images/stackernews.png",
+      "url": "https://stacker.news/"
+    },
+    {
+      "id": "10",
+      "title": "Fold App",
+      "role": "Frontend Developer",
+      "description": "Earn bitcoin back on everything. Buy bitcoin with no fees. I worked on the frontend app. Deployed multiple features and bug fixes to both iOS and Android.",
+      "imageSrc": "/images/foldapp.png",
+      "url": "https://foldapp.com/"
+    },
+    {
+      "id": "11",
+      "title": "Alby",
+      "role": "Open Source Contributor / Bounty hunter",
+      "description": "Contributed feature that allows users to tip on reddit and recognize lightning adresses on reddit user descriptions as well as extending the LUD-18 payer data capabilities for the wallet/extension.",
+      "imageSrc": "https://framerusercontent.com/images/5gd9JgdX3oFAFQTUDkQ8yEeka0.png",
+      "url": "https://getalby.com/"
+    },
+    {
+      "id": "12",
+      "title": "Forethought AI",
+      "role": "AI Implementation Engineer",
+      "description": "Implemented AI products for startups and enterprises. Worked on multiple projects that utilized AI and Machine Learning. Built custom modles / datasets / pipelines for clients.",
+      "imageSrc": "https://forethought.ai/wp-content/uploads/2023/01/Forethought.png",
+      "url": "https://forethought.ai/"
+    },
+    {
+      "id": "13",
+      "title": "Plebdevs Community",
+      "role": "Founder / Organizer",
+      "description": "PlebDevs is a Bitcoin/Lightning App developer community focused on education, collaboration, and building hard skills.",
+      "imageSrc": "/images/plebdevs.png",
+      "url": "https://plebdevs.com/"
+    },
+    {
+      "id": "14",
+      "title": "MakePrisms",
+      "role": "Full Stack Developer",
+      "description": "Worked on Lightning / Nostr integrated payments API and multiple fullstack apps that utilize the API.",
+      "imageSrc": "/images/makeprisms.png",
+      "url": "https://makeprisms.com/"
+    },
+    {
+      "id": "15",
+      "title": "Stacker News",
+      "role": "Open Source Contributor / Bounty hunter",
+      "description": "Stacker News, the front page of Bitcoin. I worked on the frontend and backend of the project. I Implemented features like Bounties and Nostr crossposting.",
+      "imageSrc": "/images/stackernews.png",
+      "url": "https://stacker.news/"
+    },
+    {
+      "id": "16",
+      "title": "Fold App",
+      "role": "Frontend Developer",
+      "description": "Earn bitcoin back on everything. Buy bitcoin with no fees. I worked on the frontend app. Deployed multiple features and bug fixes to both iOS and Android.",
+      "imageSrc": "/images/foldapp.png",
+      "url": "https://foldapp.com/"
+    },
+    {
+      "id": "17",
+      "title": "Alby",
+      "role": "Open Source Contributor / Bounty hunter",
+      "description": "Contributed feature that allows users to tip on reddit and recognize lightning adresses on reddit user descriptions as well as extending the LUD-18 payer data capabilities for the wallet/extension.",
+      "imageSrc": "https://framerusercontent.com/images/5gd9JgdX3oFAFQTUDkQ8yEeka0.png",
+      "url": "https://getalby.com/"
+    },
+    {
+      "id": "18",
+      "title": "Forethought AI",
+      "role": "AI Implementation Engineer",
+      "description": "Implemented AI products for startups and enterprises. Worked on multiple projects that utilized AI and Machine Learning. Built custom modles / datasets / pipelines for clients.",
+      "imageSrc": "https://forethought.ai/wp-content/uploads/2023/01/Forethought.png",
+      "url": "https://forethought.ai/"
+    },
+    {
+      "id": "19",
+      "title": "Plebdevs Community",
+      "role": "Founder / Organizer",
+      "description": "PlebDevs is a Bitcoin/Lightning App developer community focused on education, collaboration, and building hard skills.",
+      "imageSrc": "/images/plebdevs.png",
+      "url": "https://plebdevs.com/"
+    },
+    {
+      "id": "20",
+      "title": "MakePrisms",
+      "role": "Full Stack Developer",
+      "description": "Worked on Lightning / Nostr integrated payments API and multiple fullstack apps that utilize the API.",
+      "imageSrc": "/images/makeprisms.png",
+      "url": "https://makeprisms.com/"
+    },
+    {
+      "id": "21",
+      "title": "Stacker News",
+      "role": "Open Source Contributor / Bounty hunter",
+      "description": "Stacker News, the front page of Bitcoin. I worked on the frontend and backend of the project. I Implemented features like Bounties and Nostr crossposting.",
+      "imageSrc": "/images/stackernews.png",
+      "url": "https://stacker.news/"
+    },
+    {
+      "id": "22",
+      "title": "Fold App",
+      "role": "Frontend Developer",
+      "description": "Earn bitcoin back on everything. Buy bitcoin with no fees. I worked on the frontend app. Deployed multiple features and bug fixes to both iOS and Android.",
+      "imageSrc": "/images/foldapp.png",
+      "url": "https://foldapp.com/"
+    },
+    {
+      "id": "23",
+      "title": "Alby",
+      "role": "Open Source Contributor / Bounty hunter",
+      "description": "Contributed feature that allows users to tip on reddit and recognize lightning adresses on reddit user descriptions as well as extending the LUD-18 payer data capabilities for the wallet/extension.",
+      "imageSrc": "https://framerusercontent.com/images/5gd9JgdX3oFAFQTUDkQ8yEeka0.png",
+      "url": "https://getalby.com/"
+    },
+    {
+      "id": "24",
+      "title": "Forethought AI",
+      "role": "AI Implementation Engineer",
+      "description": "Implemented AI products for startups and enterprises. Worked on multiple projects that utilized AI and Machine Learning. Built custom modles / datasets / pipelines for clients.",
+      "imageSrc": "https://forethought.ai/wp-content/uploads/2023/01/Forethought.png",
+      "url": "https://forethought.ai/"
     }
   ],
   "services": [

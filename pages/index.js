@@ -16,6 +16,7 @@ import data from "../data/portfolio.json";
 export default function Home() {
   // state
   const [showCopyConfirmation, setShowCopyConfirmation] = useState(false);
+  const [visibleProjects, setVisibleProjects] = useState(6);
   // Ref
   const workRef = useRef();
   const aboutRef = useRef();
@@ -119,7 +120,7 @@ export default function Home() {
           <h1 className="text-2xl text-bold">Work.</h1>
 
           <div className="mt-5 laptop:mt-10 grid gap-4 laptopl:grid-cols-2 desktop:grid-cols-2 laptop:grid-cols-2 tablet:grid-cols-2 mob:grid-cols-1">
-            {data.projects.map((project) => (
+            {data.projects.slice(0, visibleProjects).map((project) => (
               <WorkCard
                 key={project.id}
                 img={project.imageSrc}
@@ -130,6 +131,19 @@ export default function Home() {
               />
             ))}
           </div>
+        </div>
+
+        <div className="mt-5 w-full flex justify-center">
+          {visibleProjects < data.projects.length && (
+            <button
+              onClick={() => setVisibleProjects(prevVisibleProjects => Math.min(prevVisibleProjects + 6, data.projects.length))}
+              style={{ backgroundImage: 'radial-gradient(at top right, #51afc8 0%, #384acb 100%)' }}
+              className="py-1 px-3 text-white rounded hover:bg-blue-700 transition duration-300"
+            >
+              Show More
+            </button>
+
+          )}
         </div>
 
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
