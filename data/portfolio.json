@@ -67,11 +67,11 @@
     },
     {
       "id": "5",
-      "title": "Alby",
-      "role": "Open Source Contributor / Bounty hunter",
-      "description": "Contributed feature that allows users to tip on reddit and recognize lightning adresses on reddit user descriptions as well as extending the LUD-18 payer data capabilities for the wallet/extension.",
-      "imageSrc": "https://framerusercontent.com/images/5gd9JgdX3oFAFQTUDkQ8yEeka0.png",
-      "url": "https://getalby.com/"
+      "title": "Pulsar",
+      "role": "Open Source Contributor / Frontend Developer",
+      "description": "Pulsar is an encrypted nostr chat app that masks your metadata. It works by sending fixed-length, fixed-frequency messages over the nostr messaging network. I worked with supertestnet on this project, we sumbitted it for HRF's encrypted group chat bounty.",
+      "imageSrc": "/images/pulsar.png",
+      "url": "https://www.nostrpulsar.chat/"
     },
     {
       "id": "6",
@@ -83,11 +83,11 @@
     },
     {
       "id": "7",
-      "title": "Plebdevs Community",
-      "role": "Founder / Organizer",
-      "description": "PlebDevs is a Bitcoin/Lightning App developer community focused on education, collaboration, and building hard skills.",
-      "imageSrc": "/images/plebdevs.png",
-      "url": "https://plebdevs.com/"
+      "title": "Ln-Inbound",
+      "role": "Full Stack Developer",
+      "description": "An easy to deploy LND wrapper to sell inbound Lightning channels from your own node. Me and @cmdruid built this for the Bitcoin++ hackathon.",
+      "imageSrc": "/images/lninbound.png",
+      "url": "https://lninbound.com/"
     },
     {
       "id": "8",
