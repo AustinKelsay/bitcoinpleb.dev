@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Button from "../components/Button";
 import Header from "../components/Header";
 import { v4 as uuidv4 } from "uuid";
-import { useTheme } from "next-themes";
 
 // Data
 import yourData from "../data/portfolio.json";
@@ -11,7 +10,6 @@ const Edit = () => {
   // states
   const [data, setData] = useState(yourData);
   const [currentTabs, setCurrentTabs] = useState("HEADER");
-  const { theme } = useTheme();
 
   const saveData = () => {
     if (process.env.NODE_ENV === "development") {
@@ -149,7 +147,7 @@ const Edit = () => {
     <div className={`container mx-auto ${data.showCursor && "cursor-none"}`}>
       <Header isBlog></Header>
       <div className="mt-10">
-        <div className={`${theme === "dark" ? "bg-transparent" : "bg-white"}`}>
+        <div className={"bg-transparent"}>
           <div className="flex items-center justify-between">
             <h1 className="text-4xl">Dashboard</h1>
             <div className="flex items-center">

@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import Button from "../../components/Button";
 import DatePicker from "react-datepicker";
 import TextareaAutosize from "react-textarea-autosize";
-import { useTheme } from "next-themes";
 
 import "react-datepicker/dist/react-datepicker.css";
 
 const BlogEditor = ({ post, close, refresh }) => {
-  const { theme } = useTheme();
   const [currentTabs, setCurrentTabs] = useState("BLOGDETAILS");
   const [blogContent, setBlogContent] = useState(post.content);
   const [blogVariables, setBlogVariables] = useState({
@@ -43,9 +41,7 @@ const BlogEditor = ({ post, close, refresh }) => {
 
   return (
     <div
-      className={`fixed z-10 w-screen h-screen overflow-auto top-0 flex flex-col items-center ${
-        theme === "dark" ? "bg-black" : "bg-white"
-      }`}
+      className={"fixed z-10 w-screen h-screen overflow-auto top-0 flex flex-col items-center bg-black"}
     >
       <div className="container my-20">
         <div className="mt-10">
