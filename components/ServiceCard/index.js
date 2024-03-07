@@ -8,7 +8,7 @@ const ServiceCard = ({ name, description }) => {
   }, []);
   return (
     <div
-      className={"w-full p-2 mob:p-4 rounded-lg transition-all ease-out duration-300"}
+      className={"w-full bg-gray-900 p-4 mob:p-4 rounded-lg transition-all ease-out duration-300"}
     >
       <h1 className="text-3xl">{name ? name : "Heading"}</h1>
       <p className="mt-5 opacity-40 text-xl">
