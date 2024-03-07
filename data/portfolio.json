@@ -17,7 +17,7 @@
     {
       "id": "2",
       "title": "LinkedIn",
-      "link": "https://www.linkedin.com/in/austinkelsay/"
+      "link": "https://www.linkedin.com/in/austinkelsay"
     },
     {
       "id": "3",
@@ -90,11 +90,11 @@
     },
     {
       "id": "8",
-      "title": "MakePrisms",
+      "title": "Devstr",
       "role": "Full Stack Developer",
-      "description": "Worked on Lightning / Nostr integrated payments API and multiple fullstack apps that utilize the API.",
-      "imageSrc": "/images/makeprisms.png",
-      "url": "https://makeprisms.com/"
+      "description": "Devstr is a prototype Github-like platform that uses Nostr for storing and broadcasting redundant repository data. Me and @btcretriever built this for the 2023 Austin SatsX hackathon and won the prize for the nostr category.",
+      "imageSrc": "/images/devstr.png",
+      "url": "https://devstr.vercel.app/"
     },
     {
       "id": "9",
