@@ -1,16 +1,47 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const WorkCard = ({ img, name, role, description, onClick }) => {
+  const [backgroundSize, setBackgroundSize] = useState("cover");
+  const [backgroundHeight, setBackgroundHeight] = useState("400px");
+
+  useEffect(() => {
+    const updateBackgroundSize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth < 375) {  // for 'mob' size
+        setBackgroundSize("contain");
+        setBackgroundHeight("280px");  // Height for mobile
+      } else if (screenWidth < 768) {  // for 'tablet' size
+        setBackgroundSize("contain");
+        setBackgroundHeight("280px");  // Height for tablet
+      } else if (screenWidth < 1024) {  // for 'laptop' size
+        setBackgroundSize("contain");
+        setBackgroundHeight("300px");  // Height for laptop
+      } else if (screenWidth < 1280) {  // for 'desktop' size
+        setBackgroundSize("cover");
+        setBackgroundHeight("330px");  // Height for desktop
+      } else {  // for larger screens
+        setBackgroundSize("cover");
+        setBackgroundHeight("380px");  // Height for larger screens
+      }
+    };
+
+    window.addEventListener("resize", updateBackgroundSize);
+    updateBackgroundSize();
+
+    return () => window.removeEventListener("resize", updateBackgroundSize);
+  }, []);
+
   return (
     <div className="overflow-hidden rounded-lg p-2 laptop:p-4 first:ml-0 link cursor-pointer">
       <div
         onClick={onClick}
-        className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 bg-opacity-hover laptopl:h-[400px] desktop:h-[380px] laptop:h-[350px] tablet:h-[300px] mob:h-[280px]"
+        className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 bg-opacity-hover"
         style={{
           backgroundImage: `url(${img})`,
-          backgroundSize: "cover",
+          backgroundSize: backgroundSize,
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "center"
+          backgroundPosition: "center",
+          height: backgroundHeight,
         }}
       >
       </div>
