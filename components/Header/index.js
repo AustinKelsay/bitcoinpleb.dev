@@ -84,7 +84,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         )}
       </Popover>
       <div
-        className={"mt-10 hidden flex-row items-center justify-between sticky dark:text-white top-0 z-10 tablet:flex"}
+        className={"mt-10 hidden flex-row items-center justify-between sticky text-white top-0 z-10 tablet:flex"}
       >
         <h1
           onClick={() => router.push("/")}
