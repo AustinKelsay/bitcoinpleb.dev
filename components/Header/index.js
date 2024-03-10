@@ -7,14 +7,8 @@ import data from "../../data/portfolio.json";
 
 const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const router = useRouter();
-  const [mounted, setMounted] = useState(false);
 
   const { name, showBlog, showResume } = data;
-
-  useEffect(() => {
-    setMounted(true);
-
-  }, []);
 
   return (
     <>
