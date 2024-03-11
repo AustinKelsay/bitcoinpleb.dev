@@ -1,9 +1,8 @@
-import { Transition } from "@headlessui/react";
-import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import { CSSTransition } from "react-transition-group";
 import Button from "../Button";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-// Local Data
 import data from "../../data/portfolio.json";
 
 const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
@@ -74,15 +73,11 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           />
         </div>
       )}
-      <Transition
-        show={isOpen}
-        as="div"
-        enter="transition ease-out duration-200"
-        enterFrom="opacity-0 scale-95"
-        enterTo="opacity-100 scale-100"
-        leave="transition ease-in duration-200"
-        leaveFrom="opacity-100 scale-100"
-        leaveTo="opacity-0 scale-95"
+      <CSSTransition
+        in={isOpen}
+        timeout={200}
+        classNames="transition"
+        unmountOnExit
       >
         <div className="absolute top-20 right-4 bg-slate-800 rounded-md shadow-lg p-4">
           {!isBlog ? (
@@ -114,7 +109,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             </>
           )}
         </div>
-      </Transition>
+      </CSSTransition>
     </div>
   );
 };
