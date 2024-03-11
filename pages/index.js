@@ -79,7 +79,7 @@ export default function Home() {
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
         />
-        <div className="laptop:mt-20 mt-10">
+        <div className="laptop:mt-20 mt-10 mob:mx-4">
           <div className="mt-5">
             <h1
               ref={textOne}
