@@ -74,8 +74,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           />
         </div>
       )}
-      {/* <Transition
+      <Transition
         show={isOpen}
+        as="div"
         enter="transition ease-out duration-200"
         enterFrom="opacity-0 scale-95"
         enterTo="opacity-100 scale-100"
@@ -113,7 +114,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             </>
           )}
         </div>
-      </Transition> */}
+      </Transition>
     </div>
   );
 };
