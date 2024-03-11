@@ -2,7 +2,7 @@ import { Transition } from "@headlessui/react";
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
 import Button from "../Button";
-// import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 // Local Data
 import data from "../../data/portfolio.json";
 
@@ -68,14 +68,13 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
       </div>
       {showHamburger && (
         <div>
-          {/* <HiOutlineMenuAlt3
+          <HiOutlineMenuAlt3
             className="w-8 h-8 cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
-          /> */}
-          <h1>haha</h1>
+          />
         </div>
       )}
-      <Transition
+      {/* <Transition
         show={isOpen}
         enter="transition ease-out duration-200"
         enterFrom="opacity-0 scale-95"
@@ -114,7 +113,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             </>
           )}
         </div>
-      </Transition>
+      </Transition> */}
     </div>
   );
 };
