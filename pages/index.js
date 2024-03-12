@@ -166,7 +166,7 @@ export default function Home() {
             </Link>
           </div>
         )}
-        <div className="mt-10 bg-gray-900 laptop:mt-40 p-2 pt-8 rounded-lg laptop:p-0" ref={aboutRef}>
+        <div className="mt-10 bg-gray-900 mob:bg-gray-800 laptop:mt-40 p-2 pt-8 rounded-lg laptop:p-0" ref={aboutRef}>
           <h1 className="pt-4 tablet:m-10 text-2xl text-bold">About.</h1>
           <p className="pb-4 tablet:m-10 mt-2 text-xl laptop:text-2xl w-full laptop:w-3/5">
             {data.aboutpara}

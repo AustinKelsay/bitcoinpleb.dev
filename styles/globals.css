@@ -12,6 +12,13 @@ body {
   @apply bg-gray-950 text-white;
 }
 
+@media screen and (min-width: 375px) {
+  body {
+    @apply bg-gray-900;
+  }
+  
+}
+
 .gradient-circle {
   position: absolute;
   pointer-events: none;
