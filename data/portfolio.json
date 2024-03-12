@@ -38,7 +38,8 @@
       "role": "Founder / Organizer",
       "description": "PlebDevs is a Bitcoin/Lightning App developer community focused on education, collaboration, and building hard skills.",
       "imageSrc": "/images/plebdevs.png",
-      "url": "https://plebdevs.com/"
+      "url": "https://plebdevs.com/",
+      "github": "https://github.com/pleb-devs"
     },
     {
       "id": "2",
@@ -46,7 +47,8 @@
       "role": "Full Stack Developer",
       "description": "Worked on Lightning / Nostr integrated payments API and multiple fullstack apps that utilize the API.",
       "imageSrc": "/images/makeprisms.png",
-      "url": "https://makeprisms.com/"
+      "url": "https://makeprisms.com/",
+      "github": "https://github.com/makeprisms"
     },
     {
       "id": "3",
@@ -54,7 +56,8 @@
       "role": "Open Source Contributor / Bounty hunter",
       "description": "Stacker News, the front page of Bitcoin. I worked on the frontend and backend of the project. I Implemented features like Bounties and Nostr crossposting.",
       "imageSrc": "/images/stackernews.png",
-      "url": "https://stacker.news/"
+      "url": "https://stacker.news/",
+      "github": "https://github.com/stackernews/stacker.news"
     },
     {
       "id": "4",
@@ -70,7 +73,8 @@
       "role": "Open Source Contributor / Frontend Developer",
       "description": "Pulsar is an encrypted nostr chat app that masks your metadata. It works by sending fixed-length, fixed-frequency messages over the nostr messaging network. I worked with supertestnet on this project, we sumbitted it for HRF's encrypted group chat bounty.",
       "imageSrc": "/images/pulsar.png",
-      "url": "https://www.nostrpulsar.chat/"
+      "url": "https://www.nostrpulsar.chat/",
+      "github": "https://github.com/austinkelsay/pulsar"
     },
     {
       "id": "6",
@@ -86,7 +90,8 @@
       "role": "Full Stack Developer",
       "description": "An easy to deploy LND wrapper to sell inbound Lightning channels from your own node. Me and @cmdruid built this for the Bitcoin++ hackathon.",
       "imageSrc": "/images/lninbound.png",
-      "url": "https://lninbound.com/"
+      "url": "https://lninbound.com/",
+      "github": "https://github.com/austinkelsay/ln-inbound"
     },
     {
       "id": "8",
@@ -94,15 +99,17 @@
       "role": "Full Stack Developer",
       "description": "Devstr is a prototype Github-like platform that uses Nostr for storing and broadcasting redundant repository data. Me and @btcretriever built this for the 2023 Austin SatsX hackathon and won the prize for the nostr category.",
       "imageSrc": "/images/devstr.png",
-      "url": "https://devstr.vercel.app/"
+      "url": "https://devstr.vercel.app/",
+      "github": "https://github.com/austinkelsay/devstr"
     },
     {
       "id": "9",
-      "title": "Stacker News",
-      "role": "Open Source Contributor / Bounty hunter",
-      "description": "Stacker News, the front page of Bitcoin. I worked on the frontend and backend of the project. I Implemented features like Bounties and Nostr crossposting.",
-      "imageSrc": "/images/stackernews.png",
-      "url": "https://stacker.news/"
+      "title": "pleb-post",
+      "role": "Full Stack Developer",
+      "description": "A full Stack Lightning Template App for learning and building your First lightning app. built with NextJS, LNBits, and Voltage.cloud This project was built as a part of my presentation 'Building your First Lightning App' at the Bitcoin++ conference.",
+      "imageSrc": "/images/pleb-post.png",
+      "url": "https://replit.com/@btcpp-atx-22/Building-your-First-Lightning-App",
+      "github": "https://github.com/austinkelsay/pleb-post"
     },
     {
       "id": "10",

@@ -127,6 +127,7 @@ export default function Home() {
                 name={project.title}
                 role={project.role}
                 description={project.description}
+                github={project.github || null}
                 onClick={() => window.open(project.url, "_blank")}
               />
             ))}
