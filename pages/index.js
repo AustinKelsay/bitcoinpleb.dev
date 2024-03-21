@@ -90,12 +90,12 @@ export default function Home() {
             >
               {data.headerTaglineOne}
             </h1>
-            <h1
+            {/* <h1
               ref={textTwo}
               className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
               {data.headerTaglineTwo}
-            </h1>
+            </h1> */}
             <h1
               ref={textThree}
               className="text-xl tablet:text-2xl laptop:text-2xl laptopl:text-4xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"

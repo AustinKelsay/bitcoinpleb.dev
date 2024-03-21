@@ -1,6 +1,6 @@
 {
   "name": "Plebdev",
-  "headerTaglineOne": "Hi I'm Austin,",
+  "headerTaglineOne": "Hi I'm Austin",
   "headerTaglineTwo": "the bitcoinplebdev.",
   "headerTaglineThree": "developer / educator / hacker / founder of plebdevs",
   "headerTaglineFour": "BASED in Austin, TX.",
@@ -230,7 +230,7 @@
         "dates": "October 2023 - Present",
         "type": "Contractor",
         "position": "StackerNews",
-        "bullets": "Started as an open source contributor and worked my way into some paid bounties. Built stackernews bounties feature. Built stackernews Nostr Crossposting. Added to and worked on the stackernews dev docker env"
+        "bullets": "Started as an open source contributor and worked my way into some contracting. Built stackernews bounties feature. Built stackernews Nostr Crossposting. Added to and worked on the stackernews dev docker env"
       },
       {
         "id": "2",
