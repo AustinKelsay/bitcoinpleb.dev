@@ -38,9 +38,12 @@ const Resume = () => {
             <div
               className={"w-full bg-slate-800 max-w-4xl p-20 mob:p-5 desktop:p-20 rounded-lg shadow-sm"}
             >
-              <h1 className="text-3xl font-bold">{name}</h1>
-              <h2 className="text-xl mt-5">{resume.tagline}</h2>
-              <h2 className="w-4/5 text-xl mt-5 opacity-50">
+              <div className="w-full flex flex-row justify-between">
+                <h1 className="text-3xl font-bold">Austin</h1>
+                <a href="https://docs.google.com/document/d/1GYIp7oYkN9FPWf3rckVXR7_WH8It89_Nlj8VOw9gE6k/edit?usp=sharing" className="text-blue-500" target="_blank" rel="noreferrer"
+                >Link to resume google doc</a>
+              </div>
+              <h2 className="w-full text-xl mt-5 opacity-50 px-4">
                 {resume.description}
               </h2>
               <div className="mt-2">
@@ -72,6 +75,15 @@ const Resume = () => {
                     {resume.education.universityPara}
                   </p>
                 </div>
+                <div className="mt-2">
+                  <h2 className="text-lg">Bloomtech</h2>
+                  <h3 className="text-sm opacity-75">
+                    December 2018 - December 2019
+                  </h3>
+                  <p className="text-sm mt-2 opacity-50">
+                    Full Stack Web Development Bootcamp
+                  </p>
+                </div>
               </div>
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">Skills</h1>
@@ -96,6 +108,19 @@ const Resume = () => {
                         {resume.frameworks.map((framework, index) => (
                           <li key={index} className="ml-5 py-2">
                             {framework}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {resume.backend && (
+                    <div className="mt-2 mob:mt-5">
+                      <h2 className="text-lg">Backend</h2>
+                      <ul className="list-disc">
+                        {resume.backend.map((backend, index) => (
+                          <li key={index} className="ml-5 py-2">
+                            {backend}
                           </li>
                         ))}
                       </ul>

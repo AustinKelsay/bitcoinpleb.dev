@@ -42,7 +42,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             <Button onClick={handleAboutScroll}>About</Button>
             {showBlog && <Button onClick={() => router.push("/blog")}>Blog</Button>}
             {showResume && (
-              <Button onClick={() => window.open("mailto:austinkelsay@protonmail.com")}>
+              <Button onClick={() => router.push("/resume")} classes="ml-1">
                 Resume
               </Button>
             )}
@@ -86,7 +86,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               <Button onClick={handleAboutScroll}>About</Button>
               {showBlog && <Button onClick={() => router.push("/blog")}>Blog</Button>}
               {showResume && (
-                <Button onClick={() => window.open("mailto:austinkelsay@protonmail.com")}>
+                <Button onClick={() => router.push("/resume")} classes="ml-1">
                   Resume
                 </Button>
               )}

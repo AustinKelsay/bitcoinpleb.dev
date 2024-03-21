@@ -6,7 +6,7 @@
   "headerTaglineFour": "BASED in Austin, TX.",
   "lud16": "austin@bitcoinpleb.dev.",
   "showCursor": false,
-  "showBlog": true,
+  "showBlog": false,
   "showResume": true,
   "socials": [
     {
@@ -24,9 +24,8 @@
       "title": "Twitter",
       "link": "https://twitter.com/bitcoinplebdev"
     },
-    { "id": "4", "title": "Blog", "link": "https://bitcoinpleb.dev/blog/" },
     {
-      "id": "5",
+      "id": "4",
       "title": "Email",
       "link": "mailto:austinkelsay@protonmail.com"
     }
@@ -69,6 +68,15 @@
     },
     {
       "id": "5",
+      "title": "QuickCashu",
+      "role": "Designer / Developer / Contributor",
+      "description": "A Lightning / Cashu Ecash wallet designed for fast easy onboarding and use with features like Lightning Address, Nostr Wallet Connect, Nostr Wallet Auth, and prism payments.",
+      "imageSrc": "/images/quick-cashu.png",
+      "url": "https://quickcashu.com/",
+      "github": "https://github.com/MakePrisms/quick-cashu"
+    },
+    {
+      "id": "6",
       "title": "Pulsar",
       "role": "Open Source Contributor / Frontend Developer",
       "description": "Pulsar is an encrypted nostr chat app that masks your metadata. It works by sending fixed-length, fixed-frequency messages over the nostr messaging network. I worked with supertestnet on this project, we sumbitted it for HRF's encrypted group chat bounty.",
@@ -77,7 +85,7 @@
       "github": "https://github.com/austinkelsay/pulsar"
     },
     {
-      "id": "6",
+      "id": "7",
       "title": "Forethought AI",
       "role": "AI Implementation Engineer",
       "description": "Implemented AI products for startups and enterprises. Worked on multiple projects that utilized AI and Machine Learning. Built custom modles / datasets / pipelines for clients.",
@@ -85,7 +93,7 @@
       "url": "https://forethought.ai/"
     },
     {
-      "id": "7",
+      "id": "8",
       "title": "Ln-Inbound",
       "role": "Full Stack Developer",
       "description": "An easy to deploy LND wrapper to sell inbound Lightning channels from your own node. Me and @cmdruid built this for the Bitcoin++ hackathon.",
@@ -94,7 +102,7 @@
       "github": "https://github.com/austinkelsay/ln-inbound"
     },
     {
-      "id": "8",
+      "id": "9",
       "title": "Devstr",
       "role": "Full Stack Developer",
       "description": "Devstr is a prototype Github-like platform that uses Nostr for storing and broadcasting redundant repository data. Me and @btcretriever built this for the 2023 Austin SatsX hackathon and won the prize for the nostr category.",
@@ -103,7 +111,7 @@
       "github": "https://github.com/austinkelsay/devstr"
     },
     {
-      "id": "9",
+      "id": "10",
       "title": "pleb-post",
       "role": "Full Stack Developer",
       "description": "A full Stack Lightning Template App for learning and building your First lightning app. built with NextJS, LNBits, and Voltage.cloud This project was built as a part of my presentation 'Building your First Lightning App' at the Bitcoin++ conference.",
@@ -112,7 +120,7 @@
       "github": "https://github.com/austinkelsay/pleb-post"
     },
     {
-      "id": "10",
+      "id": "11",
       "title": "pleb-node",
       "role": "Full Stack Developer",
       "description": "A simple fullstack Lightning App template for learning / development with LND",
@@ -121,7 +129,7 @@
       "github": "https://github.com/austinkelsay/pleb-node"
     },
     {
-      "id": "11",
+      "id": "12",
       "title": "Alby",
       "role": "Open Source Contributor / Bounty hunter",
       "description": "Contributed feature that allows users to tip on reddit and recognize lightning adresses on reddit user descriptions as well as extending the LUD-18 payer data capabilities for the wallet/extension.",
@@ -130,7 +138,7 @@
       "github": "https://github.com/getAlby/lightning-browser-extension/commits?author=AustinKelsay"
     },
     {
-      "id": "12",
+      "id": "13",
       "title": "Sats4Tips",
       "role": "Full Stack Developer",
       "description": "Your own personalized space for collecting tips in Bitcoin. I helped build out the frontend and styles with my team at the Bitcoin++ hackathon",
@@ -139,7 +147,15 @@
       "github": "https://github.com/cmdruid/lightning-tip-jar"
     },
     {
-      "id": "13",
+      "id": "14",
+      "title": "Bloomtech",
+      "role": "Team Lead ",
+      "description": "Bloomtech is a full stack developer bootcamp that teaches the latest in web development. I worked as a Team Lead walking students through the full curriculum, helping them with their projects, blockers, and leading workshops / 1:1's.",
+      "imageSrc": "/images/bloomtech.png",
+      "url": "https://www.bloomtech.com/"
+    },
+    {
+      "id": "15",
       "title": "Bitcoin Knowledge Bot",
       "role": "Full Stack Developer",
       "description": "The first EVER custom trained and fine-tuned Bitcoin knowledge LLM. Bitcoin Knowledge Bot is powered by GPT-3 and trained on an open source dataset of established Bitcoin knowledge.",
@@ -148,7 +164,7 @@
       "github": "https://github.com/bitcoin-knowledge"
     },
     {
-      "id": "14",
+      "id": "16",
       "title": "Reclaim",
       "role": "Full Stack Developer",
       "description": "Reclaim is an open source desktop app for collecting and storing your online information. With Reclaim you can collect your social media data in a few clicks and explore every photo, friend, and interaction from your digital life.",
@@ -157,7 +173,7 @@
       "github": "https://github.com/ReclaimApp"
     },
     {
-      "id": "15",
+      "id": "17",
       "title": "FB-Explorer",
       "role": "Full Stack Developer",
       "description": "fbexplorer is a tool that lets you reclaim, search, and explore all of your Facebook data. This is a single page application built with React and utilizing Redux/hooks for state management. fbexplorer does not collect any user's Facebook data or personal information.",
@@ -166,7 +182,7 @@
       "github": "https://github.com/AustinKelsay/fb-explorer"
     },
     {
-      "id": "16",
+      "id": "18",
       "title": "Austin's Game of Life",
       "role": "Frontend Developer",
       "description": "An implementation of Conway’s Game of Life. This is a React single page application with a random cell placement feature, speed settings for the simulation, and the ability to step through each generation with a visual counter.",
@@ -184,7 +200,7 @@
     {
       "id": "2",
       "title": "Bitcoin / Lightning Development",
-      "description": "I have been working with Bitcoin and Lightning for the past 4 years. I have built multiple projects and have a deep understanding of the technologies."
+      "description": "I have been working with Bitcoin and Lightning for the past 4 years doing everything from app development to light protocol development. I have built multiple projects and have a deep understanding of the technologies."
     },
     {
       "id": "3",
@@ -200,30 +216,60 @@
   "aboutpara": "I started my development journey self-taught with a passion and curiosity for Bitcoin and a desire to build applications that leverage the technology. I joined the Lambda School (Now Bloomtech) Full Stack Developer Bootcamp in 2018. After completing my student status at Lambda I started working for the bootcamp as a Team Lead walking students through the full curriculum. This is when I discovered my love for teaching and developer education. In my carrer I have worked for multiple companies and startups as a developer touching everything from traditional web development, Backend Enterprise API development, crossplatform mobile development, and AI/ML implementation and development. My expertise lies in Bitcoin and Lightning development, App Development, and Developer Education. I have built a multitude of free open source apps within the Bitcoin/Lightning/Nostr ecosystem. Along with all of this I have also been running the Plebdevs community for the past 2 years. I have built multiple courses, do live workshops, 1:1 tutoring, and more. I am passionate about building and teaching and I am always looking for new opportunities to do so.",
   "resume": {
     "tagline": "👋  I'm a software Engineer",
-    "description": "I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.",
+    "description": "I started my programming journey self-taught with a passion and curiosity for Bitcoin and a desire to build applications that leverage the technology. I joined Lambda School (Now Bloomtech) Full Stack Developer Bootcamp in 2018. After completing my student status I started working for the bootcamp as a Team Lead walking students through the full curriculum. This is when I discovered my love for teaching and developer education. I moved to Austin, TX to accelerate my journey into Bitcoin development and have worked out of PlebLab and been actively involved in the community for the last two years. In my career I have worked for multiple companies and startups as a developer touching everything from traditional web development, Backend API development, mobile development, Bitcoin/lightning/nostr, and AI/ML development. I am passionate about building and teaching and I am always looking for new opportunities to do so.",
     "experiences": [
       {
         "id": "1",
-        "dates": "March 2022 - Present",
-        "type": "Full Time",
-        "position": "Frontend Engineer at X",
-        "bullets": "Bullet One, Bullet Two"
+        "dates": "January 2023 - Present",
+        "type": "Founder",
+        "position": "Plebdevs",
+        "bullets": "PlebDevs is a Bitcoin/Lightning App developer community focused on education collaboration, and building hard skills. Manage the Plebdevs community & content across discord/twitch/youtube/nostr. Created two beginner developer courses with 1000+ paid students. Developed and published dozens of beginner technical workshops on YouTube/Twitch. Work with students 1:1 to help them reach technical or career goals. Created/presented workshops at TABconf, Bitcoin++, BitBlockBoom, and beyond"
       },
       {
-        "id": "d495c23b-4f65-479a-9b8a-cfbc1c089725",
-        "dates": "July 2020 - March 2022",
-        "type": "Full Time",
-        "position": "Frontend Engineer at X",
-        "bullets": "Worked on the frontend of a React application, Worked on the frontend of a React application"
+        "id": "2",
+        "dates": "October 2023 - Present",
+        "type": "Contractor",
+        "position": "StackerNews",
+        "bullets": "Started as an open source contributor and worked my way into some paid bounties. Built stackernews bounties feature. Built stackernews Nostr Crossposting. Added to and worked on the stackernews dev docker env"
+      },
+      {
+        "id": "2",
+        "dates": "October 2023 - March 2024",
+        "type": "Contractor",
+        "position": "Prism",
+        "bullets": "Built multiple example apps implementing non-custodial zaps with NWC. Worked on Lightning/NWC based payments API. Worked on Telegram/Discord Lightning zap bots. Created “QuickCashu” a non-custodial Lightning/Cashu wallet"
+      },
+      {
+        "id": "2",
+        "dates": "August 2022 - October 2023",
+        "type": "Frontend Engineer",
+        "position": "Fold App",
+        "bullets": "Developing the Frontend Fold App using React Native and deploying to IOS/Android. Working on several internal projects such as developing an analytics pipeline for marketing, implementing bip21 unified qr’s for Bitcoin, building prototype for lightning withdraws/rewards. Representing the company publicly at multiple conferences & bitcoin events"
       }
     ],
     "education": {
-      "universityName": "University X",
-      "universityDate": "2016-2020",
-      "universityPara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+      "universityName": "Base58",
+      "universityDate": "April 2022 - May 2020",
+      "universityPara": "Bitcoin transaction/protocol bootcamp"
     },
-    "languages": ["Javascript", "HTML5", "CSS", "Python", "Go"],
-    "frameworks": ["React", "Typescript", "NodeJs"],
-    "others": ["Figma", "AdobeXD", "AWS"]
+    "languages": ["Javascript", "HTML5", "CSS", "Python", "Rust"],
+    "frameworks": [
+      "React",
+      "Typescript",
+      "NodeJs",
+      "NextJs",
+      "React Native",
+      "Svelte"
+    ],
+    "backend": [
+      "SQL",
+      "MySQL",
+      "Postgres",
+      "MongoDB",
+      "Express",
+      "Flask",
+      "FastAPI"
+    ],
+    "others": ["LND", "Bitcoind", "Git", "Docker", "Bash"]
   }
 }
