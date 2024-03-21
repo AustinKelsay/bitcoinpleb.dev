@@ -16,6 +16,7 @@ import data from "../data/portfolio.json";
 export default function Home() {
   // state
   const [showCopyConfirmation, setShowCopyConfirmation] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
   const [visibleProjects, setVisibleProjects] = useState(6);
   // Ref
   const workRef = useRef();
@@ -33,7 +34,9 @@ export default function Home() {
       if (window && window?.webln && window?.webln?.lnurl) {
         await window.webln.enable();
         const result = await window.webln.lnurl("bitcoinplebdev@stacker.news");
-        console.log("result", result);
+        if (result && result?.preimage) {
+          setShowSuccess(true);
+        }
       }
     } catch (err) {
       console.error('Failed to copy:', err);
@@ -112,6 +115,7 @@ export default function Home() {
               ⚡ {data.lud16}
             </button>
             {showCopyConfirmation && <div className="copied-notification">Copied to clipboard!</div>}
+            {showSuccess && <div className="copied-notification">Payment successful!</div>}
           </div>
 
           <Socials className="mt-2 laptop:mt-5" />
