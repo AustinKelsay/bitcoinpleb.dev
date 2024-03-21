@@ -113,11 +113,12 @@
     },
     {
       "id": "10",
-      "title": "Fold App",
-      "role": "Frontend Developer",
-      "description": "Earn bitcoin back on everything. Buy bitcoin with no fees. I worked on the frontend app. Deployed multiple features and bug fixes to both iOS and Android.",
-      "imageSrc": "/images/foldapp.png",
-      "url": "https://foldapp.com/"
+      "title": "pleb-node",
+      "role": "Full Stack Developer",
+      "description": "A simple fullstack Lightning App template for learning / development with LND",
+      "imageSrc": "/images/pleb-node.png",
+      "url": "https://github.com/austinkelsay/pleb-node",
+      "github": "https://github.com/austinkelsay/pleb-node"
     },
     {
       "id": "11",
@@ -125,136 +126,78 @@
       "role": "Open Source Contributor / Bounty hunter",
       "description": "Contributed feature that allows users to tip on reddit and recognize lightning adresses on reddit user descriptions as well as extending the LUD-18 payer data capabilities for the wallet/extension.",
       "imageSrc": "https://framerusercontent.com/images/5gd9JgdX3oFAFQTUDkQ8yEeka0.png",
-      "url": "https://getalby.com/"
+      "url": "https://getalby.com/",
+      "github": "https://github.com/getAlby/lightning-browser-extension/commits?author=AustinKelsay"
     },
     {
       "id": "12",
-      "title": "Forethought AI",
-      "role": "AI Implementation Engineer",
-      "description": "Implemented AI products for startups and enterprises. Worked on multiple projects that utilized AI and Machine Learning. Built custom modles / datasets / pipelines for clients.",
-      "imageSrc": "https://forethought.ai/wp-content/uploads/2023/01/Forethought.png",
-      "url": "https://forethought.ai/"
+      "title": "Sats4Tips",
+      "role": "Full Stack Developer",
+      "description": "Your own personalized space for collecting tips in Bitcoin. I helped build out the frontend and styles with my team at the Bitcoin++ hackathon",
+      "imageSrc": "/images/sats4tips.png",
+      "url": "https://sats4.tips/",
+      "github": "https://github.com/cmdruid/lightning-tip-jar"
     },
     {
       "id": "13",
-      "title": "Plebdevs Community",
-      "role": "Founder / Organizer",
-      "description": "PlebDevs is a Bitcoin/Lightning App developer community focused on education, collaboration, and building hard skills.",
-      "imageSrc": "/images/plebdevs.png",
-      "url": "https://plebdevs.com/"
+      "title": "Bitcoin Knowledge Bot",
+      "role": "Full Stack Developer",
+      "description": "The first EVER custom trained and fine-tuned Bitcoin knowledge LLM. Bitcoin Knowledge Bot is powered by GPT-3 and trained on an open source dataset of established Bitcoin knowledge.",
+      "imageSrc": "/images/bitcoin-knowledge.png",
+      "url": "https://github.com/bitcoin-knowledge/bitcoin-knowledge-bot",
+      "github": "https://github.com/bitcoin-knowledge"
     },
     {
       "id": "14",
-      "title": "MakePrisms",
+      "title": "Reclaim",
       "role": "Full Stack Developer",
-      "description": "Worked on Lightning / Nostr integrated payments API and multiple fullstack apps that utilize the API.",
-      "imageSrc": "/images/makeprisms.png",
-      "url": "https://makeprisms.com/"
+      "description": "Reclaim is an open source desktop app for collecting and storing your online information. With Reclaim you can collect your social media data in a few clicks and explore every photo, friend, and interaction from your digital life.",
+      "imageSrc": "/images/reclaim.png",
+      "url": "https://github.com/ReclaimApp/Reclaim",
+      "github": "https://github.com/ReclaimApp"
     },
     {
       "id": "15",
-      "title": "Stacker News",
-      "role": "Open Source Contributor / Bounty hunter",
-      "description": "Stacker News, the front page of Bitcoin. I worked on the frontend and backend of the project. I Implemented features like Bounties and Nostr crossposting.",
-      "imageSrc": "/images/stackernews.png",
-      "url": "https://stacker.news/"
+      "title": "FB-Explorer",
+      "role": "Full Stack Developer",
+      "description": "fbexplorer is a tool that lets you reclaim, search, and explore all of your Facebook data. This is a single page application built with React and utilizing Redux/hooks for state management. fbexplorer does not collect any user's Facebook data or personal information.",
+      "imageSrc": "/images/fb-explorer.jpg",
+      "url": "https://fbexplorer.app/",
+      "github": "https://github.com/AustinKelsay/fb-explorer"
     },
     {
       "id": "16",
-      "title": "Fold App",
+      "title": "Austin's Game of Life",
       "role": "Frontend Developer",
-      "description": "Earn bitcoin back on everything. Buy bitcoin with no fees. I worked on the frontend app. Deployed multiple features and bug fixes to both iOS and Android.",
-      "imageSrc": "/images/foldapp.png",
-      "url": "https://foldapp.com/"
-    },
-    {
-      "id": "17",
-      "title": "Alby",
-      "role": "Open Source Contributor / Bounty hunter",
-      "description": "Contributed feature that allows users to tip on reddit and recognize lightning adresses on reddit user descriptions as well as extending the LUD-18 payer data capabilities for the wallet/extension.",
-      "imageSrc": "https://framerusercontent.com/images/5gd9JgdX3oFAFQTUDkQ8yEeka0.png",
-      "url": "https://getalby.com/"
-    },
-    {
-      "id": "18",
-      "title": "Forethought AI",
-      "role": "AI Implementation Engineer",
-      "description": "Implemented AI products for startups and enterprises. Worked on multiple projects that utilized AI and Machine Learning. Built custom modles / datasets / pipelines for clients.",
-      "imageSrc": "https://forethought.ai/wp-content/uploads/2023/01/Forethought.png",
-      "url": "https://forethought.ai/"
-    },
-    {
-      "id": "19",
-      "title": "Plebdevs Community",
-      "role": "Founder / Organizer",
-      "description": "PlebDevs is a Bitcoin/Lightning App developer community focused on education, collaboration, and building hard skills.",
-      "imageSrc": "/images/plebdevs.png",
-      "url": "https://plebdevs.com/"
-    },
-    {
-      "id": "20",
-      "title": "MakePrisms",
-      "role": "Full Stack Developer",
-      "description": "Worked on Lightning / Nostr integrated payments API and multiple fullstack apps that utilize the API.",
-      "imageSrc": "/images/makeprisms.png",
-      "url": "https://makeprisms.com/"
-    },
-    {
-      "id": "21",
-      "title": "Stacker News",
-      "role": "Open Source Contributor / Bounty hunter",
-      "description": "Stacker News, the front page of Bitcoin. I worked on the frontend and backend of the project. I Implemented features like Bounties and Nostr crossposting.",
-      "imageSrc": "/images/stackernews.png",
-      "url": "https://stacker.news/"
-    },
-    {
-      "id": "22",
-      "title": "Fold App",
-      "role": "Frontend Developer",
-      "description": "Earn bitcoin back on everything. Buy bitcoin with no fees. I worked on the frontend app. Deployed multiple features and bug fixes to both iOS and Android.",
-      "imageSrc": "/images/foldapp.png",
-      "url": "https://foldapp.com/"
-    },
-    {
-      "id": "23",
-      "title": "Alby",
-      "role": "Open Source Contributor / Bounty hunter",
-      "description": "Contributed feature that allows users to tip on reddit and recognize lightning adresses on reddit user descriptions as well as extending the LUD-18 payer data capabilities for the wallet/extension.",
-      "imageSrc": "https://framerusercontent.com/images/5gd9JgdX3oFAFQTUDkQ8yEeka0.png",
-      "url": "https://getalby.com/"
-    },
-    {
-      "id": "24",
-      "title": "Forethought AI",
-      "role": "AI Implementation Engineer",
-      "description": "Implemented AI products for startups and enterprises. Worked on multiple projects that utilized AI and Machine Learning. Built custom modles / datasets / pipelines for clients.",
-      "imageSrc": "https://forethought.ai/wp-content/uploads/2023/01/Forethought.png",
-      "url": "https://forethought.ai/"
+      "description": "An implementation of Conway’s Game of Life. This is a React single page application with a random cell placement feature, speed settings for the simulation, and the ability to step through each generation with a visual counter.",
+      "imageSrc": "/images/game-of-life.jpg",
+      "url": "https://austins-game-of-life.vercel.app/",
+      "github": "https://github.com/AustinKelsay/austins-game-of-life"
     }
   ],
   "services": [
     {
       "id": "1",
       "title": "Web / App Developer",
-      "description": "Have worked across musltiple teams building and maintaining web applications. I have experience with React, Node, and other web technologies."
+      "description": "I have worked across musltiple teams building and maintaining web applications. I have experience with JavaScript, Node, Python, and many web frameworks. I have also worked on multiple crossplatform mobile applications."
     },
     {
       "id": "2",
       "title": "Bitcoin / Lightning Development",
-      "description": "I have been working with Bitcoin and Lightning for the past 4 years. I have built multiple projects and have a deep understanding of the technology."
+      "description": "I have been working with Bitcoin and Lightning for the past 4 years. I have built multiple projects and have a deep understanding of the technologies."
     },
     {
       "id": "3",
       "title": "Developer Education",
-      "description": "I have been teaching people how to code for the past 2 years. I run the plebdevs community, I've built multiple courses, I do live workshops, 1:1 tutoring, and more."
+      "description": "I have been helping teach people how to code and build Bitcoin/Lightning/Nostr apps for 3+ years. I run the plebdevs community, I've built multiple courses, I do live workshops, 1:1 tutoring, and more."
     },
     {
       "id": "4",
       "title": "Nostr Development",
-      "description": "I have been working with Nostr for the past 2 years. I have built multiple projects and have a deep understanding of the technology."
+      "description": "I have been working with Nostr for the past 2 years. I have built multiple nostr projects from simple clients to fully integrated nostr platforms. I also have extensive experience working with Zaps and NWC (nostr wallet connect) within the nostr protocol."
     }
   ],
-  "aboutpara": "I started my development journey self-taught with a passion and curiosity for Bitcoin and a desire to build applications that leverage the technology. I started taking my programming journey more serious in 2019 when I joined the Lambda School (Now Bloomtech) Full Stack Developer Bootcamp. After completing my student status at Lambda I started working for the bootcamp as a Team Lead walking students through the full curriculum. This is when I discovered my love for teaching and developer education. In my carrer I have worked for multiple companies and startups as a developer touching everything from traditional web development, Backend Enterprise API development, crossplatform mobile development, and AI/ML implementation and development. My expertise lies in Bitcoin and Lightning development, App Development, and Developer Education. I have built a multitude of free open source apps within the Bitcoin/Lightning/Nostr ecosystem. Along with all of this I have also been running the Plebdevs community for the past 2 years. I have built multiple courses, do live workshops, 1:1 tutoring, and more. I am passionate about building and teaching and I am always looking for new opportunities to do so.",
+  "aboutpara": "I started my development journey self-taught with a passion and curiosity for Bitcoin and a desire to build applications that leverage the technology. I joined the Lambda School (Now Bloomtech) Full Stack Developer Bootcamp in 2018. After completing my student status at Lambda I started working for the bootcamp as a Team Lead walking students through the full curriculum. This is when I discovered my love for teaching and developer education. In my carrer I have worked for multiple companies and startups as a developer touching everything from traditional web development, Backend Enterprise API development, crossplatform mobile development, and AI/ML implementation and development. My expertise lies in Bitcoin and Lightning development, App Development, and Developer Education. I have built a multitude of free open source apps within the Bitcoin/Lightning/Nostr ecosystem. Along with all of this I have also been running the Plebdevs community for the past 2 years. I have built multiple courses, do live workshops, 1:1 tutoring, and more. I am passionate about building and teaching and I am always looking for new opportunities to do so.",
   "resume": {
     "tagline": "👋  I'm a software Engineer",
     "description": "I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.",
