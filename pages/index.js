@@ -35,7 +35,7 @@ export default function Home() {
       setTimeout(() => setShowCopyConfirmation(false), 2000); // Hide confirmation after 2 seconds
       if (window && window?.webln && window?.webln?.lnurl) {
         await window.webln.enable();
-        const result = await window.webln.lnurl("bitcoinplebdev@stacker.news");
+        const result = await window.webln.lnurl("austin@bitcoinpleb.dev");
         if (result && result?.preimage) {
           setShowSuccess(true);
         }
