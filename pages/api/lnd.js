@@ -5,7 +5,7 @@ const LND_MACAROON = process.env.LND_MACAROON;
 
 export default async function handler(req, res) {
     try {
-        const response = await axios.post(`${LND_HOST}/v1/invoices`, {
+        const response = await axios.post(`https://${LND_HOST}/v1/invoices`, {
             value: req.body.amount,
             description_hash: req.body.description_hash
         }, {
