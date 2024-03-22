@@ -153,8 +153,8 @@ export default function Home() {
           )}
         </div>
 
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Media</h1>
+        <div className="mt-28 laptop:mt-30 p-2 laptop:p-0 mob:mt-10">
+          <h1 className="text-2xl text-bold">Media.</h1>
 
           <div className="mt-5 laptop:mt-10 grid gap-4 laptopl:grid-cols-2 desktop:grid-cols-2 laptop:grid-cols-2 tablet:grid-cols-2 mob:grid-cols-1">
             {data.media.slice(0, visibleMedia).map((media) => (
