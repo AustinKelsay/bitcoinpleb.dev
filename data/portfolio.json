@@ -212,6 +212,22 @@
   "media": [
     {
       "id": "1",
+      "title": "Plebdevs Youtube",
+      "role": "Creator",
+      "description": "100+ hourse of Bitcoin technical content",
+      "imageSrc": "/images/youtube.png",
+      "url": "https://www.youtube.com/channel/UCRPvdcPYyWAXF7cOjW_dJCA"
+    },
+    {
+      "id": "1",
+      "title": "Plebdevs Twitch",
+      "role": "Creator",
+      "description": "Live coding / Q&A / Workshops",
+      "imageSrc": "/images/twitch.png",
+      "url": "https://www.twitch.tv/plebdevs"
+    },
+    {
+      "id": "1",
       "title": "Startup Day",
       "role": "Speaker",
       "description": "From Pleblab Startup Day 2023 - 'Inspiring Developers and Builders of Tomorrow'",
