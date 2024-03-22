@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
+import MediaCard from "../components/MediaCard";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
 import Footer from "../components/Footer";
@@ -18,6 +19,7 @@ export default function Home() {
   const [showCopyConfirmation, setShowCopyConfirmation] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
   const [visibleProjects, setVisibleProjects] = useState(6);
+  const [visibleMedia, setVisibleMedia] = useState(6);
   // Ref
   const workRef = useRef();
   const aboutRef = useRef();
@@ -142,6 +144,36 @@ export default function Home() {
           {visibleProjects < data.projects.length && (
             <button
               onClick={() => setVisibleProjects(prevVisibleProjects => Math.min(prevVisibleProjects + 6, data.projects.length))}
+              style={{ backgroundImage: 'radial-gradient(at top right, #51afc8 0%, #384acb 100%)' }}
+              className="py-1 px-3 text-white rounded hover:bg-blue-700 transition duration-300"
+            >
+              Show More
+            </button>
+
+          )}
+        </div>
+
+        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
+          <h1 className="text-2xl text-bold">Media</h1>
+
+          <div className="mt-5 laptop:mt-10 grid gap-4 laptopl:grid-cols-2 desktop:grid-cols-2 laptop:grid-cols-2 tablet:grid-cols-2 mob:grid-cols-1">
+            {data.media.slice(0, visibleMedia).map((media) => (
+              <MediaCard
+                key={media.id}
+                img={media.imageSrc}
+                name={media.title}
+                role={media.role}
+                description={media.description}
+                onClick={() => window.open(media.url, "_blank")}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-5 w-full flex justify-center">
+          {visibleMedia < data.media.length && (
+            <button
+              onClick={() => setVisibleMedia(prevVisibleMedia => Math.min(prevVisibleMedia + 6, data.media.length))}
               style={{ backgroundImage: 'radial-gradient(at top right, #51afc8 0%, #384acb 100%)' }}
               className="py-1 px-3 text-white rounded hover:bg-blue-700 transition duration-300"
             >
