@@ -26,6 +26,11 @@
     },
     {
       "id": "4",
+      "title": "Nostr",
+      "link": "https://nostr.com/npub1s9etjgzjglwlaxdhsveq0qksxyh6xpdpn8ajh69ruetrug957r3qpklxzl"
+    },
+    {
+      "id": "5",
       "title": "Email",
       "link": "mailto:austinkelsay@protonmail.com"
     }
