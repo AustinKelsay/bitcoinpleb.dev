@@ -145,7 +145,7 @@ export default function Home() {
             <button
               onClick={() => setVisibleProjects(prevVisibleProjects => Math.min(prevVisibleProjects + 6, data.projects.length))}
               style={{ backgroundImage: 'radial-gradient(at top right, #51afc8 0%, #384acb 100%)' }}
-              className="py-1 px-3 text-white rounded hover:bg-blue-700 transition duration-300"
+              className="py-3 px-5 text-white rounded hover:bg-blue-700 transition duration-300 hover:opacity-80"
             >
               Show More
             </button>
@@ -175,7 +175,7 @@ export default function Home() {
             <button
               onClick={() => setVisibleMedia(prevVisibleMedia => Math.min(prevVisibleMedia + 6, data.media.length))}
               style={{ backgroundImage: 'radial-gradient(at top right, #51afc8 0%, #384acb 100%)' }}
-              className="py-1 px-3 text-white rounded hover:bg-blue-700 transition duration-300"
+              className="py-3 px-5 text-white rounded hover:bg-blue-700 transition duration-300 hover:opacity-80"
             >
               Show More
             </button>
