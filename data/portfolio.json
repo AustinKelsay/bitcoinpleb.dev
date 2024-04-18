@@ -224,7 +224,7 @@
       "url": "https://www.youtube.com/channel/UCRPvdcPYyWAXF7cOjW_dJCA"
     },
     {
-      "id": "1",
+      "id": "2",
       "title": "Plebdevs Twitch",
       "role": "Creator",
       "description": "Live coding / Q&A / Workshops",
@@ -232,7 +232,15 @@
       "url": "https://www.twitch.tv/plebdevs"
     },
     {
-      "id": "1",
+      "id": "3",
+      "title": "BitBlockBoom",
+      "role": "Speaker",
+      "description": "From BitBlockBoom Workshop Day 2024 - 'Building Your First Lightning App'",
+      "imageSrc": "https://pbs.twimg.com/media/GKRal1UbUAAqc8k?format=jpg&name=medium",
+      "url": "https://twitter.com/bitblockboom/status/1775651539333591292"
+    },
+    {
+      "id": "4",
       "title": "Startup Day",
       "role": "Speaker",
       "description": "From Pleblab Startup Day 2023 - 'Inspiring Developers and Builders of Tomorrow'",
@@ -240,7 +248,7 @@
       "url": "https://www.meetup.com/pleb-lab/events/294438897/"
     },
     {
-      "id": "2",
+      "id": "5",
       "title": "Bitcoin++",
       "role": "Speaker",
       "description": "From Bitcoin++ Workshop Day - 'Building Your First Lightning App'",
@@ -248,7 +256,7 @@
       "url": "https://btcplusplus.dev/static/atx23/"
     },
     {
-      "id": "3",
+      "id": "6",
       "title": "San Antonio Bitcoin Meetup",
       "role": "Speaker",
       "description": "Pleb Say #11 Fireside Chat wth Austin & Jana",
@@ -256,7 +264,7 @@
       "url": "https://www.eventbrite.com/e/pleb-say-11-tickets-524187728607?aff=eand"
     },
     {
-      "id": "4",
+      "id": "7",
       "title": "Bitcoin Park - Grassroots Bitcoin 2022",
       "role": "Speaker",
       "description": "Grassroots Bitcoin 2022 - Building a Bitcoin City w Austin, Tristan, Kyle, and Car",
@@ -264,7 +272,7 @@
       "url": "https://podcasts.apple.com/us/podcast/grassroots-bitcoin-2022-building-a-bitcoin-city/id1646515985?i=1000580522450"
     },
     {
-      "id": "5",
+      "id": "8",
       "title": "Pleblab Workshop Series",
       "role": "Speaker",
       "description": "The First ever Plebdev Workshop",
@@ -272,7 +280,7 @@
       "url": "https://www.youtube.com/watch?v=Th2_8pL01sU"
     },
     {
-      "id": "6",
+      "id": "9",
       "title": "Bitcoin Rapid Fire w John Vallis",
       "role": "Podcast Guest",
       "description": "The Journey to Becoming a Bitcoin Developer w/ Austin Kelsay",
