@@ -350,20 +350,27 @@
       },
       {
         "id": "2",
+        "dates": "May 2024 - Present",
+        "type": "Developer Relations Engineer",
+        "position": "Voltage",
+        "bullets": "I help developers leverage Bitcoin and Lightning infrastructure using Voltage, whether they be individuals, startups, or enterprises."
+      },
+      {
+        "id": "3",
         "dates": "October 2023 - Present",
         "type": "Contractor",
         "position": "StackerNews",
         "bullets": "Started as an open source contributor and worked my way into some contracting. Built stackernews bounties feature. Built stackernews Nostr Crossposting. Added to and worked on the stackernews dev docker env"
       },
       {
-        "id": "2",
+        "id": "4",
         "dates": "October 2023 - March 2024",
         "type": "Contractor",
         "position": "Prism",
         "bullets": "Built multiple example apps implementing non-custodial zaps with NWC. Worked on Lightning/NWC based payments API. Worked on Telegram/Discord Lightning zap bots. Created “QuickCashu” a non-custodial Lightning/Cashu wallet"
       },
       {
-        "id": "2",
+        "id": "5",
         "dates": "August 2022 - October 2023",
         "type": "Frontend Engineer",
         "position": "Fold App",
