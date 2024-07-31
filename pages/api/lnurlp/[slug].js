@@ -1,9 +1,7 @@
 import axios from "axios";
 import crypto from "crypto";
 import { runMiddleware, corsMiddleware } from "../../../utils/middleware";
-import { verifyEvent, getPublicKey } from 'nostr-tools/pure';
-import { finalizeEvent } from 'nostr-tools/pure';
-import { SimplePool } from 'nostr-tools/pool';
+import { verifyEvent } from 'nostr-tools/pure';
 
 const BACKEND_URL = process.env.BACKEND_URL;
 const NOSTR_PUBKEY = process.env.NOSTR_PUBKEY; // Your nostr public key
