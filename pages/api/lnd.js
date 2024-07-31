@@ -4,7 +4,7 @@ import { SimplePool } from 'nostr-tools/pool';
 
 const LND_HOST = process.env.LND_HOST;
 const LND_MACAROON = process.env.LND_MACAROON;
-const NOSTR_PRIVKEY = process.env.NOSTR_PRIVKEY; // Your nostr private key
+const NOSTR_PRIVKEY = process.env.NOSTR_PRIVKEY;
 
 export default async function handler(req, res) {
     try {
