@@ -24,7 +24,7 @@ export default async function handler(req, res) {
             minSendable: 1000,
             metadata: JSON.stringify(metadata),
             tag: 'payRequest',
-            allowNostr: true,
+            allowsNostr: true,
             nostrPubkey: NOSTR_PUBKEY
         })
         return
