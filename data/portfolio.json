@@ -47,6 +47,24 @@
     },
     {
       "id": "2",
+      "title": "Voltage",
+      "role": "Developer Relations Engineer",
+      "description": "Voltage is a Bitcoin & Lightning infrastructure platform that makes it easy to deploy and manage Bitcoin and Lightning nodes in the cloud, all non-custodial.",
+      "imageSrc": "/images/voltage.png",
+      "url": "https://voltage.cloud",
+      "github": "https://github.com/voltagecloud"
+    },
+    {
+      "id": "3",
+      "title": "BitcoinLink",
+      "role": "Full Stack Developer",
+      "description": "Create single use non-custodial bitcoin links redeemable via Lightning using Nostr Wallet Connect",
+      "imageSrc": "/images/bitcoinlink.png",
+      "url": "https://www.bitcoinlink.app",
+      "github": "https://github.com/austinkelsay/bitcoinlink"
+    },
+    {
+      "id": "4",
       "title": "MakePrisms",
       "role": "Full Stack Developer",
       "description": "Worked on Lightning / Nostr integrated payments API and multiple fullstack apps that utilize the API.",
@@ -55,7 +73,7 @@
       "github": "https://github.com/makeprisms"
     },
     {
-      "id": "3",
+      "id": "5",
       "title": "Stacker News",
       "role": "Open Source Contributor / Bounty hunter",
       "description": "Stacker News, the front page of Bitcoin. I worked on the frontend and backend of the project. I Implemented features like Bounties and Nostr crossposting.",
@@ -64,7 +82,7 @@
       "github": "https://github.com/stackernews/stacker.news"
     },
     {
-      "id": "4",
+      "id": "6",
       "title": "Fold App",
       "role": "Frontend Developer",
       "description": "Earn bitcoin back on everything. Buy bitcoin with no fees. I worked on the frontend app. Deployed multiple features and bug fixes to both iOS and Android.",
@@ -72,7 +90,7 @@
       "url": "https://foldapp.com/"
     },
     {
-      "id": "5",
+      "id": "7",
       "title": "Plebdevs Course 2 - Building a Lightning Wallet Backend",
       "role": "Designer / Developer / Creator",
       "description": "Learn Backend from scratch and build a simple Lightning Wallet backend with a server, API, Database, and Lightning node using NodeJS",
@@ -81,7 +99,7 @@
       "github": "https://github.com/pleb-devs/plebdev-course-2"
     },
     {
-      "id": "6",
+      "id": "8",
       "title": "Plebdevs Course 1 - Building a Lightning Wallet Frontend",
       "role": "Designer / Developer / Creator",
       "description": "Write your first code and learn Frontend from scratch to build a simple lightning wallet using HTML/CSS, Javascript, and React",
@@ -90,7 +108,7 @@
       "github": "https://github.com/pleb-devs/plebdev-course-1"
     },
     {
-      "id": "7",
+      "id": "9",
       "title": "QuickCashu",
       "role": "Designer / Developer / Contributor",
       "description": "A Lightning / Cashu Ecash wallet designed for fast easy onboarding and use with features like Lightning Address, Nostr Wallet Connect, Nostr Wallet Auth, and prism payments.",
@@ -99,7 +117,7 @@
       "github": "https://github.com/MakePrisms/quick-cashu"
     },
     {
-      "id": "8",
+      "id": "10",
       "title": "Pulsar",
       "role": "Open Source Contributor / Frontend Developer",
       "description": "Pulsar is an encrypted nostr chat app that masks your metadata. It works by sending fixed-length, fixed-frequency messages over the nostr messaging network. I worked with supertestnet on this project, we sumbitted it for HRF's encrypted group chat bounty.",
@@ -108,7 +126,7 @@
       "github": "https://github.com/austinkelsay/pulsar"
     },
     {
-      "id": "9",
+      "id": "11",
       "title": "Forethought AI",
       "role": "AI Implementation Engineer",
       "description": "Implemented AI products for startups and enterprises. Worked on multiple projects that utilized AI and Machine Learning. Built custom models / datasets / pipelines for clients.",
@@ -116,7 +134,7 @@
       "url": "https://forethought.ai/"
     },
     {
-      "id": "10",
+      "id": "12",
       "title": "Ln-Inbound",
       "role": "Full Stack Developer",
       "description": "An easy to deploy LND wrapper to sell inbound Lightning channels from your own node. Me and @cmdruid built this for the Bitcoin++ hackathon.",
@@ -125,7 +143,7 @@
       "github": "https://github.com/austinkelsay/ln-inbound"
     },
     {
-      "id": "11",
+      "id": "13",
       "title": "Devstr",
       "role": "Full Stack Developer",
       "description": "Devstr is a prototype Github-like platform that uses Nostr for storing and broadcasting redundant repository data. Me and @btcretriever built this for the 2023 Austin SatsX hackathon and won the prize for the nostr category.",
@@ -134,7 +152,7 @@
       "github": "https://github.com/austinkelsay/devstr"
     },
     {
-      "id": "12",
+      "id": "14",
       "title": "pleb-post",
       "role": "Full Stack Developer",
       "description": "A full Stack Lightning Template App for learning and building your First lightning app. built with NextJS, LNBits, and Voltage.cloud This project was built as a part of my presentation 'Building your First Lightning App' at the Bitcoin++ conference.",
@@ -143,7 +161,7 @@
       "github": "https://github.com/austinkelsay/pleb-post"
     },
     {
-      "id": "13",
+      "id": "15",
       "title": "pleb-node",
       "role": "Full Stack Developer",
       "description": "A simple fullstack Lightning App template for learning / development with LND",
@@ -152,7 +170,7 @@
       "github": "https://github.com/austinkelsay/pleb-node"
     },
     {
-      "id": "14",
+      "id": "16",
       "title": "Alby",
       "role": "Open Source Contributor / Bounty hunter",
       "description": "Contributed feature that allows users to tip on reddit and recognize lightning adresses on reddit user descriptions as well as extending the LUD-18 payer data capabilities for the wallet/extension.",
@@ -161,7 +179,7 @@
       "github": "https://github.com/getAlby/lightning-browser-extension/commits?author=AustinKelsay"
     },
     {
-      "id": "15",
+      "id": "17",
       "title": "Sats4Tips",
       "role": "Full Stack Developer",
       "description": "Your own personalized space for collecting tips in Bitcoin. I helped build out the frontend and styles with my team at the Bitcoin++ hackathon",
@@ -170,7 +188,7 @@
       "github": "https://github.com/cmdruid/lightning-tip-jar"
     },
     {
-      "id": "16",
+      "id": "18",
       "title": "Bloomtech",
       "role": "Team Lead ",
       "description": "Bloomtech is a full stack developer bootcamp that teaches the latest in web development. I worked as a Team Lead walking students through the full curriculum, helping them with their projects, blockers, and leading workshops / 1:1's.",
@@ -178,7 +196,7 @@
       "url": "https://www.bloomtech.com/"
     },
     {
-      "id": "17",
+      "id": "19",
       "title": "Bitcoin Knowledge Bot",
       "role": "Full Stack Developer",
       "description": "The first EVER custom trained and fine-tuned Bitcoin knowledge LLM. Bitcoin Knowledge Bot is powered by GPT-3 and trained on an open source dataset of established Bitcoin knowledge.",
@@ -187,7 +205,7 @@
       "github": "https://github.com/bitcoin-knowledge"
     },
     {
-      "id": "18",
+      "id": "20",
       "title": "Reclaim",
       "role": "Full Stack Developer",
       "description": "Reclaim is an open source desktop app for collecting and storing your online information. With Reclaim you can collect your social media data in a few clicks and explore every photo, friend, and interaction from your digital life.",
@@ -196,7 +214,7 @@
       "github": "https://github.com/ReclaimApp"
     },
     {
-      "id": "19",
+      "id": "21",
       "title": "FB-Explorer",
       "role": "Full Stack Developer",
       "description": "fbexplorer is a tool that lets you reclaim, search, and explore all of your Facebook data. This is a single page application built with React and utilizing Redux/hooks for state management. fbexplorer does not collect any user's Facebook data or personal information.",
@@ -205,7 +223,7 @@
       "github": "https://github.com/AustinKelsay/fb-explorer"
     },
     {
-      "id": "20",
+      "id": "22",
       "title": "Austin's Game of Life",
       "role": "Frontend Developer",
       "description": "An implementation of Conway’s Game of Life. This is a React single page application with a random cell placement feature, speed settings for the simulation, and the ability to step through each generation with a visual counter.",
@@ -230,6 +248,14 @@
       "description": "Live coding / Q&A / Workshops",
       "imageSrc": "/images/twitch.png",
       "url": "https://www.twitch.tv/plebdevs"
+    },
+    {
+      "id": "3",
+      "title": "EDAS (Enterprise Digital Asset Summit)",
+      "role": "Speaker",
+      "description": "From EDAS, delivering talk: The Power of Lightning",
+      "imageSrc": "/images/edas.png",
+      "url": "https://edas.live"
     },
     {
       "id": "3",
