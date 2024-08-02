@@ -28,7 +28,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   }, []);
 
   return (
-    <div className="flex items-center justify-between sticky top-0 z-10 bg-transparent p-4">
+    <div className="flex items-center justify-between fixed top-0 left-0 right-0 z-50 bg-white dark:bg-slate-900 shadow-md p-4">
       <h1
         onClick={() => router.push("/")}
         className="font-medium cursor-pointer link"
