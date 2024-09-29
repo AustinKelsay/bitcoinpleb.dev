@@ -4,7 +4,7 @@ const BACKEND_URL = process.env.BACKEND_URL
 const NOSTR_PUBKEY = process.env.NOSTR_PUBKEY
 
 export default async function handler(req, res) {
-    console.log("host", req.headers.host);
+    console.log("host", req);
     await runMiddleware(req, res, corsMiddleware);
 
     const { slug } = req.query
