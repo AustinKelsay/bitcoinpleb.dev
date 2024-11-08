@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     try {
         const response = await axios.post(`https://${LND_HOST}/v1/invoices`, {
             value: req.body.amount,
-            description_hash: req.body.description_hash
+            description_hash: req.body.description_hash,
         }, {
             headers: {
                 'Grpc-Metadata-macaroon': LND_MACAROON,
@@ -18,6 +18,8 @@ export default async function handler(req, res) {
         });
 
         const invoice = response.data.payment_request;
+        const paymentHash = Buffer.from(response.data.r_hash, 'base64');
+        const paymentHashHex = paymentHash.toString('hex');
 
         // If this is a zap, publish a zap receipt
         if (req.body.zap_request) {
@@ -39,10 +41,10 @@ export default async function handler(req, res) {
             // Publish zap receipt to relays
             const pool = new SimplePool();
             const relays = zapRequest.tags.find(tag => tag[0] === 'relays')?.[1] || [];
-            await pool.publish(relays, signedZapReceipt);
+            pool.publish(relays, signedZapReceipt);
         }
 
-        res.status(200).json(invoice);
+        res.status(200).json({ invoice, payment_hash: paymentHashHex, verify: `${BACKEND_URL}/api/verify/${slug}` });
     } catch (error) {
         console.error('Error (server) fetching data from LND:', error.message);
         res.status(500).json({ message: 'Error fetching data' });

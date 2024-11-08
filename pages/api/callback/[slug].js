@@ -52,7 +52,7 @@ export default async function handler(req, res) {
             } else {
                 try {
                     const response = await axios.post(`${BACKEND_URL}/api/lnd`, { amount: value, description_hash: descriptionHash });
-                    res.status(200).json({ pr: response.data });
+                    res.status(200).json({ pr: response.data.invoice, verify: response.data.verify });
                 } catch (error) {
                     console.error(error);
                     res.status(500).json({ error: 'Failed to generate invoice' });
