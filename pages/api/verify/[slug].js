@@ -7,10 +7,10 @@ export default async function handler(req, res) {
     try {
         const { slug } = req.query;
 
-        if (slug !== "austin") {
+        if (!slug) {
             res.status(200).json({
                 status: "ERROR",
-                reason: "Lightning address not found"
+                reason: "No payment hash provided"
             });
             return;
         }
