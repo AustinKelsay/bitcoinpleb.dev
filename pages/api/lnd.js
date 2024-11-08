@@ -45,7 +45,7 @@ export default async function handler(req, res) {
             pool.publish(relays, signedZapReceipt);
         }
 
-        res.status(200).json({ invoice, payment_hash: paymentHashHex, verify: `${BACKEND_URL}/api/verify/${slug}` });
+        res.status(200).json({ invoice, verify: `${BACKEND_URL}/api/verify/${paymentHashHex}` });
     } catch (error) {
         console.error('Error (server) fetching data from LND:', error.message);
         res.status(500).json({ message: 'Error fetching data' });
