@@ -1,12 +1,18 @@
 import axios from "axios";
 import { finalizeEvent } from 'nostr-tools/pure';
 import { SimplePool } from 'nostr-tools/pool';
-import { kv } from '@vercel/kv';
+import { Redis } from '@upstash/redis'
 
 const LND_HOST = process.env.LND_HOST;
 const LND_MACAROON = process.env.LND_MACAROON;
 const NOSTR_PRIVKEY = process.env.NOSTR_PRIVKEY;
 const BACKEND_URL = process.env.BACKEND_URL;
+
+// Replace kv import with Upstash Redis client initialization
+const redis = new Redis({
+    url: process.env.KV_REST_API_URL,
+    token: process.env.KV_REST_API_TOKEN,
+})
 
 export default async function handler(req, res) {
     try {
@@ -29,7 +35,8 @@ export default async function handler(req, res) {
             const zapRequest = JSON.parse(req.body.zap_request);
             const verifyUrl = `${BACKEND_URL}/api/verify/${paymentHashHex}`;
 
-            await kv.set(`invoice:${paymentHashHex}`, {
+            // Replace kv.set with redis.set
+            await redis.set(`invoice:${paymentHashHex}`, {
                 verifyUrl,
                 zapRequest,
                 invoice,
