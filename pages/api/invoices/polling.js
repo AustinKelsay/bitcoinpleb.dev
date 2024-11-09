@@ -110,7 +110,7 @@ export default async function handler(req, res) {
                         ];
                         await Promise.any(pool.publish(relays, signedZapReceipt));
 
-                        console.log(`Broadcasted zap receipt for ${name} (${paymentHash})`, zapReceipt);
+                        console.log(`Broadcasted zap receipt`, zapReceipt);
 
                         // Delete from Redis after successful broadcast
                         await kv.del(key);
