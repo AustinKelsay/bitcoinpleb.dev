@@ -1,6 +1,7 @@
 import axios from "axios";
 import { finalizeEvent } from 'nostr-tools/pure';
 import { SimplePool } from 'nostr-tools/pool';
+import { kv } from '@vercel/kv';
 
 const LND_HOST = process.env.LND_HOST;
 const LND_MACAROON = process.env.LND_MACAROON;
@@ -19,30 +20,21 @@ export default async function handler(req, res) {
         });
 
         const invoice = response.data.payment_request;
+        const expiry = response.data.expiry;
         const paymentHash = Buffer.from(response.data.r_hash, 'base64');
         const paymentHashHex = paymentHash.toString('hex');
 
         // If this is a zap, publish a zap receipt
         if (req.body.zap_request) {
             const zapRequest = JSON.parse(req.body.zap_request);
-            const zapReceipt = {
-                kind: 9735,
-                created_at: Math.floor(Date.now() / 1000),
-                content: '',
-                tags: [
-                    ['p', zapRequest.pubkey],
-                    ['e', zapRequest.id],
-                    ['bolt11', invoice],
-                    ['description', JSON.stringify(zapRequest)]
-                ]
-            };
+            const verifyUrl = `${BACKEND_URL}/api/verify/${paymentHashHex}`;
 
-            const signedZapReceipt = finalizeEvent(zapReceipt, NOSTR_PRIVKEY);
-
-            // Publish zap receipt to relays
-            const pool = new SimplePool();
-            const relays = zapRequest.tags.find(tag => tag[0] === 'relays')?.[1] || [];
-            pool.publish(relays, signedZapReceipt);
+            await kv.set(`invoice:${paymentHashHex}`, {
+                verifyUrl,
+                zapRequest,
+                invoice,
+                settled: false
+            }, { ex: expiry || 86400 });
         }
 
         res.status(200).json({ invoice, verify: `${BACKEND_URL}/api/verify/${paymentHashHex}` });
