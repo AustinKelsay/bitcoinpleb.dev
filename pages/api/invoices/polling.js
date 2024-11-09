@@ -41,7 +41,7 @@ export default async function handler(req, res) {
                 const invoiceData = await kv.get(key);
                 if (!invoiceData) continue;
 
-                const { name, foundAddress, zapRequest, settled } = invoiceData;
+                const { zapRequest, settled } = invoiceData;
                 const paymentHash = key.replace('invoice:', '');
 
                 // Skip if already settled
