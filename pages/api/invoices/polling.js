@@ -17,6 +17,7 @@ export default async function handler(req, res) {
 
         // Get all invoice keys from Redis
         const keys = await redis.keys('invoice:*');
+        console.log("keys", keys);
 
         // Add batch size limit
         const BATCH_LIMIT = 500;
