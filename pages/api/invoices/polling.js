@@ -1,11 +1,13 @@
 import axios from "axios";
-import { kv } from '@vercel/kv';
+import { Redis } from '@upstash/redis';
 import { finalizeEvent } from 'nostr-tools/pure';
 import { SimplePool } from 'nostr-tools/pool';
 
 const NOSTR_PRIVKEY = process.env.NOSTR_PRIVKEY;
 const LND_HOST = process.env.LND_HOST;
 const LND_MACAROON = process.env.LND_MACAROON;
+
+const redis = Redis.fromEnv();
 
 export default async function handler(req, res) {
     try {
@@ -14,7 +16,7 @@ export default async function handler(req, res) {
         const TIMEOUT_MS = 8000; // Vercel timeout is 10s, give ourselves margin
 
         // Get all invoice keys from Redis
-        const keys = await kv.keys('invoice:*');
+        const keys = await redis.keys('invoice:*');
 
         // Add batch size limit
         const BATCH_LIMIT = 500;
@@ -38,7 +40,8 @@ export default async function handler(req, res) {
                 break;
             }
             try {
-                const invoiceData = await kv.get(key);
+                const invoiceData = await redis.get(key);
+                console.log("invoiceData", invoiceData);
                 if (!invoiceData) continue;
 
                 const { zapRequest, settled } = invoiceData;
@@ -46,7 +49,7 @@ export default async function handler(req, res) {
 
                 // Skip if already settled
                 if (settled) {
-                    await kv.del(key);
+                    await redis.del(key);
                     continue;
                 }
 
@@ -67,7 +70,7 @@ export default async function handler(req, res) {
 
                 // Handle expired invoices
                 if (response.data.state === "EXPIRED" || response.data.state === "CANCELED") {
-                    await kv.del(key);
+                    await redis.del(key);
                     results.expired++;
                     continue;
                 }
@@ -113,12 +116,12 @@ export default async function handler(req, res) {
                         console.log(`Broadcasted zap receipt`, zapReceipt);
 
                         // Delete from Redis after successful broadcast
-                        await kv.del(key);
+                        await redis.del(key);
                         results.settled++;
                     } catch (broadcastError) {
                         console.error('Error broadcasting zap receipt:', broadcastError);
                         // Keep in Redis for retry if broadcast fails
-                        await kv.set(key, { ...invoiceData, settled: true }, { ex: 3600 });
+                        await redis.set(key, { ...invoiceData, settled: true }, { ex: 3600 });
                         results.errors++;
                     }
                 }

@@ -1,14 +1,10 @@
 import axios from "axios";
-import { finalizeEvent } from 'nostr-tools/pure';
-import { SimplePool } from 'nostr-tools/pool';
 import { Redis } from '@upstash/redis'
 
 const LND_HOST = process.env.LND_HOST;
 const LND_MACAROON = process.env.LND_MACAROON;
-const NOSTR_PRIVKEY = process.env.NOSTR_PRIVKEY;
 const BACKEND_URL = process.env.BACKEND_URL;
 
-// Replace the manual initialization with fromEnv()
 const redis = Redis.fromEnv()
 
 export default async function handler(req, res) {
