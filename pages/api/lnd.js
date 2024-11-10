@@ -1,15 +1,9 @@
 import axios from "axios";
-import { Redis } from '@upstash/redis'
+import redis from "../../utils/redis"
 
 const LND_HOST = process.env.LND_HOST;
 const LND_MACAROON = process.env.LND_MACAROON;
 const BACKEND_URL = process.env.BACKEND_URL;
-
-const redis = new Redis({
-    url: process.env.KV_REST_API_URL,
-    token: process.env.KV_REST_API_TOKEN,
-});
-
 
 export default async function handler(req, res) {
     try {
@@ -29,16 +23,20 @@ export default async function handler(req, res) {
 
         // If this is a zap, publish a zap receipt
         if (req.body.zap_request) {
-            const zapRequest = JSON.parse(req.body.zap_request);
             const verifyUrl = `${BACKEND_URL}/api/verify/${paymentHashHex}`;
 
-            // Store data as a JSON string
-            await redis.set(`invoice:${paymentHashHex}`, JSON.stringify({
-                verifyUrl,
-                zapRequest,
-                invoice,
-                settled: false
-            }), { ex: expiry || 86400 });
+            try {
+                // Store data as a JSON string
+                await redis.set(`invoice:${paymentHashHex}`, JSON.stringify({
+                    verifyUrl,
+                    zapRequest: req.body.zap_request,
+                    invoice,
+                    settled: false
+                }), { ex: expiry || 86400 });
+            } catch (redisError) {
+                console.error('Redis operation failed:', redisError);
+                throw redisError;
+            }
         }
 
         res.status(200).json({ invoice, verify: `${BACKEND_URL}/api/verify/${paymentHashHex}` });

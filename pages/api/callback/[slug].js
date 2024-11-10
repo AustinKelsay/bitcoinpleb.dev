@@ -11,13 +11,14 @@ export default async function handler(req, res) {
     const { slug, ...queryParams } = req.query;
 
     if (slug === 'austin') {
+        let zapRequest = null;
         if (queryParams.amount) {
             const amount = parseInt(queryParams.amount);
             let metadata, metadataString, hash, descriptionHash;
 
             if (queryParams.nostr) {
                 // This is a zap request
-                const zapRequest = JSON.parse(decodeURIComponent(queryParams.nostr));
+                zapRequest = JSON.parse(decodeURIComponent(queryParams.nostr));
 
                 // Verify the zap request
                 if (!verifyEvent(zapRequest)) {
@@ -51,7 +52,7 @@ export default async function handler(req, res) {
                 return;
             } else {
                 try {
-                    const response = await axios.post(`${BACKEND_URL}/api/lnd`, { amount: value, description_hash: descriptionHash });
+                    const response = await axios.post(`${BACKEND_URL}/api/lnd`, { amount: value, description_hash: descriptionHash, zap_request: zapRequest });
                     res.status(200).json({ pr: response.data.invoice, verify: response.data.verify });
                 } catch (error) {
                     console.error(error);

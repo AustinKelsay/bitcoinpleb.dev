@@ -1,16 +1,11 @@
 import axios from "axios";
-import { Redis } from '@upstash/redis';
+import redis from "../../../utils/redis"
 import { finalizeEvent } from 'nostr-tools/pure';
 import { SimplePool } from 'nostr-tools/pool';
 
 const NOSTR_PRIVKEY = process.env.NOSTR_PRIVKEY;
 const LND_HOST = process.env.LND_HOST;
 const LND_MACAROON = process.env.LND_MACAROON;
-
-const redis = new Redis({
-    url: process.env.KV_REST_API_URL,
-    token: process.env.KV_REST_API_TOKEN,
-});
 
 
 export default async function handler(req, res) {
@@ -20,8 +15,9 @@ export default async function handler(req, res) {
         const TIMEOUT_MS = 8000; // Vercel timeout is 10s, give ourselves margin
 
         // Get all invoice keys from Redis
+        console.log('Starting polling process...');
         const keys = await redis.keys('invoice:*');
-        console.log("keys", keys);
+        console.log("Found invoice keys:", keys);
 
         // Add batch size limit
         const BATCH_LIMIT = 500;
@@ -40,18 +36,20 @@ export default async function handler(req, res) {
 
         // Process each invoice
         for (const key of keys) {
+            console.log(`\n--- Processing key: ${key} ---`);
             if (Date.now() - startTime > TIMEOUT_MS) {
                 console.warn('Approaching timeout, stopping processing');
                 break;
             }
             try {
                 const invoiceData = await redis.get(key);
-                console.log("invoiceData", invoiceData);
-                if (!invoiceData) continue;
+                console.log("Raw invoice data from Redis:", invoiceData);
+                if (!invoiceData) {
+                    console.log(`No data found for key: ${key}`);
+                    continue;
+                }
 
-                // Parse the JSON string back into an object
-                const parsedInvoiceData = JSON.parse(invoiceData);
-                const { zapRequest, settled } = parsedInvoiceData;
+                const { zapRequest, settled } = invoiceData;
                 const paymentHash = key.replace('invoice:', '');
 
                 // Skip if already settled
