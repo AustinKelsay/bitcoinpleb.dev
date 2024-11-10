@@ -28,13 +28,13 @@ export default async function handler(req, res) {
             const zapRequest = JSON.parse(req.body.zap_request);
             const verifyUrl = `${BACKEND_URL}/api/verify/${paymentHashHex}`;
 
-            // Replace kv.set with redis.set
-            await redis.set(`invoice:${paymentHashHex}`, {
+            // Store data as a JSON string
+            await redis.set(`invoice:${paymentHashHex}`, JSON.stringify({
                 verifyUrl,
                 zapRequest,
                 invoice,
                 settled: false
-            }, { ex: expiry || 86400 });
+            }), { ex: expiry || 86400 });
         }
 
         res.status(200).json({ invoice, verify: `${BACKEND_URL}/api/verify/${paymentHashHex}` });

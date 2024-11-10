@@ -45,7 +45,9 @@ export default async function handler(req, res) {
                 console.log("invoiceData", invoiceData);
                 if (!invoiceData) continue;
 
-                const { zapRequest, settled } = invoiceData;
+                // Parse the JSON string back into an object
+                const parsedInvoiceData = JSON.parse(invoiceData);
+                const { zapRequest, settled } = parsedInvoiceData;
                 const paymentHash = key.replace('invoice:', '');
 
                 // Skip if already settled
@@ -122,7 +124,10 @@ export default async function handler(req, res) {
                     } catch (broadcastError) {
                         console.error('Error broadcasting zap receipt:', broadcastError);
                         // Keep in Redis for retry if broadcast fails
-                        await redis.set(key, { ...invoiceData, settled: true }, { ex: 3600 });
+                        await redis.set(key, JSON.stringify({
+                            ...parsedInvoiceData,
+                            settled: true
+                        }), { ex: 3600 });
                         results.errors++;
                     }
                 }
