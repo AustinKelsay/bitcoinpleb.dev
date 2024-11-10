@@ -8,11 +8,8 @@ const LND_MACAROON = process.env.LND_MACAROON;
 const NOSTR_PRIVKEY = process.env.NOSTR_PRIVKEY;
 const BACKEND_URL = process.env.BACKEND_URL;
 
-// Replace kv import with Upstash Redis client initialization
-const redis = new Redis({
-    url: process.env.KV_REST_API_URL,
-    token: process.env.KV_REST_API_TOKEN,
-})
+// Replace the manual initialization with fromEnv()
+const redis = Redis.fromEnv()
 
 export default async function handler(req, res) {
     try {
