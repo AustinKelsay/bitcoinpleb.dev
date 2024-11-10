@@ -5,7 +5,11 @@ const LND_HOST = process.env.LND_HOST;
 const LND_MACAROON = process.env.LND_MACAROON;
 const BACKEND_URL = process.env.BACKEND_URL;
 
-const redis = Redis.fromEnv()
+const redis = new Redis({
+    url: process.env.KV_REST_API_URL,
+    token: process.env.KV_REST_API_TOKEN,
+});
+
 
 export default async function handler(req, res) {
     try {
