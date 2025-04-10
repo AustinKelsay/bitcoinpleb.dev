@@ -14,6 +14,12 @@ const nextConfig = {
     };
   },
 
+  // Configure images to properly handle static image loading
+  images: {
+    unoptimized: true,
+    domains: ['i.ytimg.com', 'i.scdn.co', 'pbs.twimg.com', 'plebdevs-bucket.nyc3.cdn.digitaloceanspaces.com', 'forethought.ai'],
+  },
+
   async rewrites() {
     return [
       {
