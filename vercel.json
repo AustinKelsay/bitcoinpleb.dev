@@ -12,7 +12,7 @@
   "images": {
     "sizes": [256, 512, 1024, 2048],
     "minimumCacheTTL": 60,
-    "formats": ["image/webp", "image/avif", "image/jpeg", "image/png"]
+    "formats": ["image/webp", "image/avif"]
   },
   "buildCommand": "next build",
   "outputDirectory": ".next",
