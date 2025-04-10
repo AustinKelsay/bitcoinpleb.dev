@@ -1,3 +1,13 @@
 *.png filter=lfs diff=lfs merge=lfs -text
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.jpeg filter=lfs diff=lfs merge=lfs -text
+
+# Exclude key project images from LFS
+public/images/igloo.png -filter=lfs -diff=lfs -merge=lfs -text
+public/images/frostr-logo.png -filter=lfs -diff=lfs -merge=lfs -text
+public/images/plebdevsdotcom.png -filter=lfs -diff=lfs -merge=lfs -text
+public/images/voltage.png -filter=lfs -diff=lfs -merge=lfs -text
+public/images/plebdevs.png -filter=lfs -diff=lfs -merge=lfs -text
+public/images/bitcoinlink.png -filter=lfs -diff=lfs -merge=lfs -text
+public/images/quick-cashu.png -filter=lfs -diff=lfs -merge=lfs -text
+public/images/makeprisms.png -filter=lfs -diff=lfs -merge=lfs -text
