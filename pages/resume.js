@@ -5,8 +5,6 @@ import ProjectResume from "../components/ProjectResume";
 import Socials from "../components/Socials";
 import Button from "../components/Button";
 // Data
-import { name, showResume } from "../data/portfolio.json";
-import { resume } from "../data/portfolio.json";
 import data from "../data/portfolio.json";
 
 const Resume = () => {
@@ -15,7 +13,7 @@ const Resume = () => {
 
   useEffect(() => {
     setMount(true);
-    if (!showResume) {
+    if (!data.showResume) {
       router.push("/");
     }
   }, []);
@@ -44,7 +42,7 @@ const Resume = () => {
                 >Link to resume google doc</a>
               </div>
               <h2 className="w-full text-xl mt-5 opacity-50 px-4">
-                {resume.description}
+                {data.resume.description}
               </h2>
               <div className="mt-2">
                 <Socials />
@@ -52,7 +50,7 @@ const Resume = () => {
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">Experience</h1>
 
-                {resume.experiences.map(
+                {data.resume.experiences.map(
                   ({ id, dates, type, position, bullets }) => (
                     <ProjectResume
                       key={id}
@@ -67,12 +65,12 @@ const Resume = () => {
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">Education</h1>
                 <div className="mt-2">
-                  <h2 className="text-lg">{resume.education.universityName}</h2>
+                  <h2 className="text-lg">{data.resume.education.universityName}</h2>
                   <h3 className="text-sm opacity-75">
-                    {resume.education.universityDate}
+                    {data.resume.education.universityDate}
                   </h3>
                   <p className="text-sm mt-2 opacity-50">
-                    {resume.education.universityPara}
+                    {data.resume.education.universityPara}
                   </p>
                 </div>
                 <div className="mt-2">
@@ -88,11 +86,11 @@ const Resume = () => {
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">Skills</h1>
                 <div className="flex mob:flex-col desktop:flex-row justify-between">
-                  {resume.languages && (
+                  {data.resume.languages && (
                     <div className="mt-2 mob:mt-5">
                       <h2 className="text-lg">Languages</h2>
                       <ul className="list-disc">
-                        {resume.languages.map((language, index) => (
+                        {data.resume.languages.map((language, index) => (
                           <li key={index} className="ml-5 py-2">
                             {language}
                           </li>
@@ -101,11 +99,11 @@ const Resume = () => {
                     </div>
                   )}
 
-                  {resume.frameworks && (
+                  {data.resume.frameworks && (
                     <div className="mt-2 mob:mt-5">
                       <h2 className="text-lg">Frameworks</h2>
                       <ul className="list-disc">
-                        {resume.frameworks.map((framework, index) => (
+                        {data.resume.frameworks.map((framework, index) => (
                           <li key={index} className="ml-5 py-2">
                             {framework}
                           </li>
@@ -114,11 +112,11 @@ const Resume = () => {
                     </div>
                   )}
 
-                  {resume.backend && (
+                  {data.resume.backend && (
                     <div className="mt-2 mob:mt-5">
                       <h2 className="text-lg">Backend</h2>
                       <ul className="list-disc">
-                        {resume.backend.map((backend, index) => (
+                        {data.resume.backend.map((backend, index) => (
                           <li key={index} className="ml-5 py-2">
                             {backend}
                           </li>
@@ -127,11 +125,11 @@ const Resume = () => {
                     </div>
                   )}
 
-                  {resume.others && (
+                  {data.resume.others && (
                     <div className="mt-2 mob:mt-5">
                       <h2 className="text-lg">Others</h2>
                       <ul className="list-disc">
-                        {resume.others.map((other, index) => (
+                        {data.resume.others.map((other, index) => (
                           <li key={index} className="ml-5 py-2">
                             {other}
                           </li>

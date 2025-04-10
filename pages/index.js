@@ -6,7 +6,6 @@ import WorkCard from "../components/WorkCard";
 import MediaCard from "../components/MediaCard";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
-import Footer from "../components/Footer";
 import Head from "next/head";
 import Button from "../components/Button";
 import Link from "next/link";
@@ -183,9 +182,11 @@ export default function Home() {
           )}
         </div>
 
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
-          <h1 className="tablet:m-10 text-2xl text-bold">Skills</h1>
-          <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
+        <div className="mt-20 laptop:mt-40 p-2 laptop:p-0">
+          <h1 className="text-3xl font-bold text-center mb-10">
+            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Skills</span>
+          </h1>
+          <div className="mt-10 grid grid-cols-1 laptop:grid-cols-2 gap-8 px-4 laptop:px-0">
             {data.services.map((service, index) => (
               <ServiceCard
                 key={index}
@@ -203,13 +204,16 @@ export default function Home() {
             </Link>
           </div>
         )}
-        <div className="mt-10 bg-gray-900 mob:bg-gray-800 laptop:mt-40 p-2 pt-8 rounded-lg laptop:p-0" ref={aboutRef}>
+        <div className="mt-10 bg-gray-900 mob:bg-gray-800 laptop:mt-40 p-4 pt-8 rounded-lg laptop:p-6" ref={aboutRef}>
           <h1 className="pt-4 tablet:m-10 text-2xl text-bold">About.</h1>
-          <p className="pb-4 tablet:m-10 mt-2 text-xl laptop:text-2xl w-full laptop:w-3/5">
-            {data.aboutpara}
-          </p>
+          <div
+            className="pb-4 tablet:m-10 mt-2 text-xl laptop:text-2xl w-full laptop:w-4/5 space-y-4"
+            dangerouslySetInnerHTML={{ __html: data.aboutpara }}
+          />
         </div>
-        <Footer />
+        <footer className="mt-10 border-t-2 border-gray-800 pt-10 pb-6 flex flex-col items-center">
+          <p className="text-sm text-gray-400">© {new Date().getFullYear()} Austin Kelsay. All rights reserved.</p>
+        </footer>
       </div>
     </div>
   );
