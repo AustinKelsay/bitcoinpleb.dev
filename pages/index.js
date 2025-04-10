@@ -119,6 +119,16 @@ export default function Home() {
             {showSuccess && <div className="copied-notification">Payment successful!</div>}
           </div>
 
+          {/* Test image for debugging */}
+          <div className="mt-4 p-2">
+            <p className="text-sm text-gray-400 mb-2">Test Image (Direct HTML):</p>
+            <img
+              src="/images/igloo.png"
+              alt="Test Image"
+              style={{ width: '200px', height: 'auto', borderRadius: '8px' }}
+            />
+          </div>
+
           <Socials className="mt-2 laptop:mt-5" />
         </div>
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
