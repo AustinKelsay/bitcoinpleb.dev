@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { FaGithub, FaLink } from "react-icons/fa";
+import Image from "next/image";
 
 const MediaCard = ({ img, name, role, description, onClick, github }) => {
     const [backgroundHeight, setBackgroundHeight] = useState("380px");
@@ -35,15 +36,16 @@ const MediaCard = ({ img, name, role, description, onClick, github }) => {
                 className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 cursor-pointer"
                 style={{ height: backgroundHeight }}
             >
-                <div
-                    className="absolute inset-0 rounded-lg"
-                    style={{
-                        backgroundImage: `url(${img})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundRepeat: 'no-repeat',
-                    }}
-                />
+                <div className="absolute inset-0 rounded-lg">
+                    <Image
+                        src={img}
+                        alt={name || "Media Image"}
+                        fill
+                        style={{ objectFit: 'cover' }}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        priority={true}
+                    />
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-70 transition-opacity duration-300 rounded-lg"></div>
             </div>
             <div className="mt-4 space-y-2 laptop:space-y-3">

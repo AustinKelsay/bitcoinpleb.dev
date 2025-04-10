@@ -16,8 +16,31 @@ const nextConfig = {
 
   // Configure images to properly handle static image loading
   images: {
-    unoptimized: true,
-    domains: ['i.ytimg.com', 'i.scdn.co', 'pbs.twimg.com', 'plebdevs-bucket.nyc3.cdn.digitaloceanspaces.com', 'forethought.ai'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.ytimg.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.scdn.co',
+      },
+      {
+        protocol: 'https',
+        hostname: 'pbs.twimg.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'plebdevs-bucket.nyc3.cdn.digitaloceanspaces.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'forethought.ai',
+      },
+    ],
+    minimumCacheTTL: 60,
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
   async rewrites() {
