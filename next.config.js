@@ -2,14 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
 
-  // Skip building blog pages since they're causing errors
-  exportPathMap: async function () {
-    return {
-      '/': { page: '/' },
-      '/resume': { page: '/resume' },
-      // Exclude blog pages from the build
-    };
-  },
+  // Blog pages have been physically moved out of the pages directory
+  // to prevent build errors
 
   async rewrites() {
     return [
