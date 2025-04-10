@@ -2,8 +2,17 @@
 const nextConfig = {
   reactStrictMode: true,
 
-  // Blog pages have been physically moved out of the pages directory
-  // to prevent build errors
+  // Blog pages have been completely removed to fix build errors
+  // Explicitly include only the pages we want to build
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
+
+  // Explicitly define which pages to include in build
+  exportPathMap: async function () {
+    return {
+      '/': { page: '/' },
+      '/resume': { page: '/resume' }
+    };
+  },
 
   async rewrites() {
     return [
