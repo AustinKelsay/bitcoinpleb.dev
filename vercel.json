@@ -5,5 +5,16 @@
       "path": "/api/invoices/polling",
       "schedule": "*/5 * * * *"
     }
-  ]
+  ],
+  "git": {
+    "lfs": true
+  },
+  "images": {
+    "sizes": [256, 512, 1024, 2048],
+    "minimumCacheTTL": 60,
+    "formats": ["image/webp", "image/avif", "image/jpeg", "image/png"]
+  },
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "framework": "nextjs"
 }

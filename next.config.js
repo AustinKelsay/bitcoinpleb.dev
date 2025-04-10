@@ -16,6 +16,7 @@ const nextConfig = {
 
   // Configure images to properly handle static image loading
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
