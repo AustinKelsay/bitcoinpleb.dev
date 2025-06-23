@@ -38,7 +38,7 @@
   "projects": [
     {
       "id": "1",
-      "title": "Igloo",
+      "title": "Igloo Desktop",
       "role": "Lead Developer",
       "description": "Desktop signer and key management app for FROSTR. Igloo provides secure distributed key management using threshold signatures, allowing users to split their Nostr private keys into shares that can be stored across multiple devices for enhanced security and backup.",
       "imageSrc": "/images/igloo.png",
@@ -262,6 +262,14 @@
   "media": [
     {
       "id": "1",
+      "title": "Frostr Workshop - Bitcoin 2025 Vegas",
+      "role": "Workshop Presenter",
+      "description": "Austin & Topher's FROSTR workshop. Walking through the basics of the protocol and going through a live demo with the audience (signing a 6/12 nostr multisig note live!)",
+      "imageSrc": "https://plebdevs-bucket.nyc3.cdn.digitaloceanspaces.com/images/frostr-vegas-workshop.png",
+      "url": "https://www.youtube.com/watch?v=J1WG_InBsHg"
+    },
+    {
+      "id": "2",
       "title": "No Password Reset? How Frostr Saves Your Nostr Identity",
       "role": "Featured Project / Developer",
       "description": "Born out of a hackathon at TABCONF 2024, Frostr may have just solved Nostr's most pernicious issue: the inability to reset your password if your private key gets compromised.",
@@ -269,7 +277,7 @@
       "url": "https://bitcoinmagazine.com/business/no-password-reset-how-frostr-saves-your-nostr-identity"
     },
     {
-      "id": "2",
+      "id": "3",
       "title": "Frostr Explained - Thank God For Nostr Podcast",
       "role": "Podcast Guest",
       "description": "A deep dive into FROSTR with myself and @cmd discussing how we're solving key recovery in the Nostr ecosystem and the technical challenges involved.",
@@ -379,6 +387,14 @@
       "description": "The Journey to Becoming a Bitcoin Developer w/ Austin Kelsay",
       "imageSrc": "https://i.ytimg.com/vi/zc3h6TWmXQI/maxresdefault.jpg?v=6277219a",
       "url": "https://www.youtube.com/watch?v=zc3h6TWmXQI"
+    },
+    {
+      "id": "16",
+      "title": "Frostr Workshop - Bitcoin 2025 Vegas",
+      "role": "Workshop Presenter",
+      "description": "Austin & Topher's FROSTR workshop. Walking through the basics of the protocol and going through a live demo with the audience (signing a 6/12 nostr multisig note live!)",
+      "imageSrc": "https://plebdevs-bucket.nyc3.cdn.digitaloceanspaces.com/images/frostr-vegas-workshop.png",
+      "url": "https://www.youtube.com/watch?v=J1WG_InBsHg"
     }
   ],
   "services": [
