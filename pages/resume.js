@@ -48,9 +48,24 @@ const Resume = () => {
                 <Socials />
               </div>
               <div className="mt-5">
-                <h1 className="text-2xl font-bold">Experience</h1>
+                <h1 className="text-2xl font-bold">Career</h1>
 
-                {data.resume.experiences.map(
+                {data.resume.careerExperiences.map(
+                  ({ id, dates, type, position, bullets }) => (
+                    <ProjectResume
+                      key={id}
+                      dates={dates}
+                      type={type}
+                      position={position}
+                      bullets={bullets}
+                    ></ProjectResume>
+                  )
+                )}
+              </div>
+              <div className="mt-10">
+                <h1 className="text-2xl font-bold">Personal Projects</h1>
+
+                {data.resume.personalExperiences.map(
                   ({ id, dates, type, position, bullets }) => (
                     <ProjectResume
                       key={id}

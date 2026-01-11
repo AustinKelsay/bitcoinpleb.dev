@@ -3,9 +3,20 @@ import { useRouter } from "next/router";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import Image from "next/image";
 
-const WorkCard = ({ img, name, role, description, onClick, github }) => {
+const WorkCard = ({ img, name, role, description, onClick, github, date }) => {
   const [backgroundHeight, setBackgroundHeight] = useState("380px");
   const router = useRouter();
+
+  // Check if the image source is a video file
+  const isVideo = img && /\.(mp4|mov|webm|ogg)$/i.test(img);
+
+  // Format date for display (e.g., "Oct 2024")
+  const formatDate = (dateStr) => {
+    if (!dateStr) return null;
+    const d = new Date(dateStr);
+    return d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+  };
+  const formattedDate = formatDate(date);
 
   useEffect(() => {
     const updateImageHeight = () => {
@@ -37,16 +48,32 @@ const WorkCard = ({ img, name, role, description, onClick, github }) => {
         style={{ height: backgroundHeight }}
       >
         <div className="absolute inset-0 rounded-lg">
-          <Image
-            src={img}
-            alt={name || "Project Image"}
-            fill
-            style={{ objectFit: 'cover' }}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            priority={true}
-          />
+          {isVideo ? (
+            <video
+              src={img}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-contain bg-black"
+            />
+          ) : (
+            <Image
+              src={img}
+              alt={name || "Project Image"}
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              priority={true}
+            />
+          )}
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-70 transition-opacity duration-300 rounded-lg"></div>
+        {formattedDate && (
+          <div className="absolute top-2 right-2 px-2 py-1 bg-black/70 text-white text-xs rounded">
+            {formattedDate}
+          </div>
+        )}
       </div>
       <div className="mt-4 space-y-2 laptop:space-y-3">
         <h1 className="text-xl mob:text-lg laptop:text-2xl font-bold pr-2 line-clamp-1">

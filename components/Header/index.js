@@ -66,12 +66,14 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         )}
       </div>
       {showHamburger && (
-        <div>
-          <HiOutlineMenuAlt3
-            className="w-8 h-8 cursor-pointer"
-            onClick={() => setIsOpen(!isOpen)}
-          />
-        </div>
+        <button
+          aria-label="Toggle menu"
+          aria-expanded={isOpen}
+          onClick={() => setIsOpen(!isOpen)}
+          className="p-1"
+        >
+          <HiOutlineMenuAlt3 className="w-8 h-8" />
+        </button>
       )}
       <CSSTransition
         in={isOpen}

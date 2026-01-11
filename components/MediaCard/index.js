@@ -3,9 +3,17 @@ import { useRouter } from "next/router";
 import { FaGithub, FaLink } from "react-icons/fa";
 import Image from "next/image";
 
-const MediaCard = ({ img, name, role, description, onClick, github }) => {
+const MediaCard = ({ img, name, role, description, onClick, github, date }) => {
     const [backgroundHeight, setBackgroundHeight] = useState("380px");
     const router = useRouter();
+
+    // Format date for display (e.g., "Oct 2024")
+    const formatDate = (dateStr) => {
+        if (!dateStr) return null;
+        const d = new Date(dateStr);
+        return d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+    };
+    const formattedDate = formatDate(date);
 
     useEffect(() => {
         const updateImageHeight = () => {
@@ -47,6 +55,11 @@ const MediaCard = ({ img, name, role, description, onClick, github }) => {
                     />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-70 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
+                {formattedDate && (
+                    <div className="absolute top-2 right-2 px-2 py-1 bg-black/70 text-white text-xs rounded">
+                        {formattedDate}
+                    </div>
+                )}
             </div>
             <div className="mt-4 space-y-2 laptop:space-y-3">
                 <h1 className="text-xl mob:text-lg laptop:text-2xl font-bold pr-2 line-clamp-1">

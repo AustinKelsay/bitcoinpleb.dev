@@ -38,6 +38,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'forethought.ai',
       },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+        pathname: '/**',
+      },
     ],
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,

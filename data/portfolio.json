@@ -11,7 +11,7 @@
   "socials": [
     {
       "id": "1",
-      "title": "Github",
+      "title": "GitHub",
       "link": "https://github.com/austinkelsay"
     },
     {
@@ -43,7 +43,8 @@
       "description": "Desktop signer and key management app for FROSTR. Igloo provides secure distributed key management using threshold signatures, allowing users to split their Nostr private keys into shares that can be stored across multiple devices for enhanced security and backup.",
       "imageSrc": "/images/igloo.png",
       "url": "https://frostr.org/",
-      "github": "https://github.com/FROSTR-ORG/igloo"
+      "github": "https://github.com/FROSTR-ORG/igloo",
+      "createdAt": "2024-10-21"
     },
     {
       "id": "2",
@@ -52,211 +53,295 @@
       "description": "Solving Nostr's key management problem. Frostr provides password reset and key recovery functionality for Nostr utilizing the powers of FROST - making the protocol far more secure, accessible, and user-friendly.",
       "imageSrc": "/images/frostr-logo.png",
       "url": "https://frostr.org",
-      "github": "https://github.com/frostr-app/frostr"
+      "github": "https://github.com/frostr-app/frostr",
+      "createdAt": "2024-10-21"
     },
     {
       "id": "3",
+      "title": "Igloo Server",
+      "role": "Lead Developer",
+      "description": "Lightweight self-hostable Frostr server & signing client with NIP46 support. Supports headless mode with .env config or full-featured database mode with SQLite and user management.",
+      "imageSrc": "https://plebdevs-bucket.nyc3.cdn.digitaloceanspaces.com/images/frostr/igloo-server/signer.png",
+      "url": "https://frostr.org/",
+      "github": "https://github.com/FROSTR-ORG/igloo-server",
+      "createdAt": "2025-02-21"
+    },
+    {
+      "id": "4",
+      "title": "Igloo Web",
+      "role": "Lead Developer",
+      "description": "Browser-first FROSTR signer built with React/Vite. Runs entirely in-browser with encrypted shares stored in localStorage for secure key management without server dependencies.",
+      "imageSrc": "https://plebdevs-bucket.nyc3.cdn.digitaloceanspaces.com/images/frostr/igloo-web/igloo-web-signer.png",
+      "url": "https://frostr.org/",
+      "github": "https://github.com/FROSTR-ORG/igloo-web",
+      "createdAt": "2025-11-11"
+    },
+    {
+      "id": "5",
+      "title": "Igloo Core",
+      "role": "Lead Developer",
+      "description": "TypeScript library providing essential functionality for FROSTR/Bifrost distributed key management and remote signing. Strongly-typed API for building secure distributed signing applications.",
+      "imageSrc": "/images/igloo-core-npm.png",
+      "url": "https://frostr.org/",
+      "github": "https://github.com/FROSTR-ORG/igloo-core",
+      "createdAt": "2025-06-05"
+    },
+    {
+      "id": "6",
+      "title": "Igloo CLI",
+      "role": "Lead Developer",
+      "description": "Command-line interface for FROSTR functionality including key operations, signing, peering, and recovery processes. Ideal for developers and power users.",
+      "imageSrc": "https://plebdevs-bucket.nyc3.cdn.digitaloceanspaces.com/videos/frostr/igloo-cli-short-repeating.mov",
+      "url": "https://frostr.org/",
+      "github": "https://github.com/FROSTR-ORG/igloo-cli",
+      "createdAt": "2025-10-01"
+    },
+    {
+      "id": "7",
       "title": "PlebDevs Platform",
       "role": "Founder / Lead Developer",
       "description": "Content and community platform built on Nostr and fully Lightning integrated. Offers comprehensive learning resources, community features, and subscription-based premium content using Bitcoin's Lightning Network.",
       "imageSrc": "/images/plebdevsdotcom.png",
       "url": "https://plebdevs.com/",
-      "github": "https://github.com/austinkelsay/plebdevs"
+      "github": "https://github.com/austinkelsay/plebdevs",
+      "createdAt": "2023-12-23"
     },
     {
-      "id": "4",
+      "id": "8",
       "title": "Voltage",
       "role": "Developer Relations Engineer",
       "description": "Voltage is a Bitcoin & Lightning infrastructure platform that makes it easy to deploy and manage Bitcoin and Lightning nodes in the cloud, all non-custodial.",
       "imageSrc": "/images/voltage.png",
       "url": "https://voltage.cloud",
-      "github": "https://github.com/voltagecloud"
-    },
-    {
-      "id": "5",
-      "title": "BitcoinLink",
-      "role": "Full Stack Developer",
-      "description": "Create single use non-custodial bitcoin links redeemable via Lightning using Nostr Wallet Connect",
-      "imageSrc": "/images/bitcoinlink.png",
-      "url": "https://www.bitcoinlink.app",
-      "github": "https://github.com/austinkelsay/bitcoinlink"
-    },
-    {
-      "id": "6",
-      "title": "MakePrisms",
-      "role": "Full Stack Developer",
-      "description": "Worked on Lightning / Nostr integrated payments API and multiple fullstack apps that utilize the API.",
-      "imageSrc": "/images/makeprisms.png",
-      "url": "https://makeprisms.com/",
-      "github": "https://github.com/makeprisms"
-    },
-    {
-      "id": "7",
-      "title": "Stacker News",
-      "role": "Open Source Contributor / Bounty hunter",
-      "description": "Stacker News, the front page of Bitcoin. I worked on the frontend and backend of the project. I Implemented features like Bounties and Nostr crossposting.",
-      "imageSrc": "/images/stackernews.png",
-      "url": "https://stacker.news/",
-      "github": "https://github.com/stackernews/stacker.news"
-    },
-    {
-      "id": "8",
-      "title": "Fold App",
-      "role": "Frontend Developer",
-      "description": "Earn bitcoin back on everything. Buy bitcoin with no fees. I worked on the frontend app. Deployed multiple features and bug fixes to both iOS and Android.",
-      "imageSrc": "/images/foldapp.png",
-      "url": "https://foldapp.com/"
+      "github": "https://github.com/voltagecloud",
+      "createdAt": "2024-05-01"
     },
     {
       "id": "9",
-      "title": "Plebdevs Course 2 - Building a Lightning Wallet Backend",
-      "role": "Designer / Developer / Creator",
-      "description": "Learn Backend from scratch and build a simple Lightning Wallet backend with a server, API, Database, and Lightning node using NodeJS",
-      "imageSrc": "/images/course-2.png",
-      "url": "https://www.udemy.com/course/plebdevs-backend/",
-      "github": "https://github.com/pleb-devs/plebdev-course-2"
+      "title": "BitcoinLink",
+      "role": "Full Stack Developer",
+      "description": "Create single-use non-custodial Bitcoin links redeemable via Lightning using Nostr Wallet Connect.",
+      "imageSrc": "/images/bitcoinlink.png",
+      "url": "https://www.bitcoinlink.app",
+      "github": "https://github.com/austinkelsay/bitcoinlink",
+      "createdAt": "2024-05-03"
     },
     {
       "id": "10",
-      "title": "Plebdevs Course 1 - Building a Lightning Wallet Frontend",
-      "role": "Designer / Developer / Creator",
-      "description": "Write your first code and learn Frontend from scratch to build a simple lightning wallet using HTML/CSS, Javascript, and React",
-      "imageSrc": "/images/course-1.png",
-      "url": "https://www.udemy.com/course/pleblabaustin/",
-      "github": "https://github.com/pleb-devs/plebdev-course-1"
+      "title": "MakePrisms",
+      "role": "Full Stack Developer",
+      "description": "Worked on Lightning / Nostr integrated payments API and multiple full-stack apps that utilize the API.",
+      "imageSrc": "/images/makeprisms.png",
+      "url": "https://makeprisms.com/",
+      "github": "https://github.com/makeprisms",
+      "createdAt": "2023-10-01"
     },
     {
       "id": "11",
+      "title": "Stacker News",
+      "role": "Open Source Contributor / Bounty Hunter",
+      "description": "Stacker News, the front page of Bitcoin. I worked on the frontend and backend of the project. I implemented features like Bounties and Nostr crossposting.",
+      "imageSrc": "/images/stackernews.png",
+      "url": "https://stacker.news/",
+      "github": "https://github.com/stackernews/stacker.news",
+      "createdAt": "2023-10-01"
+    },
+    {
+      "id": "12",
+      "title": "Fold App",
+      "role": "Frontend Developer",
+      "description": "Earn Bitcoin back on everything. Buy Bitcoin with no fees. I worked on the frontend app. Deployed multiple features and bug fixes to both iOS and Android.",
+      "imageSrc": "/images/foldapp.png",
+      "url": "https://foldapp.com/",
+      "createdAt": "2022-08-01"
+    },
+    {
+      "id": "13",
+      "title": "Plebdevs Course 2 - Building a Lightning Wallet Backend",
+      "role": "Designer / Developer / Creator",
+      "description": "Learn backend development from scratch and build a simple Lightning wallet backend with a server, API, database, and Lightning node using Node.js.",
+      "imageSrc": "/images/course-2.png",
+      "url": "https://www.udemy.com/course/plebdevs-backend/",
+      "github": "https://github.com/pleb-devs/plebdev-course-2",
+      "createdAt": "2023-03-03"
+    },
+    {
+      "id": "14",
+      "title": "Plebdevs Course 1 - Building a Lightning Wallet Frontend",
+      "role": "Designer / Developer / Creator",
+      "description": "Write your first code and learn frontend development from scratch to build a simple Lightning wallet using HTML/CSS, JavaScript, and React.",
+      "imageSrc": "/images/course-1.png",
+      "url": "https://www.udemy.com/course/pleblabaustin/",
+      "github": "https://github.com/pleb-devs/plebdev-course-1",
+      "createdAt": "2022-12-20"
+    },
+    {
+      "id": "15",
       "title": "Plebdevs Community",
       "role": "Founder / Organizer",
       "description": "PlebDevs is a Bitcoin/Lightning App developer community focused on education, collaboration, and building hard skills.",
       "imageSrc": "/images/plebdevs.png",
       "url": "https://plebdevs.com/",
-      "github": "https://github.com/pleb-devs"
+      "github": "https://github.com/pleb-devs",
+      "createdAt": "2023-01-01"
     },
     {
-      "id": "12",
+      "id": "16",
       "title": "QuickCashu",
       "role": "Designer / Developer / Contributor",
       "description": "A Lightning / Cashu Ecash wallet designed for fast easy onboarding and use with features like Lightning Address, Nostr Wallet Connect, Nostr Wallet Auth, and prism payments.",
       "imageSrc": "/images/quick-cashu.png",
       "url": "https://quickcashu.com/",
-      "github": "https://github.com/MakePrisms/quick-cashu"
+      "github": "https://github.com/MakePrisms/quick-cashu",
+      "createdAt": "2024-02-01"
     },
     {
-      "id": "13",
+      "id": "17",
       "title": "Pulsar",
       "role": "Open Source Contributor / Frontend Developer",
-      "description": "Pulsar is an encrypted nostr chat app that masks your metadata. It works by sending fixed-length, fixed-frequency messages over the nostr messaging network. I worked with supertestnet on this project, we sumbitted it for HRF's encrypted group chat bounty.",
+      "description": "Pulsar is an encrypted Nostr chat app that masks your metadata. It works by sending fixed-length, fixed-frequency messages over the Nostr messaging network. I worked with supertestnet on this project, we submitted it for HRF's encrypted group chat bounty.",
       "imageSrc": "/images/pulsar.png",
       "url": "https://www.nostrpulsar.chat/",
-      "github": "https://github.com/austinkelsay/pulsar"
+      "github": "https://github.com/austinkelsay/pulsar",
+      "createdAt": "2023-08-21"
     },
     {
-      "id": "14",
+      "id": "18",
       "title": "Forethought AI",
       "role": "AI Implementation Engineer",
       "description": "Implemented AI products for startups and enterprises. Worked on multiple projects that utilized AI and Machine Learning. Built custom models / datasets / pipelines for clients.",
       "imageSrc": "https://forethought.ai/wp-content/uploads/2023/01/Forethought.png",
-      "url": "https://forethought.ai/"
+      "url": "https://forethought.ai/",
+      "createdAt": "2021-01-01"
     },
     {
-      "id": "15",
+      "id": "19",
       "title": "Ln-Inbound",
       "role": "Full Stack Developer",
       "description": "An easy to deploy LND wrapper to sell inbound Lightning channels from your own node. Me and @cmdruid built this for the Bitcoin++ hackathon.",
       "imageSrc": "/images/lninbound.png",
       "url": "https://lninbound.com/",
-      "github": "https://github.com/austinkelsay/ln-inbound"
-    },
-    {
-      "id": "16",
-      "title": "Devstr",
-      "role": "Full Stack Developer",
-      "description": "Devstr is a prototype Github-like platform that uses Nostr for storing and broadcasting redundant repository data. Me and @btcretriever built this for the 2023 Austin SatsX hackathon and won the prize for the nostr category.",
-      "imageSrc": "/images/devstr.png",
-      "url": "https://devstr.vercel.app/",
-      "github": "https://github.com/austinkelsay/devstr"
-    },
-    {
-      "id": "17",
-      "title": "pleb-post",
-      "role": "Full Stack Developer",
-      "description": "A full Stack Lightning Template App for learning and building your First lightning app. built with NextJS, LNBits, and Voltage.cloud This project was built as a part of my presentation 'Building your First Lightning App' at the Bitcoin++ conference.",
-      "imageSrc": "/images/pleb-post.png",
-      "url": "https://replit.com/@btcpp-atx-22/Building-your-First-Lightning-App",
-      "github": "https://github.com/austinkelsay/pleb-post"
-    },
-    {
-      "id": "18",
-      "title": "pleb-node",
-      "role": "Full Stack Developer",
-      "description": "A simple fullstack Lightning App template for learning / development with LND",
-      "imageSrc": "/images/pleb-node.png",
-      "url": "https://github.com/austinkelsay/pleb-node",
-      "github": "https://github.com/austinkelsay/pleb-node"
-    },
-    {
-      "id": "19",
-      "title": "Alby",
-      "role": "Open Source Contributor / Bounty hunter",
-      "description": "Contributed feature that allows users to tip on reddit and recognize lightning adresses on reddit user descriptions as well as extending the LUD-18 payer data capabilities for the wallet/extension.",
-      "imageSrc": "https://framerusercontent.com/images/5gd9JgdX3oFAFQTUDkQ8yEeka0.png",
-      "url": "https://getalby.com/",
-      "github": "https://github.com/getAlby/lightning-browser-extension/commits?author=AustinKelsay"
+      "github": "https://github.com/austinkelsay/ln-inbound",
+      "createdAt": "2023-04-30"
     },
     {
       "id": "20",
-      "title": "Sats4Tips",
+      "title": "Devstr",
       "role": "Full Stack Developer",
-      "description": "Your own personalized space for collecting tips in Bitcoin. I helped build out the frontend and styles with my team at the Bitcoin++ hackathon",
-      "imageSrc": "/images/sats4tips.png",
-      "url": "https://sats4.tips/",
-      "github": "https://github.com/cmdruid/lightning-tip-jar"
+      "description": "Devstr is a prototype GitHub-like platform that uses Nostr for storing and broadcasting redundant repository data. Me and @btcretriever built this for the 2023 Austin SatsX hackathon and won the prize for the Nostr category.",
+      "imageSrc": "/images/devstr.png",
+      "url": "https://devstr.vercel.app/",
+      "github": "https://github.com/austinkelsay/devstr",
+      "createdAt": "2023-03-18"
     },
     {
       "id": "21",
-      "title": "Bloomtech",
-      "role": "Team Lead ",
-      "description": "Bloomtech is a full stack developer bootcamp that teaches the latest in web development. I worked as a Team Lead walking students through the full curriculum, helping them with their projects, blockers, and leading workshops / 1:1's.",
-      "imageSrc": "/images/bloomtech.png",
-      "url": "https://www.bloomtech.com/"
+      "title": "pleb-post",
+      "role": "Full Stack Developer",
+      "description": "A full-stack Lightning template app for learning and building your first Lightning app. Built with Next.js, LNBits, and Voltage.cloud. This project was built as a part of my presentation 'Building your First Lightning App' at the Bitcoin++ conference.",
+      "imageSrc": "/images/pleb-post.png",
+      "url": "https://replit.com/@btcpp-atx-22/Building-your-First-Lightning-App",
+      "github": "https://github.com/austinkelsay/pleb-post",
+      "createdAt": "2023-01-08"
     },
     {
       "id": "22",
+      "title": "pleb-node",
+      "role": "Full Stack Developer",
+      "description": "A simple full-stack Lightning app template for learning and development with LND.",
+      "imageSrc": "/images/pleb-node.png",
+      "url": "https://github.com/austinkelsay/pleb-node",
+      "github": "https://github.com/austinkelsay/pleb-node",
+      "createdAt": "2023-01-08"
+    },
+    {
+      "id": "23",
+      "title": "Alby",
+      "role": "Open Source Contributor / Bounty Hunter",
+      "description": "Contributed feature that allows users to tip on Reddit and recognize lightning addresses on Reddit user descriptions as well as extending the LUD-18 payer data capabilities for the wallet/extension.",
+      "imageSrc": "https://framerusercontent.com/images/5gd9JgdX3oFAFQTUDkQ8yEeka0.png",
+      "url": "https://getalby.com/",
+      "github": "https://github.com/getAlby/lightning-browser-extension/commits?author=AustinKelsay",
+      "createdAt": "2022-06-01"
+    },
+    {
+      "id": "24",
+      "title": "Sats4Tips",
+      "role": "Full Stack Developer",
+      "description": "Your own personalized space for collecting tips in Bitcoin. I helped build out the frontend and styles with my team at the Bitcoin++ hackathon.",
+      "imageSrc": "/images/sats4tips.png",
+      "url": "https://sats4.tips/",
+      "github": "https://github.com/cmdruid/lightning-tip-jar",
+      "createdAt": "2022-05-28"
+    },
+    {
+      "id": "25",
+      "title": "Bloomtech",
+      "role": "Team Lead",
+      "description": "Bloomtech is a full stack developer bootcamp that teaches the latest in web development. I worked as a Team Lead walking students through the full curriculum, helping them with their projects, blockers, and leading workshops / 1:1's.",
+      "imageSrc": "/images/bloomtech.png",
+      "url": "https://www.bloomtech.com/",
+      "createdAt": "2019-01-01"
+    },
+    {
+      "id": "26",
       "title": "Bitcoin Knowledge Bot",
       "role": "Full Stack Developer",
       "description": "The first EVER custom trained and fine-tuned Bitcoin knowledge LLM. Bitcoin Knowledge Bot is powered by GPT-3 and trained on an open source dataset of established Bitcoin knowledge.",
       "imageSrc": "/images/bitcoin-knowledge.png",
       "url": "https://github.com/bitcoin-knowledge/bitcoin-knowledge-bot",
-      "github": "https://github.com/bitcoin-knowledge"
+      "github": "https://github.com/bitcoin-knowledge",
+      "createdAt": "2022-01-01"
     },
     {
-      "id": "23",
+      "id": "27",
       "title": "Reclaim",
       "role": "Full Stack Developer",
       "description": "Reclaim is an open source desktop app for collecting and storing your online information. With Reclaim you can collect your social media data in a few clicks and explore every photo, friend, and interaction from your digital life.",
       "imageSrc": "/images/reclaim.png",
       "url": "https://github.com/ReclaimApp/Reclaim",
-      "github": "https://github.com/ReclaimApp"
+      "github": "https://github.com/ReclaimApp",
+      "createdAt": "2020-06-01"
     },
     {
-      "id": "24",
+      "id": "28",
       "title": "FB-Explorer",
       "role": "Full Stack Developer",
       "description": "fbexplorer is a tool that lets you reclaim, search, and explore all of your Facebook data. This is a single page application built with React and utilizing Redux/hooks for state management. fbexplorer does not collect any user's Facebook data or personal information.",
       "imageSrc": "/images/fb-explorer.jpg",
       "url": "https://fbexplorer.app/",
-      "github": "https://github.com/AustinKelsay/fb-explorer"
+      "github": "https://github.com/AustinKelsay/fb-explorer",
+      "createdAt": "2020-08-28"
     },
     {
-      "id": "25",
+      "id": "29",
       "title": "Austin's Game of Life",
       "role": "Frontend Developer",
       "description": "An implementation of Conway's Game of Life. This is a React single page application with a random cell placement feature, speed settings for the simulation, and the ability to step through each generation with a visual counter.",
       "imageSrc": "/images/game-of-life.jpg",
       "url": "https://austins-game-of-life.vercel.app/",
-      "github": "https://github.com/AustinKelsay/austins-game-of-life"
+      "github": "https://github.com/AustinKelsay/austins-game-of-life",
+      "createdAt": "2020-09-14"
+    },
+    {
+      "id": "30",
+      "title": "snstr",
+      "role": "Creator / Lead Developer",
+      "description": "Secure, lightweight TypeScript library for Nostr. Supports 18 NIPs including NIP-04/44 encryption, NIP-46 remote signing, NIP-47 wallet connect, and NIP-57 zaps. Works on Node.js, browsers, and React Native.",
+      "imageSrc": "https://raw.githubusercontent.com/AustinKelsay/snstr/main/.github/images/snstr.jpg",
+      "url": "https://github.com/austinkelsay/snstr",
+      "github": "https://github.com/austinkelsay/snstr",
+      "createdAt": "2025-03-29"
+    },
+    {
+      "id": "31",
+      "title": "nostr-mcp-server",
+      "role": "Creator / Lead Developer",
+      "description": "MCP server enabling AI models like Claude to interact with Nostr. Provides 17 tools for reading profiles, publishing notes, managing zaps, and identity operations. Built with snstr.",
+      "imageSrc": "https://plebdevs-bucket.nyc3.cdn.digitaloceanspaces.com/videos/random/nostr-mcp-demo.mov",
+      "url": "https://github.com/austinkelsay/nostr-mcp-server",
+      "github": "https://github.com/austinkelsay/nostr-mcp-server",
+      "createdAt": "2025-03-23"
     }
   ],
   "media": [
@@ -264,9 +349,10 @@
       "id": "1",
       "title": "Frostr Workshop - Bitcoin 2025 Vegas",
       "role": "Workshop Presenter",
-      "description": "Austin & Topher's FROSTR workshop. Walking through the basics of the protocol and going through a live demo with the audience (signing a 6/12 nostr multisig note live!)",
+      "description": "Austin & Topher's FROSTR workshop. Walking through the basics of the protocol and going through a live demo with the audience (signing a 6/12 Nostr multisig note live!)",
       "imageSrc": "https://plebdevs-bucket.nyc3.cdn.digitaloceanspaces.com/images/frostr-vegas-workshop.png",
-      "url": "https://www.youtube.com/watch?v=J1WG_InBsHg"
+      "url": "https://www.youtube.com/watch?v=J1WG_InBsHg",
+      "createdAt": "2025-05-28"
     },
     {
       "id": "2",
@@ -274,7 +360,8 @@
       "role": "Featured Project / Developer",
       "description": "Born out of a hackathon at TABCONF 2024, Frostr may have just solved Nostr's most pernicious issue: the inability to reset your password if your private key gets compromised.",
       "imageSrc": "https://plebdevs-bucket.nyc3.cdn.digitaloceanspaces.com/images/frostr-bitcoin-magazine.png",
-      "url": "https://bitcoinmagazine.com/business/no-password-reset-how-frostr-saves-your-nostr-identity"
+      "url": "https://bitcoinmagazine.com/business/no-password-reset-how-frostr-saves-your-nostr-identity",
+      "createdAt": "2024-11-15"
     },
     {
       "id": "3",
@@ -282,7 +369,8 @@
       "role": "Podcast Guest",
       "description": "A deep dive into FROSTR with myself and @cmd discussing how we're solving key recovery in the Nostr ecosystem and the technical challenges involved.",
       "imageSrc": "https://i.scdn.co/image/ab6765630000ba8ac6d48028ef9d5ba0483dc08a",
-      "url": "https://fountain.fm/episode/gWYJ5PgxwzdnBjuNuzyc"
+      "url": "https://fountain.fm/episode/gWYJ5PgxwzdnBjuNuzyc",
+      "createdAt": "2024-11-20"
     },
     {
       "id": "4",
@@ -290,7 +378,8 @@
       "role": "Interview Guest",
       "description": "In-depth interview about PlebDevs platform and Frostr, discussing the paradigm shift that Nostr represents and the future of decentralized communication.",
       "imageSrc": "https://i.ytimg.com/vi/ebCGWjA29VE/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=ebCGWjA29VE"
+      "url": "https://www.youtube.com/watch?v=ebCGWjA29VE",
+      "createdAt": "2024-12-10"
     },
     {
       "id": "5",
@@ -298,7 +387,8 @@
       "role": "Speaker",
       "description": "Featured on Bitcoin Magazine's Space discussing Frostr, a project addressing critical challenges in the Nostr ecosystem. Speaking alongside JuanGalt and Topher.",
       "imageSrc": "/images/frostr-bitcoin-magazine-space.png",
-      "url": "https://creators.spotify.com/pod/show/bitcoin-magazine-po/episodes/FROSTR-Explained-A-Gamechanger-for-NOSTR-Identity-Management--The-Juan-Galt-Show-e30op20"
+      "url": "https://creators.spotify.com/pod/show/bitcoin-magazine-po/episodes/FROSTR-Explained-A-Gamechanger-for-NOSTR-Identity-Management--The-Juan-Galt-Show-e30op20",
+      "createdAt": "2024-11-18"
     },
     {
       "id": "6",
@@ -306,23 +396,26 @@
       "role": "Presenter",
       "description": "Live platform launch and presentation at the Bitcoin Commons in Austin, Texas. Introducing the Nostr-based education and community platform for Bitcoin developers.",
       "imageSrc": "/images/plebdevs-launch.png",
-      "url": "https://www.youtube.com/watch?v=j7Gqr9tuWxE"
+      "url": "https://www.youtube.com/watch?v=j7Gqr9tuWxE",
+      "createdAt": "2024-09-15"
     },
     {
       "id": "7",
-      "title": "Plebdevs Youtube",
+      "title": "PlebDevs YouTube",
       "role": "Creator",
-      "description": "100+ hours of Bitcoin technical content",
+      "description": "100+ hours of Bitcoin technical content.",
       "imageSrc": "/images/youtube.png",
-      "url": "https://www.youtube.com/channel/UCRPvdcPYyWAXF7cOjW_dJCA"
+      "url": "https://www.youtube.com/channel/UCRPvdcPYyWAXF7cOjW_dJCA",
+      "createdAt": "2023-01-01"
     },
     {
       "id": "8",
-      "title": "Plebdevs Twitch",
+      "title": "PlebDevs Twitch",
       "role": "Creator",
-      "description": "Live coding / Q&A / Workshops",
+      "description": "Live coding, Q&A, and workshops.",
       "imageSrc": "/images/twitch.png",
-      "url": "https://www.twitch.tv/plebdevs"
+      "url": "https://www.twitch.tv/plebdevs",
+      "createdAt": "2023-01-01"
     },
     {
       "id": "9",
@@ -330,7 +423,8 @@
       "role": "Speaker",
       "description": "From EDAS, delivering talk: The Power of Lightning",
       "imageSrc": "/images/edas.png",
-      "url": "https://edas.live"
+      "url": "https://edas.live",
+      "createdAt": "2024-03-15"
     },
     {
       "id": "10",
@@ -338,7 +432,8 @@
       "role": "Speaker",
       "description": "From BitBlockBoom Workshop Day 2024 - 'Building Your First Lightning App'",
       "imageSrc": "https://pbs.twimg.com/media/GKRal1UbUAAqc8k?format=jpg&name=medium",
-      "url": "https://twitter.com/bitblockboom/status/1775651539333591292"
+      "url": "https://twitter.com/bitblockboom/status/1775651539333591292",
+      "createdAt": "2024-04-12"
     },
     {
       "id": "11",
@@ -346,7 +441,8 @@
       "role": "Speaker",
       "description": "From Pleblab Startup Day 2023 - 'Inspiring Developers and Builders of Tomorrow'",
       "imageSrc": "/images/startup-day.png",
-      "url": "https://www.meetup.com/pleb-lab/events/294438897/"
+      "url": "https://www.meetup.com/pleb-lab/events/294438897/",
+      "createdAt": "2023-07-22"
     },
     {
       "id": "12",
@@ -354,15 +450,17 @@
       "role": "Speaker",
       "description": "From Bitcoin++ Workshop Day - 'Building Your First Lightning App'",
       "imageSrc": "/images/bitcoin++.jpg",
-      "url": "https://btcplusplus.dev/static/atx23/"
+      "url": "https://btcplusplus.dev/static/atx23/",
+      "createdAt": "2023-04-28"
     },
     {
       "id": "13",
       "title": "San Antonio Bitcoin Meetup",
       "role": "Speaker",
-      "description": "Pleb Say #11 Fireside Chat wth Austin & Jana",
+      "description": "Pleb Say #11 Fireside Chat with Austin & Jana",
       "imageSrc": "/images/pleb-say.jpg",
-      "url": "https://www.eventbrite.com/e/pleb-say-11-tickets-524187728607?aff=eand"
+      "url": "https://www.eventbrite.com/e/pleb-say-11-tickets-524187728607?aff=eand",
+      "createdAt": "2022-12-15"
     },
     {
       "id": "14",
@@ -370,7 +468,8 @@
       "role": "Speaker",
       "description": "Grassroots Bitcoin 2022 - Building a Bitcoin City w Austin, Tristan, Kyle, and Car",
       "imageSrc": "/images/bitcoin-park.jpg",
-      "url": "https://podcasts.apple.com/us/podcast/grassroots-bitcoin-2022-building-a-bitcoin-city/id1646515985?i=1000580522450"
+      "url": "https://podcasts.apple.com/us/podcast/grassroots-bitcoin-2022-building-a-bitcoin-city/id1646515985?i=1000580522450",
+      "createdAt": "2022-09-10"
     },
     {
       "id": "15",
@@ -378,7 +477,8 @@
       "role": "Speaker",
       "description": "The First ever Plebdev Workshop",
       "imageSrc": "/images/plebdev-workshop.png",
-      "url": "https://www.youtube.com/watch?v=Th2_8pL01sU"
+      "url": "https://www.youtube.com/watch?v=Th2_8pL01sU",
+      "createdAt": "2022-10-15"
     },
     {
       "id": "16",
@@ -386,90 +486,110 @@
       "role": "Podcast Guest",
       "description": "The Journey to Becoming a Bitcoin Developer w/ Austin Kelsay",
       "imageSrc": "https://i.ytimg.com/vi/zc3h6TWmXQI/maxresdefault.jpg?v=6277219a",
-      "url": "https://www.youtube.com/watch?v=zc3h6TWmXQI"
+      "url": "https://www.youtube.com/watch?v=zc3h6TWmXQI",
+      "createdAt": "2022-05-09"
     }
   ],
   "services": [
     {
       "id": "1",
-      "title": "Web / App Developer",
-      "description": "I have worked across multiple teams building and maintaining web applications. I have experience with JavaScript, Node, Python, and many web frameworks. I have also worked on multiple crossplatform mobile applications."
+      "title": "Full Stack Development",
+      "description": "Frontend to backend, mobile to web—I ship production code. React, Next.js, Node.js, TypeScript, React Native. Startup MVPs, enterprise systems, everything in between."
     },
     {
       "id": "2",
-      "title": "Bitcoin / Lightning Development",
-      "description": "I have been working with Bitcoin and Lightning for the past 4 years doing everything from app development to light protocol development. I have built multiple projects and have a deep understanding of the technologies."
+      "title": "Bitcoin & Lightning",
+      "description": "4+ years deep in the Bitcoin stack. Lightning wallets, payment APIs, node infrastructure—I've built it all. Now leading enterprise implementations at Voltage, bringing Bitcoin to businesses."
     },
     {
       "id": "3",
-      "title": "Developer Education",
-      "description": "I have been helping teach people how to code and build Bitcoin/Lightning/Nostr apps for 3+ years. I run the plebdevs community, I've built multiple courses, I do live workshops, 1:1 tutoring, and more."
+      "title": "Nostr Development",
+      "description": "In the Nostr ecosystem since the early days. Shipped clients, platforms, and libraries like snstr. Zaps, NWC, NIP-46, remote signing—I know the protocol inside and out."
     },
     {
       "id": "4",
-      "title": "Nostr Development",
-      "description": "I have been working with Nostr for the past 2 years. I have built multiple nostr projects from simple clients to fully integrated nostr platforms. I also have extensive experience working with Zaps and NWC (nostr wallet connect) within the nostr protocol."
+      "title": "Protocol & Cryptography",
+      "description": "Co-created Frostr—FROST threshold signatures for Nostr key recovery. I enjoy the deep end: cryptographic primitives, distributed systems, protocol-level engineering."
+    },
+    {
+      "id": "5",
+      "title": "Developer Education",
+      "description": "3+ years teaching devs to build on Bitcoin, Lightning, and Nostr. 1,000+ paid students, dozens of conference workshops, daily community support through Plebdevs. I make hard tech click."
+    },
+    {
+      "id": "6",
+      "title": "Enterprise Implementation",
+      "description": "Head of Implementation at Voltage. I help companies integrate Bitcoin and Lightning—from technical architecture to proof-of-concepts to production. Bridging bleeding-edge tech with business reality."
     }
   ],
-  "aboutpara": "<p class='mb-4'>I started my programming journey <span class='text-blue-400'>self-taught</span> with a passion and curiosity for <span class='font-semibold text-orange-400'>Bitcoin</span> and a desire to build applications that leverage the technology.</p><p class='mb-4'>I joined Lambda School (Now Bloomtech) Full Stack Developer Bootcamp in 2018. After completing my student status I started working for the bootcamp as a Team Lead walking students through the full curriculum. This is when I discovered my <span class='text-green-400'>love for teaching and developer education</span>.</p><p class='mb-4'>I moved to <span class='font-semibold'>Austin, TX</span> to accelerate my journey into Bitcoin development. Here I have become a member of PlebLab which has helped me launch <span class='font-semibold text-orange-400'>Plebdevs</span>, a bitcoin app developer education platform.</p><p class='mb-4'>In my career I have worked for multiple companies and startups as a developer touching everything from traditional web development, Backend API development, mobile development, <span class='font-semibold text-orange-400'>Bitcoin</span> / <span class='text-yellow-400'>lightning</span> / <span class='text-blue-400'>nostr</span>, and AI/ML development.</p><p class='font-medium italic'>I am passionate about building and teaching and I am always looking for new opportunities to do so.</p>",
+  "aboutpara": "<p class='mb-4'>I started my programming journey <span class='font-semibold'>self-taught</span>, driven by a passion and curiosity for <span class='font-semibold text-orange-400'>Bitcoin</span> and a desire to build applications that leverage the technology.</p><p class='mb-4'>I joined Lambda School (now Bloomtech) Full Stack Developer Bootcamp in 2018. After graduating, I stayed on as a Team Lead, guiding students through the full curriculum. That's when I discovered my <span class='font-semibold'>love for teaching and developer education</span>.</p><p class='mb-4'>I moved to <span class='font-semibold'>Austin, TX</span> to accelerate my journey into Bitcoin development. I joined PlebLab, where I launched <span class='font-semibold text-orange-400'>Plebdevs</span>—a Bitcoin app developer education platform.</p><p class='mb-4'>Throughout my career, I've worked for multiple companies and startups as a developer, spanning traditional web development, backend APIs, mobile apps, <span class='font-semibold text-orange-400'>Bitcoin</span> / <span class='font-semibold text-blue-400'>Lightning</span> / <span class='font-semibold text-purple-400'>Nostr</span>, and AI.</p><p class='font-medium italic'>I'm passionate about building and teaching—always looking for new opportunities to do both.</p>",
   "resume": {
-    "tagline": "👋  I'm a software Engineer",
-    "description": "I started my programming journey self-taught with a passion and curiosity for Bitcoin and a desire to build applications that leverage the technology. I joined Lambda School (Now Bloomtech) Full Stack Developer Bootcamp in 2018. After completing my student status I started working for the bootcamp as a Team Lead walking students through the full curriculum. This is when I discovered my love for teaching and developer education. I moved to Austin, TX to accelerate my journey into Bitcoin development. Here I have become a member of PlebLab which has helped me launch Plebdevs, a bitcoin app developer education platform. In my career I have worked for multiple companies and startups as a developer touching everything from traditional web development, Backend API development, mobile development, Bitcoin/lightning/nostr, and AI/ML development. I am passionate about building and teaching and I am always looking for new opportunities to do so.",
-    "experiences": [
+    "tagline": "👋 I'm a Software Engineer",
+    "description": "I started my programming journey self-taught, driven by a passion and curiosity for Bitcoin and a desire to build applications that leverage the technology. I joined Lambda School (now Bloomtech) Full Stack Developer Bootcamp in 2018. After graduating, I stayed on as a Team Lead, guiding students through the full curriculum. That's when I discovered my love for teaching and developer education. I moved to Austin, TX to accelerate my journey into Bitcoin development. I joined PlebLab, where I launched Plebdevs—a Bitcoin app developer education platform. Throughout my career, I've worked for multiple companies and startups as a developer, spanning traditional web development, backend APIs, mobile apps, Bitcoin/Lightning/Nostr, and AI. I'm passionate about building and teaching—always looking for new opportunities to do both.",
+    "careerExperiences": [
+      {
+        "id": "1",
+        "dates": "May 2024 - Present",
+        "type": "Developer Relations Engineer → Head of Implementation",
+        "position": "Voltage",
+        "bullets": "Started as Developer Relations Engineer, creating developer education content, documentation, and examples to make Lightning development more accessible. Represented Voltage at industry conferences and events to foster adoption of Lightning technology. Promoted to Head of Implementation after six months, now leading enterprise solutions—designing and implementing custom Lightning integrations for clients, helping them navigate technical requirements and integrate Bitcoin payments into their existing systems. Provide technical sales support by creating proof-of-concepts, demonstrating integrations, and solving complex implementation challenges."
+      },
+      {
+        "id": "2",
+        "dates": "October 2023 - Present",
+        "type": "Contractor",
+        "position": "StackerNews",
+        "bullets": "Started as an open source contributor and transitioned into contract work. Built the Stacker News bounties feature. Built Stacker News Nostr crossposting. Contributed to the Stacker News development Docker environment."
+      },
+      {
+        "id": "3",
+        "dates": "October 2023 - March 2024",
+        "type": "Contractor",
+        "position": "Prism",
+        "bullets": "Built multiple example apps implementing non-custodial zaps with NWC. Developed a Lightning/NWC-based payments API. Built Telegram and Discord Lightning zap bots. Created QuickCashu, a non-custodial Lightning/Cashu wallet."
+      },
+      {
+        "id": "4",
+        "dates": "August 2022 - October 2023",
+        "type": "Frontend Engineer",
+        "position": "Fold App",
+        "bullets": "Developed the Fold App frontend using React Native, deploying to iOS and Android. Worked on internal projects including an analytics pipeline for marketing, BIP-21 unified QRs for Bitcoin, and a prototype for Lightning withdrawals and rewards. Represented the company at multiple conferences and Bitcoin events."
+      }
+    ],
+    "personalExperiences": [
       {
         "id": "1",
         "dates": "March 2024 - Present",
         "type": "Co-Creator / Lead Developer",
         "position": "Frostr",
-        "bullets": "Co-created Frostr, a revolutionary key recovery solution for Nostr, solving one of the protocol's biggest usability challenges. Launched at TABCONF 2024 hackathon, earning widespread recognition including features in Bitcoin Magazine. Helped implement FROST (Flexible Round-Optimized Schnorr Threshold signatures) for secure distributed key management."
+        "bullets": "Co-created Frostr, a key recovery solution for Nostr that solves one of the protocol's biggest usability challenges. Launched at TABCONF 2024 hackathon, earning recognition including a Bitcoin Magazine feature. Implemented FROST (Flexible Round-Optimized Schnorr Threshold signatures) for secure distributed key management."
       },
       {
         "id": "2",
         "dates": "January 2023 - Present",
         "type": "Founder",
         "position": "Plebdevs",
-        "bullets": "Launched the Plebdevs platform (plebdevs dot com) in 2024, a Nostr-based content and community hub with Lightning integration. Founded PlebDevs as a Bitcoin/Lightning App developer community focused on education, collaboration, and building hard skills. Created two beginner developer courses with 1000+ paid students. Developed and published dozens of beginner technical workshops on YouTube/Twitch. Manage the Plebdevs community & content across discord/twitch/youtube/nostr. Work with students 1:1 to help them reach technical or career goals. Created/presented workshops at TABconf, Bitcoin++, BitBlockBoom, and beyond."
-      },
-      {
-        "id": "3",
-        "dates": "May 2024 - Present",
-        "type": "Sales Engineer / Implementation Engineer",
-        "position": "Voltage",
-        "bullets": "I help developers leverage Bitcoin and Lightning infrastructure using Voltage, whether they be individuals, startups, or enterprises. Created developer education content, documentation, and examples to make Lightning development more accessible. Designed and implemented custom Lightning solutions for enterprise clients, helping them navigate technical requirements and integrate Bitcoin payments into their existing systems. Provided technical sales support by creating proof-of-concepts, demonstrating integrations, and solving complex implementation challenges. Represented Voltage at industry conferences and events to foster adoption of Lightning technology."
-      },
-      {
-        "id": "4",
-        "dates": "October 2023 - Present",
-        "type": "Contractor",
-        "position": "StackerNews",
-        "bullets": "Started as an open source contributor and worked my way into some contracting. Built stackernews bounties feature. Built stackernews Nostr Crossposting. Added to and worked on the stackernews dev docker env"
-      },
-      {
-        "id": "5",
-        "dates": "October 2023 - March 2024",
-        "type": "Contractor",
-        "position": "Prism",
-        "bullets": "Built multiple example apps implementing non-custodial zaps with NWC. Worked on Lightning/NWC based payments API. Worked on Telegram/Discord Lightning zap bots. Created \"QuickCashu\" a non-custodial Lightning/Cashu wallet"
-      },
-      {
-        "id": "6",
-        "dates": "August 2022 - October 2023",
-        "type": "Frontend Engineer",
-        "position": "Fold App",
-        "bullets": "Developing the Frontend Fold App using React Native and deploying to IOS/Android. Working on several internal projects such as developing an analytics pipeline for marketing, implementing bip21 unified qr's for Bitcoin, building prototype for lightning withdraws/rewards. Representing the company publicly at multiple conferences & bitcoin events"
+        "bullets": "Launched the Plebdevs platform (plebdevs.com) in 2024, a Nostr-based content and community hub with Lightning integration. Founded Plebdevs as a Bitcoin/Lightning developer community focused on education, collaboration, and building hard skills. Created two beginner developer courses with 1,000+ paid students. Developed and published dozens of beginner technical workshops on YouTube and Twitch. Manage the Plebdevs community and content across Discord, Twitch, YouTube, and Nostr. Work with students 1:1 to help them reach technical and career goals. Created and presented workshops at TABconf, Bitcoin++, BitBlockBoom, and beyond."
       }
     ],
     "education": {
       "universityName": "Base58",
-      "universityDate": "April 2022 - May 2020",
+      "universityDate": "March 2022 - May 2022",
       "universityPara": "Bitcoin transaction/protocol bootcamp"
     },
-    "languages": ["Javascript", "HTML5", "CSS", "Python", "Rust", "TypeScript"],
+    "languages": [
+      "JavaScript",
+      "HTML5",
+      "CSS",
+      "Python",
+      "Rust",
+      "TypeScript"
+    ],
     "frameworks": [
       "React",
       "Typescript",
-      "NodeJs",
-      "NextJs",
+      "Node.js",
+      "Next.js",
       "React Native",
       "Svelte",
       "TailwindCSS"

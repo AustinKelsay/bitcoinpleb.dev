@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useMemo } from "react";
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
@@ -12,6 +12,20 @@ import Link from "next/link";
 
 // Local Data
 import data from "../data/portfolio.json";
+
+// Sort projects by createdAt date (newest first)
+const sortedProjects = [...data.projects].sort((a, b) => {
+  if (!a.createdAt) return 1;
+  if (!b.createdAt) return -1;
+  return new Date(b.createdAt) - new Date(a.createdAt);
+});
+
+// Sort media by createdAt date (newest first)
+const sortedMedia = [...data.media].sort((a, b) => {
+  if (!a.createdAt) return 1;
+  if (!b.createdAt) return -1;
+  return new Date(b.createdAt) - new Date(a.createdAt);
+});
 
 export default function Home() {
   // state
@@ -87,30 +101,30 @@ export default function Home() {
           <div className="mt-5">
             <h1
               ref={textOne}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
+              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 font-bold w-4/5 mob:w-full laptop:w-4/5"
             >
               {data.headerTaglineOne}
             </h1>
             {/* <h1
               ref={textTwo}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 font-bold w-full laptop:w-4/5"
             >
               {data.headerTaglineTwo}
             </h1> */}
             <h1
               ref={textThree}
-              className="text-xl tablet:text-2xl laptop:text-2xl laptopl:text-4xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-xl tablet:text-2xl laptop:text-2xl laptopl:text-4xl p-1 tablet:p-2 font-bold w-full laptop:w-4/5"
             >
               {data.headerTaglineThree}
             </h1>
             <h1
               ref={textFour}
-              className="text-xl tablet:text-2xl laptop:text-2xl laptopl:text-4xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-xl tablet:text-2xl laptop:text-2xl laptopl:text-4xl p-1 tablet:p-2 font-bold w-full laptop:w-4/5"
             >
               {data.headerTaglineFour}
             </h1>
             <button
-              className="lud16"
+              className="mt-4 py-2 px-4 tablet:py-3 tablet:px-5 text-sm tablet:text-base text-white font-medium rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95"
               onClick={() => copyToClipboard(data.lud16)}
             >
               ⚡ {data.lud16}
@@ -121,11 +135,11 @@ export default function Home() {
 
           <Socials className="mt-2 laptop:mt-5" />
         </div>
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Work.</h1>
+        <div className="mt-10 laptop:mt-32 p-2 laptop:p-0" ref={workRef}>
+          <h1 className="text-2xl font-bold">Work.</h1>
 
           <div className="mt-5 laptop:mt-10 grid gap-4 laptopl:grid-cols-2 desktop:grid-cols-2 laptop:grid-cols-2 tablet:grid-cols-2 mob:grid-cols-1">
-            {data.projects.slice(0, visibleProjects).map((project) => (
+            {sortedProjects.slice(0, visibleProjects).map((project) => (
               <WorkCard
                 key={project.id}
                 img={project.imageSrc}
@@ -133,6 +147,7 @@ export default function Home() {
                 role={project.role}
                 description={project.description}
                 github={project.github || null}
+                date={project.createdAt}
                 onClick={() => window.open(project.url, "_blank")}
               />
             ))}
@@ -140,11 +155,10 @@ export default function Home() {
         </div>
 
         <div className="mt-5 w-full flex justify-center">
-          {visibleProjects < data.projects.length && (
+          {visibleProjects < sortedProjects.length && (
             <button
-              onClick={() => setVisibleProjects(prevVisibleProjects => Math.min(prevVisibleProjects + 6, data.projects.length))}
-              style={{ backgroundImage: 'radial-gradient(at top right, #51afc8 0%, #384acb 100%)' }}
-              className="py-3 px-5 text-white rounded hover:bg-blue-700 transition duration-300 hover:opacity-80"
+              onClick={() => setVisibleProjects(prevVisibleProjects => Math.min(prevVisibleProjects + 6, sortedProjects.length))}
+              className="py-3 px-6 text-white font-medium rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105"
             >
               Show More
             </button>
@@ -152,17 +166,18 @@ export default function Home() {
           )}
         </div>
 
-        <div className="mt-28 laptop:mt-30 p-2 laptop:p-0 mob:mt-10">
-          <h1 className="text-2xl text-bold">Media.</h1>
+        <div className="mt-28 laptop:mt-32 p-2 laptop:p-0 mob:mt-10">
+          <h1 className="text-2xl font-bold">Media.</h1>
 
           <div className="mt-5 laptop:mt-10 grid gap-4 laptopl:grid-cols-2 desktop:grid-cols-2 laptop:grid-cols-2 tablet:grid-cols-2 mob:grid-cols-1">
-            {data.media.slice(0, visibleMedia).map((media) => (
+            {sortedMedia.slice(0, visibleMedia).map((media) => (
               <MediaCard
                 key={media.id}
                 img={media.imageSrc}
                 name={media.title}
                 role={media.role}
                 description={media.description}
+                date={media.createdAt}
                 onClick={() => window.open(media.url, "_blank")}
               />
             ))}
@@ -170,11 +185,10 @@ export default function Home() {
         </div>
 
         <div className="mt-5 w-full flex justify-center">
-          {visibleMedia < data.media.length && (
+          {visibleMedia < sortedMedia.length && (
             <button
-              onClick={() => setVisibleMedia(prevVisibleMedia => Math.min(prevVisibleMedia + 6, data.media.length))}
-              style={{ backgroundImage: 'radial-gradient(at top right, #51afc8 0%, #384acb 100%)' }}
-              className="py-3 px-5 text-white rounded hover:bg-blue-700 transition duration-300 hover:opacity-80"
+              onClick={() => setVisibleMedia(prevVisibleMedia => Math.min(prevVisibleMedia + 6, sortedMedia.length))}
+              className="py-3 px-6 text-white font-medium rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105"
             >
               Show More
             </button>
@@ -183,8 +197,8 @@ export default function Home() {
         </div>
 
         <div className="mt-20 laptop:mt-40 p-2 laptop:p-0">
-          <h1 className="text-3xl font-bold text-center mb-10">
-            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Skills</span>
+          <h1 className="text-2xl font-bold text-center mb-10">
+            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Skills.</span>
           </h1>
           <div className="mt-10 grid grid-cols-1 laptop:grid-cols-2 gap-8 px-4 laptop:px-0">
             {data.services.map((service, index) => (
@@ -205,7 +219,7 @@ export default function Home() {
           </div>
         )}
         <div className="mt-10 bg-gray-900 mob:bg-gray-800 laptop:mt-40 p-4 pt-8 rounded-lg laptop:p-6" ref={aboutRef}>
-          <h1 className="pt-4 tablet:m-10 text-2xl text-bold">About.</h1>
+          <h1 className="pt-4 tablet:m-10 text-2xl font-bold">About.</h1>
           <div
             className="pb-4 tablet:m-10 mt-2 text-xl laptop:text-2xl w-full laptop:w-4/5 space-y-4"
             dangerouslySetInnerHTML={{ __html: data.aboutpara }}
