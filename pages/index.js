@@ -118,7 +118,7 @@ export default function Home() {
               {data.headerTaglineFour}
             </h1>
             <button
-              className="mt-6 ml-2 mob:mt-8 py-3 px-5 text-sm mob:text-base tablet:text-lg text-white font-medium rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg"
+              className="mt-6 ml-2 mob:mt-8 py-2 px-3 mob:py-2.5 mob:px-4 tablet:py-3 tablet:px-5 text-xs mob:text-sm tablet:text-lg text-white font-medium rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg"
               onClick={() => copyToClipboard(data.lud16)}
             >
               ⚡ {data.lud16}
