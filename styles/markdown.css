@@ -28,7 +28,7 @@
 }
 
 .markdown-class a {
-  @apply opacity-80 font-bold text-base underline transition-all duration-200 ease-out hover:opacity-100;
+  @apply opacity-80 font-bold text-base underline transition-all duration-300 ease-out hover:opacity-100;
 }
 
 .markdown-class p {
@@ -66,11 +66,11 @@
 /* BlockQuote */
 
 .markdown-class blockquote {
-  @apply p-5 border-l-8 rounded-lg shadow-lg  text-sm bg-slate-200 text-black;
+  @apply p-5 border-l-4 border-blue-500 rounded-lg text-sm bg-gray-800/50 text-gray-200;
 }
 
 .markdown-class blockquote p {
-  @apply text-black text-sm;
+  @apply text-gray-200 text-sm;
 }
 
 
@@ -78,5 +78,5 @@
 /* Image */
 
 .markdown-class img {
-  @apply max-h-96 w-full my-5 object-cover rounded-lg shadow-lg;
+  @apply max-h-96 w-full my-5 object-cover rounded-lg shadow-md;
 }

@@ -68,7 +68,7 @@ const WorkCard = ({ img, name, role, description, onClick, github, date }) => {
             />
           )}
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-70 transition-opacity duration-300 rounded-lg"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-40 transition-opacity duration-300 rounded-lg"></div>
         {formattedDate && (
           <div className="absolute top-2 right-2 px-2 py-1 bg-black/70 text-white text-xs rounded">
             {formattedDate}
@@ -91,7 +91,7 @@ const WorkCard = ({ img, name, role, description, onClick, github, date }) => {
               e.stopPropagation();
               onClick();
             }}
-            className="flex items-center px-3 py-1.5 laptop:px-4 laptop:py-2 text-xs laptop:text-sm text-blue-400 hover:text-white bg-blue-500/10 hover:bg-blue-500/20 rounded transition-colors duration-200 cursor-pointer"
+            className="flex items-center px-3 py-1.5 laptop:px-4 laptop:py-2 text-xs laptop:text-sm text-blue-400 hover:text-white bg-blue-500/10 hover:bg-blue-500/20 rounded transition-colors duration-300 cursor-pointer"
             title="Visit Website"
           >
             <FaGlobe size={12} className="mr-1.5 laptop:size-[16px]" />
@@ -103,7 +103,7 @@ const WorkCard = ({ img, name, role, description, onClick, github, date }) => {
                 e.stopPropagation();
                 window.open(github, '_blank');
               }}
-              className="flex items-center px-3 py-1.5 laptop:px-4 laptop:py-2 text-xs laptop:text-sm text-gray-300 hover:text-white bg-gray-700/40 hover:bg-gray-700/70 rounded transition-colors duration-200 cursor-pointer"
+              className="flex items-center px-3 py-1.5 laptop:px-4 laptop:py-2 text-xs laptop:text-sm text-gray-300 hover:text-white bg-gray-700/40 hover:bg-gray-700/70 rounded transition-colors duration-300 cursor-pointer"
               title="View on GitHub"
             >
               <FaGithub size={12} className="mr-1.5 laptop:size-[16px]" />

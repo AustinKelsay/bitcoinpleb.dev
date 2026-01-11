@@ -1,4 +1,4 @@
-import { useRef, useState, useMemo } from "react";
+import { useRef, useState } from "react";
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
@@ -78,8 +78,8 @@ export default function Home() {
   useIsomorphicLayoutEffect(() => {
     stagger(
       [textOne.current, textTwo.current, textThree.current, textFour.current],
-      { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
-      { y: 0, x: 0, transform: "scale(1)" }
+      { y: 30 },
+      { y: 0 }
     );
   }, []);
 
@@ -97,34 +97,28 @@ export default function Home() {
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
         />
-        <div className="laptop:mt-20 mt-10 mob:mx-4">
-          <div className="mt-5">
+        <div className="laptop:mt-20 mt-10 mob:px-6 px-4">
+          <div className="mt-5 mob:text-center tablet:text-left">
             <h1
               ref={textOne}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 font-bold w-4/5 mob:w-full laptop:w-4/5"
+              className="text-4xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 font-bold w-full laptop:w-4/5"
             >
               {data.headerTaglineOne}
             </h1>
-            {/* <h1
-              ref={textTwo}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 font-bold w-full laptop:w-4/5"
-            >
-              {data.headerTaglineTwo}
-            </h1> */}
             <h1
               ref={textThree}
-              className="text-xl tablet:text-2xl laptop:text-2xl laptopl:text-4xl p-1 tablet:p-2 font-bold w-full laptop:w-4/5"
+              className="text-lg tablet:text-2xl laptop:text-2xl laptopl:text-4xl p-1 tablet:p-2 font-bold w-full laptop:w-4/5 mt-2 mob:mt-4"
             >
               {data.headerTaglineThree}
             </h1>
             <h1
               ref={textFour}
-              className="text-xl tablet:text-2xl laptop:text-2xl laptopl:text-4xl p-1 tablet:p-2 font-bold w-full laptop:w-4/5"
+              className="text-lg tablet:text-2xl laptop:text-2xl laptopl:text-4xl p-1 tablet:p-2 font-bold w-full laptop:w-4/5 mt-1 mob:mt-3"
             >
               {data.headerTaglineFour}
             </h1>
             <button
-              className="mt-4 py-2 px-4 tablet:py-3 tablet:px-5 text-sm tablet:text-base text-white font-medium rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95"
+              className="mt-6 mob:mt-8 py-3 px-5 text-sm tablet:text-base text-white font-medium rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg"
               onClick={() => copyToClipboard(data.lud16)}
             >
               ⚡ {data.lud16}
@@ -133,10 +127,10 @@ export default function Home() {
             {showSuccess && <div className="copied-notification">Payment successful!</div>}
           </div>
 
-          <Socials className="mt-2 laptop:mt-5" />
+          <Socials className="mt-4 mob:mt-6 laptop:mt-5 mob:justify-center tablet:justify-start" />
         </div>
         <div className="mt-10 laptop:mt-32 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl font-bold">Work.</h1>
+          <h1 className="text-2xl font-bold">Work</h1>
 
           <div className="mt-5 laptop:mt-10 grid gap-4 laptopl:grid-cols-2 desktop:grid-cols-2 laptop:grid-cols-2 tablet:grid-cols-2 mob:grid-cols-1">
             {sortedProjects.slice(0, visibleProjects).map((project) => (
@@ -158,7 +152,7 @@ export default function Home() {
           {visibleProjects < sortedProjects.length && (
             <button
               onClick={() => setVisibleProjects(prevVisibleProjects => Math.min(prevVisibleProjects + 6, sortedProjects.length))}
-              className="py-3 px-6 text-white font-medium rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105"
+              className="py-2 px-4 text-sm text-white font-medium rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg"
             >
               Show More
             </button>
@@ -167,7 +161,7 @@ export default function Home() {
         </div>
 
         <div className="mt-28 laptop:mt-32 p-2 laptop:p-0 mob:mt-10">
-          <h1 className="text-2xl font-bold">Media.</h1>
+          <h1 className="text-2xl font-bold">Media</h1>
 
           <div className="mt-5 laptop:mt-10 grid gap-4 laptopl:grid-cols-2 desktop:grid-cols-2 laptop:grid-cols-2 tablet:grid-cols-2 mob:grid-cols-1">
             {sortedMedia.slice(0, visibleMedia).map((media) => (
@@ -188,7 +182,7 @@ export default function Home() {
           {visibleMedia < sortedMedia.length && (
             <button
               onClick={() => setVisibleMedia(prevVisibleMedia => Math.min(prevVisibleMedia + 6, sortedMedia.length))}
-              className="py-3 px-6 text-white font-medium rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105"
+              className="py-2 px-4 text-sm text-white font-medium rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg"
             >
               Show More
             </button>
@@ -197,10 +191,8 @@ export default function Home() {
         </div>
 
         <div className="mt-20 laptop:mt-40 p-2 laptop:p-0">
-          <h1 className="text-2xl font-bold text-center mb-10">
-            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Skills.</span>
-          </h1>
-          <div className="mt-10 grid grid-cols-1 laptop:grid-cols-2 gap-8 px-4 laptop:px-0">
+          <h1 className="text-2xl font-bold">Skills</h1>
+          <div className="mt-5 laptop:mt-10 grid grid-cols-1 laptop:grid-cols-2 gap-4">
             {data.services.map((service, index) => (
               <ServiceCard
                 key={index}
@@ -218,14 +210,16 @@ export default function Home() {
             </Link>
           </div>
         )}
-        <div className="mt-10 bg-gray-900 mob:bg-gray-800 laptop:mt-40 p-4 pt-8 rounded-lg laptop:p-6" ref={aboutRef}>
-          <h1 className="pt-4 tablet:m-10 text-2xl font-bold">About.</h1>
-          <div
-            className="pb-4 tablet:m-10 mt-2 text-xl laptop:text-2xl w-full laptop:w-4/5 space-y-4"
-            dangerouslySetInnerHTML={{ __html: data.aboutpara }}
-          />
+        <div className="mt-20 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
+          <h1 className="text-2xl font-bold">About</h1>
+          <div className="mt-5 laptop:mt-10 bg-black/40 border border-gray-800 rounded-lg p-5 laptop:p-6">
+            <div
+              className="text-base laptop:text-lg text-gray-300 w-full laptop:w-4/5 space-y-4"
+              dangerouslySetInnerHTML={{ __html: data.aboutpara }}
+            />
+          </div>
         </div>
-        <footer className="mt-10 border-t-2 border-gray-800 pt-10 pb-6 flex flex-col items-center">
+        <footer className="mt-20 pt-10 pb-6 border-t border-gray-800 flex flex-col items-center">
           <p className="text-sm text-gray-400">© {new Date().getFullYear()} Austin Kelsay. All rights reserved.</p>
         </footer>
       </div>
