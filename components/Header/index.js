@@ -31,7 +31,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
     <div className="flex items-center justify-between sticky top-0 z-10 bg-transparent p-4">
       <h1
         onClick={() => router.push("/")}
-        className="font-medium cursor-pointer link"
+        className="text-base mob:text-lg tablet:text-xl font-medium cursor-pointer link"
       >
         {name}.
       </h1>

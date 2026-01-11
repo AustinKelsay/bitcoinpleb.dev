@@ -63,10 +63,10 @@ const ServiceCard = ({ name, description }) => {
           {getIconForService(name)}
         </div>
         <div>
-          <h1 className="text-xl font-semibold text-white">
+          <h1 className="text-lg mob:text-xl tablet:text-xl laptop:text-2xl font-semibold text-white">
             {name ? name : "Heading"}
           </h1>
-          <p className="mt-2 text-gray-300 text-base">
+          <p className="mt-2 text-gray-300 text-sm mob:text-base tablet:text-base laptop:text-lg">
             {description
               ? description
               : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."}

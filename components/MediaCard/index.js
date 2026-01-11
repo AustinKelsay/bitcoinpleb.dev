@@ -62,13 +62,13 @@ const MediaCard = ({ img, name, role, description, onClick, github, date }) => {
                 )}
             </div>
             <div className="mt-4 space-y-2 laptop:space-y-3">
-                <h1 className="text-xl mob:text-lg laptop:text-2xl font-bold pr-2 line-clamp-1">
+                <h1 className="text-lg mob:text-xl tablet:text-xl laptop:text-2xl font-bold pr-2 line-clamp-1">
                     {name ? name : "Media Name"}
                 </h1>
-                <h2 className="text-base mob:text-sm laptop:text-lg text-blue-400 font-medium line-clamp-1">
+                <h2 className="text-sm mob:text-base tablet:text-base laptop:text-lg text-blue-400 font-medium line-clamp-1">
                     {role ? role : "Role"}
                 </h2>
-                <h2 className="text-sm mob:text-xs laptop:text-base text-gray-300 line-clamp-2 laptop:line-clamp-3">
+                <h2 className="text-xs mob:text-sm tablet:text-sm laptop:text-base text-gray-300 line-clamp-2 laptop:line-clamp-3">
                     {description ? description : "Description"}
                 </h2>
                 <div className="flex flex-wrap gap-2 mt-3 pt-2 border-t border-gray-700/50">
