@@ -409,7 +409,7 @@
       "description": "Austin & Topher's FROSTR workshop. Walking through the basics of the protocol and going through a live demo with the audience (signing a 6/12 Nostr multisig note live!)",
       "imageSrc": "https://plebdevs-bucket.nyc3.cdn.digitaloceanspaces.com/images/frostr-vegas-workshop.png",
       "url": "https://www.youtube.com/watch?v=J1WG_InBsHg",
-      "createdAt": "2025-05-28"
+      "createdAt": "2025-06-11"
     },
     {
       "id": "2",
@@ -418,7 +418,7 @@
       "description": "Born out of a hackathon at TABCONF 2024, Frostr may have just solved Nostr's most pernicious issue: the inability to reset your password if your private key gets compromised.",
       "imageSrc": "https://plebdevs-bucket.nyc3.cdn.digitaloceanspaces.com/images/frostr-bitcoin-magazine.png",
       "url": "https://bitcoinmagazine.com/business/no-password-reset-how-frostr-saves-your-nostr-identity",
-      "createdAt": "2024-11-15"
+      "createdAt": "2025-04-02"
     },
     {
       "id": "3",
@@ -427,7 +427,7 @@
       "description": "A deep dive into FROSTR with myself and @cmd discussing how we're solving key recovery in the Nostr ecosystem and the technical challenges involved.",
       "imageSrc": "https://i.scdn.co/image/ab6765630000ba8ac6d48028ef9d5ba0483dc08a",
       "url": "https://fountain.fm/episode/gWYJ5PgxwzdnBjuNuzyc",
-      "createdAt": "2024-11-20"
+      "createdAt": "2025-04-08"
     },
     {
       "id": "4",
@@ -436,7 +436,7 @@
       "description": "In-depth interview about PlebDevs platform and Frostr, discussing the paradigm shift that Nostr represents and the future of decentralized communication.",
       "imageSrc": "https://i.ytimg.com/vi/ebCGWjA29VE/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=ebCGWjA29VE",
-      "createdAt": "2024-12-10"
+      "createdAt": "2025-04-07"
     },
     {
       "id": "5",
@@ -454,7 +454,7 @@
       "description": "Live platform launch and presentation at the Bitcoin Commons in Austin, Texas. Introducing the Nostr-based education and community platform for Bitcoin developers.",
       "imageSrc": "/images/plebdevs-launch.png",
       "url": "https://www.youtube.com/watch?v=j7Gqr9tuWxE",
-      "createdAt": "2024-09-15"
+      "createdAt": "2024-11-17"
     },
     {
       "id": "7",
@@ -544,7 +544,7 @@
       "description": "The Journey to Becoming a Bitcoin Developer w/ Austin Kelsay",
       "imageSrc": "https://i.ytimg.com/vi/zc3h6TWmXQI/maxresdefault.jpg?v=6277219a",
       "url": "https://www.youtube.com/watch?v=zc3h6TWmXQI",
-      "createdAt": "2022-05-09"
+      "createdAt": "2022-05-06"
     },
     {
       "id": "17",
