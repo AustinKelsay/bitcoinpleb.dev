@@ -43,8 +43,8 @@ const WorkCard = ({ img, name, role, description, onClick, github, date }) => {
   return (
     <div className="overflow-hidden rounded-lg p-2 laptop:p-4 first:ml-0 transition-all duration-300 hover:-translate-y-1 bg-black/40 border border-gray-800">
       <div
-        onClick={onClick}
-        className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 cursor-pointer"
+        onClick={onClick || undefined}
+        className={`relative rounded-lg overflow-hidden transition-all ease-out duration-300 ${onClick ? "cursor-pointer" : "cursor-default"}`}
         style={{ height: backgroundHeight }}
       >
         <div className="absolute inset-0 rounded-lg">
@@ -86,17 +86,19 @@ const WorkCard = ({ img, name, role, description, onClick, github, date }) => {
           {description ? description : "Description"}
         </h2>
         <div className="flex flex-wrap gap-2 mt-3 pt-2 border-t border-gray-700/50">
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              onClick();
-            }}
-            className="flex items-center px-3 py-1.5 laptop:px-4 laptop:py-2 text-xs laptop:text-sm text-blue-400 hover:text-white bg-blue-500/10 hover:bg-blue-500/20 rounded transition-colors duration-300 cursor-pointer"
-            title="Visit Website"
-          >
-            <FaGlobe size={12} className="mr-1.5 laptop:size-[16px]" />
-            Site
-          </button>
+          {onClick &&
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                onClick();
+              }}
+              className="flex items-center px-3 py-1.5 laptop:px-4 laptop:py-2 text-xs laptop:text-sm text-blue-400 hover:text-white bg-blue-500/10 hover:bg-blue-500/20 rounded transition-colors duration-300 cursor-pointer"
+              title="Visit Website"
+            >
+              <FaGlobe size={12} className="mr-1.5 laptop:size-[16px]" />
+              Site
+            </button>
+          }
           {github &&
             <button
               onClick={(e) => {

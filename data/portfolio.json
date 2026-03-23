@@ -98,11 +98,10 @@
     },
     {
       "id": "7",
-      "title": "PlebDevs Platform",
+      "title": "PlebDevs Platform v1",
       "role": "Founder / Lead Developer",
-      "description": "Content and community platform built on Nostr and fully Lightning integrated. Offers comprehensive learning resources, community features, and subscription-based premium content using Bitcoin's Lightning Network.",
+      "description": "Original PlebDevs platform. A Nostr and Lightning integrated education and community app that packaged courses, content, and premium subscriptions into the first version of the PlebDevs learning hub. The original app is no longer live.",
       "imageSrc": "/images/plebdevsdotcom.png",
-      "url": "https://plebdevs.com/",
       "github": "https://github.com/austinkelsay/plebdevs",
       "createdAt": "2023-12-23"
     },
@@ -342,6 +341,64 @@
       "url": "https://github.com/austinkelsay/nostr-mcp-server",
       "github": "https://github.com/austinkelsay/nostr-mcp-server",
       "createdAt": "2025-03-23"
+    },
+    {
+      "id": "32",
+      "title": "GTD Space",
+      "role": "Creator / Lead Developer",
+      "description": "Local-first GTD desktop app built with Tauri, React, and Rust. Private by default, with encrypted Git sync and backups for cross-device workflows when you want them.",
+      "imageSrc": "/images/gtdspace-home.png",
+      "url": "https://github.com/AustinKelsay/gtdspace/releases/tag/v2.0.4",
+      "github": "https://github.com/AustinKelsay/gtdspace",
+      "createdAt": "2026-03-23"
+    },
+    {
+      "id": "33",
+      "title": "dicktaint",
+      "role": "Creator / Lead Developer",
+      "description": "Local-first AI dictation app for private, low-latency voice to text. Built with Tauri, Rust, and local Whisper models for desktop and mobile workflows.",
+      "imageSrc": "/images/dicktaint-home.png",
+      "url": "https://github.com/AustinKelsay/dicktaint/releases/tag/v0.2.0",
+      "github": "https://github.com/AustinKelsay/dicktaint",
+      "createdAt": "2026-03-21"
+    },
+    {
+      "id": "34",
+      "title": "PlebDevs.com",
+      "role": "Founder / Lead Developer",
+      "description": "The new PlebDevs platform: a one-of-a-kind Bitcoin developer education, content, and community hub built on Nostr and fully Lightning integrated. This is the upgraded version of the original platform, built as an instance of pleb.school.",
+      "imageSrc": "/images/plebdevs-home.png",
+      "url": "https://www.plebdevs.com/",
+      "createdAt": "2025-01-03"
+    },
+    {
+      "id": "35",
+      "title": "pleb.school",
+      "role": "Creator / Lead Developer",
+      "description": "Open-source, self-hostable education stack for creators and communities. Fork it, configure it, and deploy your own Nostr-native learning platform with Lightning payments.",
+      "imageSrc": "/images/plebschool-home.png",
+      "url": "https://www.pleb.school/",
+      "github": "https://github.com/AustinKelsay/pleb.school",
+      "createdAt": "2025-07-12"
+    },
+    {
+      "id": "36",
+      "title": "PlebDevs Adversarial AI Course",
+      "role": "Creator / Instructor",
+      "description": "New PlebDevs course focused on understanding, using, and stress-testing AI from an adversarial developer perspective so builders can go beyond black-box tooling.",
+      "imageSrc": "https://plebdevs-bucket.nyc3.cdn.digitaloceanspaces.com/images/plebdevs-ai/plebdevs-ai-course-thumbnail.png",
+      "url": "https://www.plebdevs.com/courses/e5aeb540-d9b3-428b-9e1b-107db7619250",
+      "createdAt": "2026-03-02"
+    },
+    {
+      "id": "37",
+      "title": "Visibible",
+      "role": "Creator / Lead Developer",
+      "description": "Visualize the Bible, verse by verse. AI-powered Scripture reading with generated imagery, contextual exploration, and a public image API for already-generated verse artwork.",
+      "imageSrc": "https://unique-impala-244.convex.site/image/kg23xn9095q2zj83gmk295anmh838shn",
+      "url": "https://www.visibible.com/",
+      "github": "https://github.com/AustinKelsay/visibible",
+      "createdAt": "2025-12-24"
     }
   ],
   "media": [
@@ -488,6 +545,24 @@
       "imageSrc": "https://i.ytimg.com/vi/zc3h6TWmXQI/maxresdefault.jpg?v=6277219a",
       "url": "https://www.youtube.com/watch?v=zc3h6TWmXQI",
       "createdAt": "2022-05-09"
+    },
+    {
+      "id": "17",
+      "title": "HRF AI for Individual Rights Grant",
+      "role": "Grant Recipient / PlebDevs",
+      "description": "Human Rights Foundation announced PlebDevs as one of the first projects supported through its AI for Individual Rights program, backing open-source AI education and tooling aligned with freedom tech.",
+      "imageSrc": "https://hrf.org/wp-content/uploads/2025/08/Latest-Thumbnail-HRFs-AI-and-Individual-Rights-Newsletter-V1.png",
+      "url": "https://hrf.org/latest/hrf-announces-support-for-projects-advancing-ai-for-individual-rights/",
+      "createdAt": "2025-11-24"
+    },
+    {
+      "id": "18",
+      "title": "OpenSats Funds Frostr",
+      "role": "Grant Recipient / Frostr",
+      "description": "OpenSats included Frostr in its Twelfth Wave of Nostr Grants, funding the next phase of threshold signing, key recovery, remote signing, and multi-device key management for Nostr.",
+      "imageSrc": "https://opensats.org/static/images/blog/80-twelfth-wave-of-nostr-grants.jpg",
+      "url": "https://opensats.org/blog/twelfth-wave-of-nostr-grants",
+      "createdAt": "2025-07-01"
     }
   ],
   "services": [

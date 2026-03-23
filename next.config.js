@@ -43,6 +43,31 @@ const nextConfig = {
         hostname: 'raw.githubusercontent.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'opengraph.githubassets.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.visibible.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'unique-impala-244.convex.site',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'hrf.org',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'opensats.org',
+        pathname: '/**',
+      },
     ],
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,

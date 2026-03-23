@@ -142,7 +142,7 @@ export default function Home() {
                 description={project.description}
                 github={project.github || null}
                 date={project.createdAt}
-                onClick={() => window.open(project.url, "_blank")}
+                onClick={project.url ? () => window.open(project.url, "_blank") : null}
               />
             ))}
           </div>
