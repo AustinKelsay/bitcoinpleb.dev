@@ -403,6 +403,15 @@
   ],
   "media": [
     {
+      "id": "19",
+      "title": "Open-Source Payment Infrastructure: Building the Commons, Sustaining Contributors",
+      "role": "Speaker / Panelist",
+      "description": "From Bitcoin Takeover 2026's Power of Payments day at Bitcoin Park. A conversation on open-source Bitcoin payment infrastructure, Lightning's evolution, sustainable funding for contributors, and how new developers can get involved.",
+      "imageSrc": "https://i.ytimg.com/vi/NG6DdarGUgs/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=NG6DdarGUgs",
+      "createdAt": "2026-03-24"
+    },
+    {
       "id": "1",
       "title": "Frostr Workshop - Bitcoin 2025 Vegas",
       "role": "Workshop Presenter",
