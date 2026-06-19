@@ -2,7 +2,7 @@
   "name": "Plebdev",
   "headerTaglineOne": "Hi I'm Austin",
   "headerTaglineTwo": "the bitcoinplebdev.",
-  "headerTaglineThree": "developer / educator / hacker / founder of plebdevs",
+  "headerTaglineThree": "developer / educator / hacker / flounder",
   "headerTaglineFour": "BASED in Austin, TX.",
   "lud16": "austin@bitcoinpleb.dev",
   "showCursor": false,
@@ -399,9 +399,56 @@
       "url": "https://www.visibible.com/",
       "github": "https://github.com/AustinKelsay/visibible",
       "createdAt": "2025-12-24"
+    },
+    {
+      "id": "38",
+      "title": "Agent Camp",
+      "role": "Program Lead / Instructor",
+      "description": "AI program coming out of HRF's AI for Individual Rights initiative. I help run hands-on workshops and trainings where activists, human rights defenders, and organizations learn to deploy open-source AI agents, automate workflows, and expand their capabilities.",
+      "imageSrc": "/images/agent-camp.png",
+      "url": "https://hrf.org/program/ai-for-individual-rights/#:~:text=Program%20Initiatives&text=Agent%20Camp",
+      "createdAt": "2026-06-15"
+    },
+    {
+      "id": "39",
+      "title": "Finite Computer",
+      "role": "Co-Founder",
+      "description": "Finite Computer is the company I co-founded to host Agent Camp and build the product around practical, human-centered AI agents and workflows.",
+      "imageSrc": "/images/finite-computer.png",
+      "url": "https://finite.computer/",
+      "createdAt": "2026-06-15"
+    },
+    {
+      "id": "40",
+      "title": "Austin AI Club",
+      "role": "Founder / Organizer",
+      "description": "AI meetup I run in Austin for builders, researchers, and hackers to share demos, discuss practical AI work, and keep a durable topic registry of links, notes, and showcases.",
+      "imageSrc": "/images/austin-ai-club.png",
+      "url": "https://www.austinai.club/",
+      "github": "https://github.com/AustinKelsay/austin-ai-meetup-list",
+      "createdAt": "2026-04-23"
+    },
+    {
+      "id": "41",
+      "title": "PlebDevBench",
+      "role": "Creator / Lead Developer",
+      "description": "Local-first benchmark runner and hosted dashboard for evaluating local LLMs on agentic coding tasks across runtimes, harnesses, models, and test suites.",
+      "imageSrc": "/images/plebdevbench-dashboard.png",
+      "url": "https://plebdev-bench-dashboard.vercel.app/#/leaderboard",
+      "github": "https://github.com/AustinKelsay/plebdev-bench",
+      "createdAt": "2026-04-10"
     }
   ],
   "media": [
+    {
+      "id": "20",
+      "title": "HRF's AI Agent Camps",
+      "role": "Featured / Agent Camp",
+      "description": "Mini documentary from HRF highlighting the first eighteen months of its AI for Individual Rights program and the Agent Camp effort to help activists, human rights defenders, and organizations harness AI safely and effectively. I am featured for my work helping run Agent Camp.",
+      "imageSrc": "https://i.ytimg.com/vi/JkmXxLmC1Uo/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=JkmXxLmC1Uo",
+      "createdAt": "2026-06-15"
+    },
     {
       "id": "19",
       "title": "Open-Source Payment Infrastructure: Building the Commons, Sustaining Contributors",
@@ -583,7 +630,7 @@
     {
       "id": "2",
       "title": "Bitcoin & Lightning",
-      "description": "4+ years deep in the Bitcoin stack. Lightning wallets, payment APIs, node infrastructure—I've built it all. Now leading enterprise implementations at Voltage, bringing Bitcoin to businesses."
+      "description": "4+ years deep in the Bitcoin stack. Lightning wallets, payment APIs, node infrastructure—I've built across products, open-source projects, developer tools, and enterprise implementation work."
     },
     {
       "id": "3",
@@ -602,15 +649,22 @@
     },
     {
       "id": "6",
-      "title": "Enterprise Implementation",
-      "description": "Head of Implementation at Voltage. I help companies integrate Bitcoin and Lightning—from technical architecture to proof-of-concepts to production. Bridging bleeding-edge tech with business reality."
+      "title": "AI Agents & Applied AI Education",
+      "description": "Building Finite Computer and helping run HRF's Agent Camp. I teach practical, privacy-aware AI workflows for activists, human rights defenders, and organizations, and build tools that make open-source agents useful for real-world work."
     }
   ],
-  "aboutpara": "<p class='mb-4'>I started my programming journey <span class='font-semibold'>self-taught</span>, driven by a passion and curiosity for <span class='font-semibold'>Bitcoin</span> and a desire to build applications that leverage the technology.</p><p class='mb-4'>I joined Lambda School (now Bloomtech) Full Stack Developer Bootcamp in 2018. After graduating, I stayed on as a Team Lead, guiding students through the full curriculum. That's when I discovered my <span class='font-semibold'>love for teaching and developer education</span>.</p><p class='mb-4'>I moved to <span class='font-semibold'>Austin, TX</span> to accelerate my journey into Bitcoin development. I joined PlebLab, where I launched <span class='font-semibold'>Plebdevs</span>—a Bitcoin app developer education platform.</p><p class='mb-4'>Throughout my career, I've worked for multiple companies and startups as a developer, spanning traditional web development, backend APIs, mobile apps, <span class='font-semibold'>Bitcoin / Lightning / Nostr</span>, and AI.</p><p class='font-medium italic'>I'm passionate about building and teaching—always looking for new opportunities to do both.</p>",
+  "aboutpara": "<p class='mb-4'>I started my programming journey <span class='font-semibold'>self-taught</span>, driven by a passion and curiosity for <span class='font-semibold'>Bitcoin</span> and a desire to build applications that leverage the technology.</p><p class='mb-4'>I joined Lambda School (now Bloomtech) Full Stack Developer Bootcamp in 2018. After graduating, I stayed on as a Team Lead, guiding students through the full curriculum. That's when I discovered my <span class='font-semibold'>love for teaching and developer education</span>.</p><p class='mb-4'>I moved to <span class='font-semibold'>Austin, TX</span> to accelerate my journey into Bitcoin development. I joined PlebLab, where I launched <span class='font-semibold'>Plebdevs</span>—a Bitcoin app developer education platform.</p><p class='mb-4'>Today, my work is centered on <span class='font-semibold'>Finite Computer</span> and <span class='font-semibold'>Agent Camp</span>, the AI program coming out of HRF's AI for Individual Rights initiative. I help run workshops and trainings for activists, human rights defenders, and organizations while building the product around practical, open-source AI agents.</p><p class='font-medium italic'>I'm passionate about building and teaching useful tools at the edge of Bitcoin, Nostr, and AI.</p>",
   "resume": {
     "tagline": "👋 I'm a Software Engineer",
-    "description": "I started my programming journey self-taught, driven by a passion and curiosity for Bitcoin and a desire to build applications that leverage the technology. I joined Lambda School (now Bloomtech) Full Stack Developer Bootcamp in 2018. After graduating, I stayed on as a Team Lead, guiding students through the full curriculum. That's when I discovered my love for teaching and developer education. I moved to Austin, TX to accelerate my journey into Bitcoin development. I joined PlebLab, where I launched Plebdevs—a Bitcoin app developer education platform. Throughout my career, I've worked for multiple companies and startups as a developer, spanning traditional web development, backend APIs, mobile apps, Bitcoin/Lightning/Nostr, and AI. I'm passionate about building and teaching—always looking for new opportunities to do both.",
+    "description": "I started my programming journey self-taught, driven by a passion and curiosity for Bitcoin and a desire to build applications that leverage the technology. I joined Lambda School (now Bloomtech) Full Stack Developer Bootcamp in 2018. After graduating, I stayed on as a Team Lead, guiding students through the full curriculum. That's when I discovered my love for teaching and developer education. I moved to Austin, TX to accelerate my journey into Bitcoin development. I joined PlebLab, where I launched Plebdevs—a Bitcoin app developer education platform. Throughout my career, I've worked for multiple companies and startups as a developer, spanning traditional web development, backend APIs, mobile apps, Bitcoin/Lightning/Nostr, and AI. Today I am focused on Finite Computer and Agent Camp, building practical AI tools and teaching open-source agent workflows for activists, human rights defenders, organizations, and freedom tech builders.",
     "careerExperiences": [
+      {
+        "id": "5",
+        "dates": "2026 - Present",
+        "type": "Co-Founder / Program Lead",
+        "position": "Finite Computer / Agent Camp",
+        "bullets": "Co-founded Finite Computer with two partners to host Agent Camp and build the Finite Computer product around practical, human-centered AI agents. Help run Agent Camp, HRF's hands-on AI program for individual rights, teaching activists, human rights defenders, and organizations how to use open-source AI agents safely and effectively."
+      },
       {
         "id": "1",
         "dates": "May 2024 - Present",
@@ -696,7 +750,9 @@
       "Docker",
       "Bash",
       "Nostr",
-      "Cryptography"
+      "Cryptography",
+      "AI Agents",
+      "LLM Tooling"
     ]
   }
 }

@@ -7,6 +7,7 @@ import MediaCard from "../components/MediaCard";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
 import Head from "next/head";
+import Image from "next/image";
 import Button from "../components/Button";
 import Link from "next/link";
 
@@ -98,36 +99,50 @@ export default function Home() {
           handleAboutScroll={handleAboutScroll}
         />
         <div className="laptop:mt-20 mt-10 mob:px-6 px-4">
-          <div className="mt-5 mob:text-center tablet:text-left">
-            <h1
-              ref={textOne}
-              className="text-3xl mob:text-4xl tablet:text-5xl laptop:text-6xl laptopl:text-7xl p-1 tablet:p-2 font-bold w-full laptop:w-4/5"
-            >
-              {data.headerTaglineOne}
-            </h1>
-            <h1
-              ref={textThree}
-              className="text-base mob:text-lg tablet:text-xl laptop:text-2xl laptopl:text-3xl p-1 tablet:p-2 font-bold w-full laptop:w-4/5 mt-2 mob:mt-4"
-            >
-              {data.headerTaglineThree}
-            </h1>
-            <h1
-              ref={textFour}
-              className="text-base mob:text-lg tablet:text-xl laptop:text-2xl laptopl:text-3xl p-1 tablet:p-2 font-bold w-full laptop:w-4/5 mt-1 mob:mt-3"
-            >
-              {data.headerTaglineFour}
-            </h1>
-            <button
-              className="mt-6 ml-2 mob:mt-8 py-2 px-3 mob:py-2.5 mob:px-4 tablet:py-3 tablet:px-5 text-xs mob:text-sm tablet:text-lg text-white font-medium rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg"
-              onClick={() => copyToClipboard(data.lud16)}
-            >
-              ⚡ {data.lud16}
-            </button>
-            {showCopyConfirmation && <div className="copied-notification">Copied to clipboard!</div>}
-            {showSuccess && <div className="copied-notification">Payment successful!</div>}
-          </div>
+          <div className="mt-5 flex flex-col gap-8 tablet:flex-row tablet:items-center tablet:justify-between laptop:gap-12">
+            <div className="mob:text-center tablet:text-left tablet:flex-1">
+              <h1
+                ref={textOne}
+                className="text-3xl mob:text-4xl tablet:text-5xl laptop:text-6xl laptopl:text-7xl p-1 tablet:p-2 font-bold w-full"
+              >
+                {data.headerTaglineOne}
+              </h1>
+              <h1
+                ref={textThree}
+                className="text-base mob:text-lg tablet:text-xl laptop:text-2xl laptopl:text-3xl p-1 tablet:p-2 font-bold w-full mt-2 mob:mt-4"
+              >
+                {data.headerTaglineThree}
+              </h1>
+              <h1
+                ref={textFour}
+                className="text-base mob:text-lg tablet:text-xl laptop:text-2xl laptopl:text-3xl p-1 tablet:p-2 font-bold w-full mt-1 mob:mt-3"
+              >
+                {data.headerTaglineFour}
+              </h1>
+              <button
+                className="mt-6 ml-2 mob:mt-8 py-2 px-3 mob:py-2.5 mob:px-4 tablet:py-3 tablet:px-5 text-xs mob:text-sm tablet:text-lg text-white font-medium rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                onClick={() => copyToClipboard(data.lud16)}
+              >
+                ⚡ {data.lud16}
+              </button>
+              {showCopyConfirmation && <div className="copied-notification">Copied to clipboard!</div>}
+              {showSuccess && <div className="copied-notification">Payment successful!</div>}
+              <Socials className="mt-4 mob:mt-6 laptop:mt-5 mob:justify-center tablet:justify-start" />
+            </div>
 
-          <Socials className="mt-4 mob:mt-6 laptop:mt-5 mob:justify-center tablet:justify-start" />
+            <div className="flex justify-center tablet:justify-end tablet:shrink-0">
+              <div className="relative aspect-square w-44 mob:w-52 tablet:w-56 laptop:w-72 laptopl:w-80 overflow-hidden rounded-full outline outline-1 -outline-offset-1 outline-white/10 shadow-[0_18px_60px_rgba(59,130,246,0.24)]">
+                <Image
+                  src="/images/austin-portrait.jpg"
+                  alt="Austin Kelsay"
+                  fill
+                  priority
+                  sizes="(max-width: 767px) 208px, (max-width: 1023px) 224px, (max-width: 1439px) 288px, 320px"
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
         </div>
         <div className="mt-10 laptop:mt-32 p-2 laptop:p-0" ref={workRef}>
           <h1 className="text-xl mob:text-2xl tablet:text-3xl laptop:text-4xl font-bold">Work</h1>
